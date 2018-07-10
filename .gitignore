@@ -1,0 +1,13 @@
+*.pyc
+env
+.DS_Store
+blog
+*.db
+coverage
+tag.py
+.idea/
+#help text
+
+
+.idea
+.vscode
