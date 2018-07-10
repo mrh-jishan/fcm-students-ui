@@ -131,7 +131,7 @@ function init() {
                         textAlign: "center",
                         font: "9pt helvetica, arial, sans-serif",
                         margin: 4,
-                        editable: true  // enable in-place editing
+                        editable: false  // enable in-place editing
                     },
                     // editing the text automatically updates the model data
                     new go.Binding("text").makeTwoWay())
@@ -154,18 +154,18 @@ function load() {
             {"id": 4, "loc": "226 226", "text": "Wait"}
         ],
         "linkDataArray": [
-            {"from": 0, "to": 0, "text": "up or timer", "curviness": -20},
-            {"from": 0, "to": 1, "text": "down", "curviness": 20},
-            {"from": 1, "to": 0, "text": "up (moved)\nPOST", "curviness": 20},
-            {"from": 1, "to": 1, "text": "down", "curviness": -20},
-            {"from": 1, "to": 2, "text": "up (no move)"},
-            {"from": 1, "to": 4, "text": "timer"},
-            {"from": 2, "to": 0, "text": "timer\nPOST"},
-            {"from": 2, "to": 3, "text": "down"},
-            {"from": 3, "to": 0, "text": "up\nPOST\n(dblclick\nif no move)"},
-            {"from": 3, "to": 3, "text": "down or timer", "curviness": 20},
-            {"from": 4, "to": 0, "text": "up\nPOST"},
-            {"from": 4, "to": 4, "text": "down"}
+            {"from": 0, "to": 0, "text": "4", "curviness": -20},
+            {"from": 0, "to": 1, "text": "6", "curviness": 20},
+            {"from": 1, "to": 0, "text": "17", "curviness": 20},
+            {"from": 1, "to": 1, "text": "6", "curviness": -20},
+            {"from": 1, "to": 2, "text": "9"},
+            {"from": 1, "to": 4, "text": "12"},
+            {"from": 2, "to": 0, "text": "12"},
+            {"from": 2, "to": 3, "text": "15"},
+            {"from": 3, "to": 0, "text": "90"},
+            {"from": 3, "to": 3, "text": "6", "curviness": 20},
+            {"from": 4, "to": 0, "text": "36"},
+            {"from": 4, "to": 4, "text": "1"}
         ]
     });
 }

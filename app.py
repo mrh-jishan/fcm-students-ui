@@ -4,13 +4,18 @@ app = Flask(__name__)
 
 
 @app.route('/index')
-def hello_name():
+def index():
     return render_template('index.html', name='index page')
 
 
 @app.route('/')
-def index():
+def root():
     return redirect("/index"), 302
+
+
+@app.route('/table')
+def table():
+    return render_template('table.html', name='table page')
 
 
 @app.errorhandler(404)
