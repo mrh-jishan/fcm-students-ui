@@ -10,7 +10,7 @@ def hello_name():
 
 @app.route('/')
 def index():
-    return redirect("/index", code=302)
+    return redirect("/index"), 302
 
 
 @app.errorhandler(404)
