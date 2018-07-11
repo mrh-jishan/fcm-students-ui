@@ -10,9 +10,9 @@ function init() {
                 // have mouse wheel events zoom in and out instead of scroll up and down
                 "toolManager.mouseWheelBehavior": go.ToolManager.WheelZoom,
                 // support double-click in background creating a new node
-                "clickCreatingTool.archetypeNodeData": {text: "new node"},
+                // "clickCreatingTool.archetypeNodeData": {text: "new node"},
                 // enable undo & redo
-                "undoManager.isEnabled": true
+                "undoManager.isEnabled": false
             });
 
     // when the document is modified, add a "*" to the title and enable the "Save" button
@@ -45,72 +45,21 @@ function init() {
             $(go.TextBlock,
                 {
                     font: "bold 11pt helvetica, bold arial, sans-serif",
-                    editable: true  // editing the text automatically updates the model data
+                    editable: false  // editing the text automatically updates the model data
                 },
                 new go.Binding("text").makeTwoWay())
         );
 
-    // unlike the normal selection Adornment, this one includes a Button
-    myDiagram.nodeTemplate.selectionAdornmentTemplate =
-        $(go.Adornment, "Spot",
-            $(go.Panel, "Auto",
-                $(go.Shape, {fill: null, stroke: "blue", strokeWidth: 2}),
-                $(go.Placeholder)  // a Placeholder sizes itself to the selected Node
-            ),
-            // the button to create a "next" node, at the top-right corner
-            $("Button",
-                {
-                    alignment: go.Spot.TopRight,
-                    click: addNodeAndLink  // this function is defined below
-                },
-                $(go.Shape, "PlusLine", {width: 6, height: 6})
-            ) // end button
-        ); // end Adornment
 
-    // clicking the button inserts a new node to the right of the selected node,
-    // and adds a link to that new node
-    function addNodeAndLink(e, obj) {
-        var adornment = obj.part;
-        var diagram = e.diagram;
-        diagram.startTransaction("Add State");
 
-        // get the node data for which the user clicked the button
-        var fromNode = adornment.adornedPart;
-        var fromData = fromNode.data;
-        // create a new "State" data object, positioned off to the right of the adorned Node
-        var toData = {text: "new"};
-        var p = fromNode.location.copy();
-        p.x += 200;
-        toData.loc = go.Point.stringify(p);  // the "loc" property is a string, not a Point object
-        // add the new node data to the model
-        var model = diagram.model;
-        model.addNodeData(toData);
 
-        // create a link data from the old node data to the new node data
-        var linkdata = {
-            from: model.getKeyForNodeData(fromData),  // or just: fromData.id
-            to: model.getKeyForNodeData(toData),
-            text: "transition"
-        };
-        // and add the link data to the model
-        model.addLinkData(linkdata);
-
-        // select the new Node
-        var newnode = diagram.findNodeForData(toData);
-        diagram.select(newnode);
-
-        diagram.commitTransaction("Add State");
-
-        // if the new node is off-screen, scroll the diagram to show the new node
-        diagram.scrollToRect(newnode.actualBounds);
-    }
 
     // replace the default Link template in the linkTemplateMap
     myDiagram.linkTemplate =
         $(go.Link,  // the whole link panel
             {
                 curve: go.Link.Bezier, adjusting: go.Link.Stretch,
-                reshapable: true, relinkableFrom: true, relinkableTo: true,
+                reshapable: false, relinkableFrom: false, relinkableTo: false,
                 toShortLength: 3
             },
             new go.Binding("points").makeTwoWay(),
