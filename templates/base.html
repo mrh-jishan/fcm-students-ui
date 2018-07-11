@@ -3,15 +3,13 @@
 <head>
     <title>My Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/highlight.css') }}" rel="stylesheet">
-
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/go.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/highlight.js') }}"></script>
+
+    {% block header %}
+    {% endblock %}
 </head>
 <body>
 <div class="container">
@@ -20,6 +18,11 @@
 </div>
 
 
-<script type="text/javascript" src="{{ url_for('static', filename='js/samples.js') }}"></script>
+
+{% block footer %}
+{% endblock %}
+
 </body>
 </html>
+
+
