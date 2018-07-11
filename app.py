@@ -13,11 +13,6 @@ def root():
     return redirect("/index"), 302
 
 
-@app.route('/table')
-def table():
-    return render_template('table.html', name='table page')
-
-
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('error-404.html', data=str(e)), 404
