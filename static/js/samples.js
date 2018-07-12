@@ -95,8 +95,8 @@ function load() {
         .then(function (response) {
             return response.json();
         })
-        .then(function (myJson) {
-            myDiagram.model = go.Model.fromJson(myJson.data);
+        .then(function (res) {
+            myDiagram.model = go.Model.fromJson(res.data);
             // console.log(myJson);
         });
 
