@@ -44,7 +44,7 @@ function init() {
                 }),
             $(go.TextBlock,
                 {
-                    font: "bold 11pt helvetica, bold arial, sans-serif",
+                    font: "bold 12pt helvetica, bold arial, sans-serif",
                     editable: false  // editing the text automatically updates the model data
                 },
                 new go.Binding("text").makeTwoWay())
@@ -76,7 +76,7 @@ function init() {
                 $(go.TextBlock, "transition",  // the label text
                     {
                         textAlign: "center",
-                        font: "9pt helvetica, arial, sans-serif",
+                        font: "12pt helvetica, arial, sans-serif",
                         margin: 4,
                         editable: false  // enable in-place editing
                     },
@@ -91,31 +91,16 @@ function init() {
 
 
 function load() {
-    myDiagram.model = go.Model.fromJson({
-        "nodeKeyProperty": "id",
-        "nodeDataArray": [
-            {"id": 0, "loc": "120 120", "text": "Initial"},
-            {"id": 1, "loc": "330 120", "text": "First down"},
-            {"id": 2, "loc": "226 376", "text": "First up"},
-            {"id": 3, "loc": "60 276", "text": "Second down"},
-            {"id": 4, "loc": "226 226", "text": "Wait"}
-        ],
-        "linkDataArray": [
-            {"from": 0, "to": 0, "text": "4", "curviness": -20},
-            {"from": 0, "to": 1, "text": "6", "curviness": 20},
-            {"from": 1, "to": 0, "text": "17", "curviness": 20},
-            {"from": 1, "to": 1, "text": "6", "curviness": -20},
-            {"from": 1, "to": 2, "text": "9"},
-            {"from": 1, "to": 4, "text": "12"},
-            {"from": 2, "to": 0, "text": "12"},
-            {"from": 2, "to": 3, "text": "15"},
-            {"from": 3, "to": 0, "text": "90"},
-            {"from": 3, "to": 3, "text": "6", "curviness": 20},
-            {"from": 4, "to": 0, "text": "36"},
-            {"from": 4, "to": 4, "text": "1"},
-            {"from": 4, "to": 4, "text": "668"}
-        ]
-    });
+    fetch(location.protocol + '//' + location.host + '/get_data')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            myDiagram.model = go.Model.fromJson(myJson.data);
+            // console.log(myJson);
+        });
+
+
 }
 
 

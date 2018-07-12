@@ -1,4 +1,6 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, jsonify
+import pandas as pd
+import lib
 
 app = Flask(__name__)
 
@@ -11,6 +13,13 @@ def index():
 @app.route('/')
 def root():
     return redirect("/index"), 302
+
+
+@app.route('/get_data')
+def get_data():
+    df = pd.read_csv('data.csv')
+    return jsonify({'data': {'nodeKeyProperty': 'id', 'nodeDataArray': lib.getNodeDataArray(df),
+                             'linkDataArray': lib.getLinkDataArray(df)}})
 
 
 @app.errorhandler(404)
