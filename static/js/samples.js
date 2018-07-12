@@ -38,8 +38,8 @@ function init() {
                     fill: $(go.Brush, "Linear", {0: "rgb(254, 201, 0)", 1: "rgb(254, 162, 0)"}),
                     stroke: null,
                     portId: "",  // this Shape is the Node's port, not the whole Node
-                    fromLinkable: true, fromLinkableSelfNode: true, fromLinkableDuplicates: true,
-                    toLinkable: true, toLinkableSelfNode: true, toLinkableDuplicates: true,
+                    fromLinkable: false, fromLinkableSelfNode: false, fromLinkableDuplicates: false,
+                    toLinkable: false, toLinkableSelfNode: false, toLinkableDuplicates: false,
                     cursor: "pointer"
                 }),
             $(go.TextBlock,
@@ -49,9 +49,6 @@ function init() {
                 },
                 new go.Binding("text").makeTwoWay())
         );
-
-
-
 
 
     // replace the default Link template in the linkTemplateMap
@@ -75,6 +72,7 @@ function init() {
                             {0: "rgb(240, 240, 240)", 0.3: "rgb(240, 240, 240)", 1: "rgba(240, 240, 240, 0)"}),
                         stroke: null
                     }),
+
                 $(go.TextBlock, "transition",  // the label text
                     {
                         textAlign: "center",
@@ -114,7 +112,8 @@ function load() {
             {"from": 3, "to": 0, "text": "90"},
             {"from": 3, "to": 3, "text": "6", "curviness": 20},
             {"from": 4, "to": 0, "text": "36"},
-            {"from": 4, "to": 4, "text": "1"}
+            {"from": 4, "to": 4, "text": "1"},
+            {"from": 4, "to": 4, "text": "668"}
         ]
     });
 }
