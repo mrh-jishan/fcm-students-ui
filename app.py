@@ -20,7 +20,7 @@ def index():
         return render_template('index.html',
                                name=dict({'nodeKeyProperty': 'id', 'nodeDataArray': lib.getNodeDataArray(df),
                                           'linkDataArray': lib.getLinkDataArray(df)}))
-    return render_template('index.html', name='index page')
+    return render_template('index.html', name=dict({'nodeKeyProperty': 'id', 'nodeDataArray': [], 'linkDataArray': []}))
 
 
 @app.route('/get_data')
