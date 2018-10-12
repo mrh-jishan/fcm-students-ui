@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/highlight.css') }}" rel="stylesheet">
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/d3.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <style>
+        path.link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 1.5px;
+        }
+
+        path.link.twofive {
+            opacity: 0.25;
+        }
+
+        path.link.fivezero {
+            opacity: 0.50;
+        }
+
+        path.link.sevenfive {
+            opacity: 0.75;
+        }
+
+        path.link.onezerozero {
+            opacity: 1.0;
+        }
+
+        circle {
+            fill: #ccc;
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            fill: #000;
+            font: 10px sans-serif;
+            pointer-events: none;
+        }
+    </style>
 
     {% block header %}
     {% endblock %}
 </head>
-<body>
-<div class="container">
+
+<body class="container-fluid">
     {% block content %}
     {% endblock %}
-</div>
-
-
-
-{% block footer %}
-{% endblock %}
-
 </body>
+
 </html>
-
-

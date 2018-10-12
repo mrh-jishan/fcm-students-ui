@@ -1,34 +1,47 @@
 import os
 from flask import Flask, render_template, redirect, jsonify, request
-import pandas as pd
-import lib
+import csv
+import io
 
 app = Flask(__name__)
-app.debug = False
+app.debug = True
 
+outputFile = 'static/file/output.csv'
 
 @app.route('/')
 def root():
     return redirect("/index"), 302
 
 
-@app.route('/index', methods=['POST', 'GET'])
+@app.route('/index', methods=['GET'])
 def index():
-    if request.method == 'POST' and request.files:
-        f = request.files['fileupload']
-        df = pd.read_csv(f.stream)
-        return render_template('index.html',
-                               name=dict({'nodeKeyProperty': 'id', 'nodeDataArray': lib.getNodeDataArray(df),
-                                          'linkDataArray': lib.getLinkDataArray(df)}))
-    return render_template('index.html', name=dict({'nodeKeyProperty': 'id', 'nodeDataArray': [], 'linkDataArray': []}))
+    return render_template('index.html')
+
+@app.route('/index', methods=['POST'])
+def update_csv():
+    f = request.files['data_file']
+    if not f:
+        return
+    stream = io.StringIO(f.stream.read().decode("UTF8"), newline=None)
+    data = list(csv.reader(stream))
+    write_into_file(data)
+    return render_template('index.html', data=data)
 
 
-@app.route('/get_data')
-def get_data():
-    df = pd.read_csv('data.csv')
-    return jsonify({'data': {'nodeKeyProperty': 'id', 'nodeDataArray': lib.getNodeDataArray(df),
-                             'linkDataArray': lib.getLinkDataArray(df)}})
 
+def write_into_file(data):
+    with open(outputFile, 'w+') as file:
+        if not os.stat(outputFile).st_size == 0:
+             file.truncate(0)
+        writer = csv.writer(file)
+        writer.writerow(["source", "target", "value"])
+        for idx, column in enumerate(data):
+            for x in range(len(column)):
+                if not (data[0][x]=="null" or  data[idx][x]=="null" or column[0]=="null"):
+                    row = [column[0] , data[0][x] , data[idx][x]]
+                    writer = csv.writer(file)
+                    writer.writerow(row)
+    file.close()
 
 @app.errorhandler(404)
 def page_not_found(e):
