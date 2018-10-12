@@ -11,13 +11,40 @@
         <button class="btn btn-primary">Click Me</button>
 
     </form>
+
+
+    <select id="itemList">
+    </select>
 </div>
+
+
 <div class="row" id="container"></div>
 
 <script>
     drawFCM();
+
+    fetch('/data').then(function (res) {
+        res.json().then(function (data) {
+            items = [];
+            data.slice(1).forEach(function (res) {
+                items.push(res[0])
+                items.push(res[1])
+            })
+            uItem = Array.from(new Set(items));
+
+            uItem.forEach(function (item) {
+                $('#itemList').append('<option value="' + item + '">' + item + '</option>');
+            })
+        })
+    })
+
+
+    $("#itemList").change(function () {
+        $("#itemList option:selected").each(function () {
+            console.log($(this).text());
+        });
+    });
 </script>
 
 
 {% endblock %}
-

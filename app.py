@@ -12,10 +12,17 @@ outputFile = 'static/file/output.csv'
 def root():
     return redirect("/index"), 302
 
-
 @app.route('/index', methods=['GET'])
 def index():
     return render_template('index.html')
+
+@app.route('/data', methods=['GET'])
+def getData():
+    with open(outputFile, 'r') as csvfile:
+        data = list(csv.reader(csvfile, delimiter=','))
+        
+        return jsonify(data)
+
 
 @app.route('/index', methods=['POST'])
 def update_csv():
@@ -24,7 +31,6 @@ def update_csv():
         return
     stream = io.StringIO(f.stream.read().decode("UTF8"), newline=None)
     data = list(csv.reader(stream))
-    print(data)
     write_into_file(data)
     return render_template('index.html', data=data)
 
