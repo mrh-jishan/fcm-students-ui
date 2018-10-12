@@ -24,6 +24,7 @@ def update_csv():
         return
     stream = io.StringIO(f.stream.read().decode("UTF8"), newline=None)
     data = list(csv.reader(stream))
+    print(data)
     write_into_file(data)
     return render_template('index.html', data=data)
 
