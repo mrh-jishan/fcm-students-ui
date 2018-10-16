@@ -1088,3 +1088,69 @@ Force equilibrium and torque equlilbrium,The motion of satellite,0.2
 Force equilibrium and torque equlilbrium,Escape velocity,0.2
 Force equilibrium and torque equlilbrium,Center of gravity,0.5
 Force equilibrium and torque equlilbrium,Force equilibrium and torque equlilbrium,1
+Linear Motion,Kinematics-Linear Motion,topic ---> subtopic
+Kinematics-Linear Motion,Equation of motion,subtopic ---> principal
+Linear Motion,Kinematics-Free Fall,topic ---> subtopic
+Kinematics-Free Fall,,subtopic ---> principal
+Linear Motion,Kinematics-Projectile Motion,topic ---> subtopic
+Kinematics-Projectile Motion,,subtopic ---> principal
+Linear Motion,Dynamics -Newton's Laws of Motion,topic ---> subtopic
+Dynamics -Newton's Laws of Motion,"Newton's 1st law, Newton's 2nd law, Newton's 3rd law",subtopic ---> principal
+Linear Motion,Dynamics -Motion on inclined planes,topic ---> subtopic
+Dynamics -Motion on inclined planes,Law of Conservation of energy,subtopic ---> principal
+Linear Motion,"Work, kinetic energy and potential energy",topic ---> subtopic
+"Work, kinetic energy and potential energy",Law of Conservation of energy,subtopic ---> principal
+Linear Motion,Dynamics-Work-energy theorem,topic ---> subtopic
+Dynamics-Work-energy theorem,Law of Conservation of energy,subtopic ---> principal
+Linear Motion,Dynamics-Conservation of energy,topic ---> subtopic
+Dynamics-Conservation of energy,Law of Conservation of energy,subtopic ---> principal
+Linear Motion,Dynamics-Power,topic ---> subtopic
+Dynamics-Power,Newton's 2nd law ,subtopic ---> principal
+Linear Motion,Dynamics-Linear momentum,topic ---> subtopic
+Dynamics-Linear momentum,conservation of momentum,subtopic ---> principal
+Linear Motion,Dynamics-Conservation of linear momentum and impulse,topic ---> subtopic
+Dynamics-Conservation of linear momentum and impulse,Impulse - momentum theorm,subtopic ---> principal
+Linear Motion,Dynamics-Elastic collision,topic ---> subtopic
+Dynamics-Elastic collision,"conservation of momentum, Law of Conservation of energy",subtopic ---> principal
+Linear Motion,Dynamics-Inelastic collision,topic ---> subtopic
+Dynamics-Inelastic collision,"conservation of momentum, Law of Conservation of energy",subtopic ---> principal
+Linear Motion,Dynamics-Collision in 2-dimension,topic ---> subtopic
+Dynamics-Collision in 2-dimension,conservation of momentum,subtopic ---> principal
+Rotational Motion,Angular displacement,topic ---> subtopic
+Angular displacement,,subtopic ---> principal
+Rotational Motion,Velocity and acceleration,topic ---> subtopic
+Velocity and acceleration,,subtopic ---> principal
+Rotational Motion,Relation between rotational motion and linear motion,topic ---> subtopic
+Relation between rotational motion and linear motion,Linear motion at constant acceleration,subtopic ---> principal
+Rotational Motion,Rotational motion at constant angular acceleration,topic ---> subtopic
+Rotational motion at constant angular acceleration,Equation of motion,subtopic ---> principal
+Rotational Motion,Centripetal acceleration and centripetal force,topic ---> subtopic
+Centripetal acceleration and centripetal force,Equation of motion,subtopic ---> principal
+Rotational Motion,Rotational motion on horizontal and vertical planes,topic ---> subtopic
+Rotational motion on horizontal and vertical planes,Equation of motion,subtopic ---> principal
+Rotational Motion,Conical pendulum,topic ---> subtopic
+Conical pendulum,,subtopic ---> principal
+Rotational Motion,Centre of mass and torque,topic ---> subtopic
+Centre of mass and torque,,subtopic ---> principal
+Rotational Motion,Moment of inertia and parallel axis theorem,topic ---> subtopic
+Moment of inertia and parallel axis theorem,,subtopic ---> principal
+Rotational Motion,Rotational kinetic energy,topic ---> subtopic
+Rotational kinetic energy,"Equation of linear kinetic energy, Equation of rotational kinetic energy, Equation of initial potential energy ",subtopic ---> principal
+Rotational Motion,Angular momentum,topic ---> subtopic
+Angular momentum,Equation of angular momentum ,subtopic ---> principal
+Rotational Motion,Conservation of angular momentum,topic ---> subtopic
+Conservation of angular momentum,Law of conservation of angular momentum,subtopic ---> principal
+Gravitation,Newton's law of gravitation,topic ---> subtopic
+Newton's law of gravitation,Newton's Law of Gravitation,subtopic ---> principal
+Gravitation,Gravitational field,topic ---> subtopic
+Gravitational field,,subtopic ---> principal
+Gravitation,Gravitational potential,topic ---> subtopic
+Gravitational potential,,subtopic ---> principal
+Gravitation,The motion of satellite,topic ---> subtopic
+The motion of satellite,,subtopic ---> principal
+Gravitation,Escape velocity,topic ---> subtopic
+Escape velocity, Conservation of energy,subtopic ---> principal
+Static,Centre of gravity,topic ---> subtopic
+Centre of gravity,"Equation of centre of Gravity, Condition of Equilibrium",subtopic ---> principal
+Static,Force equilibrium and torque equilibrium,topic ---> subtopic
+Force equilibrium and torque equilibrium,Equation of torque,subtopic ---> principal

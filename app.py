@@ -47,6 +47,21 @@ def update_csv():
     return render_template('index.html', data='New data updated')
 
 
+def load_topic_subtopic_data():
+    with open('topics_subtopics_principles.csv', 'r') as csvfile:
+        data = list(csv.reader(csvfile, delimiter=','))
+        return data
+
+def update_topic_subtopic_data(data):
+    with open(outputFile, 'a+') as file:
+        itercars = iter(data)
+        next(itercars)
+        for row in itercars:
+            writer = csv.writer(file)
+            writer.writerow([row[0],row[1],'topic ---> subtopic'])
+            writer.writerow([row[1],row[2],'subtopic ---> principal'])
+    file.close()
+
 
 def write_into_file(data):
     with open(outputFile, 'w+') as file:
@@ -61,6 +76,8 @@ def write_into_file(data):
                     writer = csv.writer(file)
                     writer.writerow(row)
     file.close()
+    topic_subtopic_data = load_topic_subtopic_data()
+    update_topic_subtopic_data(topic_subtopic_data)
 
 @app.errorhandler(404)
 def page_not_found(e):
