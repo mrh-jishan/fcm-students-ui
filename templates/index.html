@@ -19,7 +19,9 @@
 
             <div class="form-group">
                 <label for="itemList">Select Item List</label>
-                <select id="itemList" class="form-control"></select>
+                <select id="itemList" class="form-control">
+                    <option value="null">Select a option</option>
+                </select>
             </div>
         </div>
     </div>
@@ -48,7 +50,10 @@
 
     $("#itemList").change(function () {
         $("#itemList option:selected").each(function () {
-            location.href = 'index?param=' + $(this).text()
+            if ($(this).text() != null) {
+                location.href = 'index?param=' + $(this).text()
+            }
+
         });
     });
 
