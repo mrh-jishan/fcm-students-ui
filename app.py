@@ -27,13 +27,12 @@ def root():
 
 @app.route('/index', methods=['GET'])
 def index():
-    return render_template('index.html')
+    return render_template('index.html', data='')
 
 @app.route('/data', methods=['GET'])
 def getData():
     with open(outputFile, 'r') as csvfile:
         data = list(csv.reader(csvfile, delimiter=','))
-        
         return jsonify(data)
 
 
@@ -45,7 +44,7 @@ def update_csv():
     stream = io.StringIO(f.stream.read().decode("UTF8"), newline=None)
     data = list(csv.reader(stream))
     write_into_file(data)
-    return render_template('index.html', data=data)
+    return render_template('index.html', data='New data updated')
 
 
 
