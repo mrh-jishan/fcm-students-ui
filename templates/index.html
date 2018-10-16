@@ -2,27 +2,34 @@
 
 {% block content %}
 
-<div class="row">
-    <form method="post" enctype="multipart/form-data" novalidate>
-        <div class="form-group">
-            <label for="fileupload">Update test data</label>
-            <input type="file" class="form-control-file" name="data_file" id="data_file">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" enctype="multipart/form-data" novalidate>
+                <div class="form-group">
+                    <label for="fileupload">Update test data</label>
+                    <input type="file" class="form-control" name="data_file" id="data_file">
+                </div>
+                <button class="btn btn-primary">Click Me</button>
+
+            </form>
         </div>
-        <button class="btn btn-primary">Click Me</button>
+        <div class="col-md-6">
 
-    </form>
-
-
-    <select id="itemList">
-    </select>
+            <div class="form-group">
+                <label for="itemList">Select Item List</label>
+                <select id="itemList" class="form-control"></select>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 
 <div class="row" id="container"></div>
 
+</div>
 <script>
-    drawFCM();
-
     fetch('/data').then(function (res) {
         res.json().then(function (data) {
             items = [];
@@ -38,12 +45,25 @@
         })
     })
 
-
     $("#itemList").change(function () {
         $("#itemList option:selected").each(function () {
-            console.log($(this).text());
+            location.href = 'index?param=' + $(this).text()
         });
     });
+
+    $.urlParam = function (param) {
+        const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+        if (results == null) {
+            return null;
+        } else {
+            return decodeURI(results[1] || 0);
+        }
+    }
+
+    if ($.urlParam('param')) {
+        drawFCM($.urlParam('param'));
+    }
+
 </script>
 
 

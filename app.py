@@ -39,9 +39,9 @@ def getData():
 
 @app.route('/index', methods=['POST'])
 def update_csv():
-    f = request.files['data_file']
+    f = request.files and request.files['data_file']
     if not f:
-        return
+        return render_template('index.html', data='Plese choose a file')
     stream = io.StringIO(f.stream.read().decode("UTF8"), newline=None)
     data = list(csv.reader(stream))
     write_into_file(data)

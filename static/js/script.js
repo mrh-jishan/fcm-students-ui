@@ -1,7 +1,12 @@
 // get the data
-drawFCM = function () {
+drawFCM = function (filterText) {
     d3.csv("static/file/output.csv", function (error, links) {
         var nodes = {};
+
+        links = links.filter(function (res) {
+            return res.source == filterText || res.target == filterText;
+        })
+
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
             link.source = nodes[link.source] ||
