@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container postion-absolute">
     <div class="row">
         <div class="col-md-6">
             <form method="post" enctype="multipart/form-data" novalidate>
@@ -30,8 +30,19 @@
 
 
 <div class="row" id="container"></div>
+</div>
+
+
+<div id="panel">
+    <div id="panel-content"></div>
+    <div id="panel-tab">
+        <div id="myTab">
+            <p>View Students Data</p>
+        </div>
+    </div>
 
 </div>
+
 <script>
     fetch('/data').then(function (res) {
         res.json().then(function (data) {
@@ -69,6 +80,17 @@
     if ($.urlParam('param')) {
         drawFCM($.urlParam('param'));
     }
+
+
+    $(function () {
+        var $pCont = $("#panel-content");
+        $pCont.width(0);
+        $("#panel").hover(function (ev) {
+            $pCont.stop().animate({ width: ev.type == "mouseenter" ? 600 : 0 }, 700);
+        });
+
+    });
+
 
 </script>
 

@@ -1,0 +1,49 @@
+html{
+    overflow: hidden;
+}
+
+#panel{
+    position: absolute;
+    height: 100%;    
+    background: transparent;
+    right: 0;
+    top: 0;
+}
+
+#panel-content{
+    position: relative;
+    width: 175px;
+    height: 100%;
+    background: #31708f;
+    float:right;
+}
+
+#panel-tab{
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background-color: transparent;
+    float:left;
+}
+
+#myTab{
+    position: relative;
+    top: 150px;
+    background: #31708f;
+    height: 53px;
+    color: White;
+    right: 100px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+#myTab p{
+    margin: 0;
+    width: 149px;
+} 
+
+.position-absolute{
+    position: absolute;
+}

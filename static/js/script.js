@@ -25,7 +25,7 @@ drawFCM = function (filterText) {
             .nodes(d3.values(nodes))
             .links(links)
             .size([width, height])
-            .linkDistance(400)
+            .linkDistance(250)
             .charge(-400)
             .on("tick", tick)
             .start();

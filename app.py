@@ -59,9 +59,9 @@ def update_topic_subtopic_data(data):
         for row in itercars:
             writer = csv.writer(file)
             if row[0] and row[1]:
-                writer.writerow([row[0],row[1],'topic ---> subtopic'])
+                writer.writerow([row[0],row[1],99999])
             if row[1] and row[2]:
-                writer.writerow([row[1],row[2],'subtopic ---> principal'])
+                writer.writerow([row[1],row[2],999999])
     file.close()
 
 
