@@ -34,7 +34,18 @@
 
 
 <div id="panel">
-    <div id="panel-content"></div>
+    <div id="panel_content">
+        <div class="col-md-8">
+            <form method="post" enctype="multipart/form-data" action="/students" novalidate>
+                <div class="form-group">
+                    <label for="students_data_file">Update Students data</label>
+                    <input type="file" class="form-control" name="students_data_file" id="students_data_file">
+                    <small>{{data}}</small>
+                </div>
+                <button class="btn btn-primary">Click Me</button>
+            </form>
+        </div>
+    </div>
     <div id="panel-tab">
         <div id="myTab">
             <p>View Students Data</p>
@@ -58,7 +69,6 @@
             })
         })
     })
-
     $("#itemList").change(function () {
         $("#itemList option:selected").each(function () {
             if ($(this).text() != null) {
@@ -67,7 +77,6 @@
 
         });
     });
-
     $.urlParam = function (param) {
         const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
         if (results == null) {
@@ -76,20 +85,23 @@
             return decodeURI(results[1] || 0);
         }
     }
-
     if ($.urlParam('param')) {
         drawFCM($.urlParam('param'));
     }
 
-
     $(function () {
-        var $pCont = $("#panel-content");
+        var $pCont = $("#panel_content");
+        var $currentWidth = $pCont.outerWidth();
         $pCont.width(0);
         $("#panel").hover(function (ev) {
             $pCont.stop().animate({ width: ev.type == "mouseenter" ? 600 : 0 }, 700);
+            draw_fcm_for_students();
         });
-
     });
+
+    // panel_content
+
+
 
 
 </script>

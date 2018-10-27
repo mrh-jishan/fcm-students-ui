@@ -10,11 +10,11 @@ html{
     top: 0;
 }
 
-#panel-content{
+#panel_content{
     position: relative;
     width: 175px;
     height: 100%;
-    background: #31708f;
+    background: #dff0d8;
     float:right;
 }
 
@@ -29,9 +29,8 @@ html{
 #myTab{
     position: relative;
     top: 150px;
-    background: #31708f;
+    background: #dff0d8;
     height: 53px;
-    color: White;
     right: 100px;
     display: table-cell;
     vertical-align: middle;

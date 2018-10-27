@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.debug = True
 
 outputFile = 'static/file/output.csv'
+outputFileStudents = 'static/file/outputstudents.csv'
 
 @app.after_request
 def add_header(r):
@@ -47,6 +48,18 @@ def update_csv():
     return render_template('index.html', data='New data updated')
 
 
+@app.route('/students', methods=['POST'])
+def update_students_csv():
+    f = request.files and request.files['students_data_file']
+    if not f:
+        return render_template('index.html', data='Plese choose a file')
+    stream = io.StringIO(f.stream.read().decode("UTF8"), newline=None)
+    data = list(csv.reader(stream))
+    write_students_data_into_file(data)
+    return redirect("/index"), 302
+    # return render_template('index.html', data='New data updated')
+
+
 def load_topic_subtopic_data():
     with open('topics_subtopics_principles.csv', 'r') as csvfile:
         data = list(csv.reader(csvfile, delimiter=','))
@@ -80,6 +93,22 @@ def write_into_file(data):
     file.close()
     topic_subtopic_data = load_topic_subtopic_data()
     update_topic_subtopic_data(topic_subtopic_data)
+
+
+def write_students_data_into_file(data):
+    with open(outputFileStudents, 'w+') as file:
+        if not os.stat(outputFileStudents).st_size == 0:
+             file.truncate(0)
+        writer = csv.writer(file)
+        writer.writerow(["source", "target", "value"])
+        for idx, column in enumerate(data):
+            for x in range(len(column)):
+                if not (data[0][x]=="null" or  data[idx][x]=="null" or column[0]=="null"):
+                    row = [column[0] , data[0][x] , data[idx][x]]
+                    writer = csv.writer(file)
+                    writer.writerow(row)
+    file.close()
+
 
 @app.errorhandler(404)
 def page_not_found(e):
