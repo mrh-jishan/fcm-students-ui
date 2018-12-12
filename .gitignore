@@ -8,3 +8,4 @@ tag.py
 .idea/
 .idea
 .vscode
+data/*
