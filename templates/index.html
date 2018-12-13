@@ -2,6 +2,28 @@
 
 {% block content %}
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
+    </div>
+
+</div>
+
+
+
 <div class="container postion-absolute">
     <div class="row">
         <div class="col-md-6">
@@ -11,7 +33,7 @@
                     <input type="file" class="form-control" name="data_file" id="data_file">
                     <small>{{data}}</small>
                 </div>
-                <button class="btn btn-primary">Click Me</button>
+                <button class="btn btn-primary">Upload File</button>
 
             </form>
         </div>
@@ -22,6 +44,7 @@
                     <option value="null">Select a option</option>
                 </select>
             </div>
+            <button class="btn btn-primary" id="myBtn">Viw Compare Data</button>
         </div>
     </div>
 </div>
@@ -96,17 +119,32 @@
                 $("#panel_content").stop().animate({ width: "0px" }, 700);
             } else {
                 $("#panel_content").stop().animate({ width: "600px" }, 700);
-
+                draw_fcm_for_students();
             }
             $(this).toggleClass("isFold");
-            draw_fcm_for_students();
         });
     });
 
     // panel_content
 
+    // modal script
 
+    // When the user clicks the button, open the modal 
+    $("#myBtn").click(function () {
+        $("#myModal").css({ "display": "block" });
+    });
 
+    // When the user clicks on <span> (x), close the modal
+    $(".close").first().click(function () {
+        $("#myModal").css({ "display": "none" });
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == document.getElementById('myModal')) {
+            $("#myModal").css({ "display": "none" });
+        }
+    }
 
 </script>
 
