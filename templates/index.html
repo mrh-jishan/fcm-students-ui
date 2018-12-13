@@ -45,7 +45,7 @@
             </form>
         </div>
     </div>
-    
+
     <div id="panel-tab">
         <div id="myTab">
             <p>View Students Data</p>
@@ -90,11 +90,15 @@
     }
 
     $(function () {
-        var $pCont = $("#panel_content");
-        var $currentWidth = $pCont.outerWidth();
-        $pCont.width(0);
-        $("#panel").hover(function (ev) {
-            $pCont.stop().animate({ width: ev.type == "mouseenter" ? 600 : 0 }, 700);
+        $("#panel_content").width(0);
+        $("#panel #myTab").click(function (ev) {
+            if ($(this).hasClass("isFold")) {
+                $("#panel_content").stop().animate({ width: "0px" }, 700);
+            } else {
+                $("#panel_content").stop().animate({ width: "600px" }, 700);
+
+            }
+            $(this).toggleClass("isFold");
             draw_fcm_for_students();
         });
     });

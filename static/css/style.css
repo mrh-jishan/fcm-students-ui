@@ -29,13 +29,20 @@ html{
 #myTab{
     position: relative;
     top: 150px;
-    background: #dff0d8;
+    background: #777;
+    color: #FFF;
     height: 53px;
     right: 100px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     transform: rotate(90deg);
+}
+
+#myTab:hover{
+    background: #111311;
+    color: #FFF;
+    cursor: pointer;
 }
 
 #myTab p{
