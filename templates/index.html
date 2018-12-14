@@ -8,11 +8,22 @@
     <div class="modal-content">
         <div class="modal-header">
             <span class="close-btn close">&times;</span>
-            <h2>Modal Header</h2>
+            <h4>View Comparison: <strong id="modal-title">Kinematics-Linear Motion</strong></h2>
         </div>
         <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Sub-topic</th>
+                        <th scope="col">Exparts</th>
+                        <th scope="col">Students</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+
+                </tbody>
+            </table>
         </div>
         <div class="modal-footer">
             <button class="close-btn btn btn-danger">Close</button>
@@ -129,7 +140,21 @@
     // modal script
 
     // When the user clicks the button, open the modal 
-    $("#myBtn").click(function () {
+    $("#myBtn").click(async function () {
+
+        var outputstudents = [];
+        await getData('static/file/outputstudents.csv').then(function (res) {
+            outputstudents = res;
+        });
+        await getData('static/file/output.csv').then(function (res) {
+            $("#modal-title").html($.urlParam('param'));
+            res.filter(function (fd) {
+                return fd.source == $.urlParam('param')
+            }).forEach(function (d, index) {
+                $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + outputstudents[index].value + '</td><td>' + d.value + '</td></tr > ')
+            })
+        });
+
         $("#myModal").css({ "display": "block" });
     });
 

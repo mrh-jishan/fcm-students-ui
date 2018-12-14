@@ -104,10 +104,14 @@ html{
 }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 2px 10px;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;  
+    height: 250px;
+    overflow-y: auto;
+}
 
 .modal-footer {
   padding: 2px 6px;

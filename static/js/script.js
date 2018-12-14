@@ -348,3 +348,12 @@ draw_fcm_for_students = function () {
 
     });
 }
+
+
+function getData(file) {
+    return new Promise(resolve => {
+        d3.csv(file, function (error, links) {
+            resolve(links);
+        });
+    });
+}
