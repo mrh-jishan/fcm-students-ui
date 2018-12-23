@@ -346,10 +346,29 @@ draw_fcm_for_students = function () {
     });
 }
 
-getData = function (file) {
+$getData = function (url) {
     return new Promise(resolve => {
-        d3.csv(file, function (error, links) {
+        d3.csv(url, function (error, links) {
             resolve(links);
+        });
+    });
+}
+
+$getOutputData = function (url, source) {
+    return new Promise(resolve => {
+        d3.csv(url, function (error, links) {
+            const data = links.filter(fd => fd.source == source);
+            resolve(data);
+        });
+    });
+}
+
+$getJSON = function (outputstudents, output) {
+    return new Promise(resolve => {
+        $getData(outputstudents).then(data => {
+            $getOutputData(output, data[0].source).then(allData => {
+                resolve({ outputstudents: data, allOutputFile: allData });
+            });
         });
     });
 }

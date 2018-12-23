@@ -141,23 +141,13 @@
 
     // When the user clicks the button, open the modal 
     $("#myBtn").click(function () {
-
-        // var outputstudents = [];
-        getData('static/file/outputstudents.csv').then(function (res) {
-            // outputstudents = res;
-            console.log(res);
-            getData('static/file/output.csv').then(function (all_data) {
-                const source = res[0].source;
-                $("#modal-title").html(source);
-                all_data.filter(function (fd) {
-                    return fd.source == source;
-                }).forEach(function (d, index) {
-                    $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + res[index].value + '</td><td>' + d.value + '</td></tr > ')
-                })
-            });
-        });
-
-
+        const outputstudents = 'static/file/outputstudents.csv';
+        const output = 'static/file/output.csv';
+        $getJSON(outputstudents, output).then(res => {
+            res.allOutputFile.forEach(function (d, index) {
+                $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + res.outputstudents.find(x => x.target == d.target).value + '</td><td>' + d.value + '</td></tr > ')
+            })
+        })
         $("#myModal").css({ "display": "block" });
     });
 
