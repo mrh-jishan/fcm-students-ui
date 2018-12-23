@@ -174,9 +174,6 @@ drawFCM = function (filterText) {
     });
 }
 
-
-
-
 // get the data
 draw_fcm_for_students = function () {
     d3.csv("static/file/outputstudents.csv", function (error, links) {
@@ -191,7 +188,7 @@ draw_fcm_for_students = function () {
             link.value = +link.value;
         });
 
-        var width = 600,
+        var width = 800,
             height = window.innerHeight,
             color = d3.scale.category20c();
 
@@ -349,8 +346,7 @@ draw_fcm_for_students = function () {
     });
 }
 
-
-function getData(file) {
+getData = function (file) {
     return new Promise(resolve => {
         d3.csv(file, function (error, links) {
             resolve(links);

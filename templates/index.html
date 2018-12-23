@@ -128,7 +128,7 @@
             if ($(this).hasClass("isFold")) {
                 $("#panel_content").stop().animate({ width: "0px" }, 700);
             } else {
-                $("#panel_content").stop().animate({ width: "600px" }, 700);
+                $("#panel_content").stop().animate({ width: "800px" }, 700);
                 draw_fcm_for_students();
             }
             $(this).toggleClass("isFold");
@@ -140,20 +140,23 @@
     // modal script
 
     // When the user clicks the button, open the modal 
-    $("#myBtn").click(async function () {
+    $("#myBtn").click(function () {
 
-        var outputstudents = [];
-        await getData('static/file/outputstudents.csv').then(function (res) {
-            outputstudents = res;
+        // var outputstudents = [];
+        getData('static/file/outputstudents.csv').then(function (res) {
+            // outputstudents = res;
+            console.log(res);
+            getData('static/file/output.csv').then(function (all_data) {
+                const source = res[0].source;
+                $("#modal-title").html(source);
+                all_data.filter(function (fd) {
+                    return fd.source == source;
+                }).forEach(function (d, index) {
+                    $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + res[index].value + '</td><td>' + d.value + '</td></tr > ')
+                })
+            });
         });
-        await getData('static/file/output.csv').then(function (res) {
-            $("#modal-title").html($.urlParam('param'));
-            res.filter(function (fd) {
-                return fd.source == $.urlParam('param')
-            }).forEach(function (d, index) {
-                $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + outputstudents[index].value + '</td><td>' + d.value + '</td></tr > ')
-            })
-        });
+
 
         $("#myModal").css({ "display": "block" });
     });
