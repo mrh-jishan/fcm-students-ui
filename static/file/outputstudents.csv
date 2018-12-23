@@ -12,10 +12,10 @@ Kinematics-Linear Motion,Dynamics-Linear momentum,0.286
 Kinematics-Linear Motion,Dynamics-Conservation of linear momentum and impulse,0.3
 Kinematics-Linear Motion,Dynamics-Elastic collision,0.2
 Kinematics-Linear Motion,Dynamics-Inelastic collision,0.3
-Kinematics-Linear Motion,Dynamics-Collision in 2-dimension,0.3
+Kinematics-Linear Motion,Dynamics-Collision in 2-dimension,0.2
 Kinematics-Linear Motion,Angular displacement,0.1
-Kinematics-Linear Motion,Velocity and acceleration,0.1
-Kinematics-Linear Motion,Relation between rotational motion and linear motion,0.1
+Kinematics-Linear Motion,Velocity and acceleration,0.3
+Kinematics-Linear Motion,Relation between rotational motion and linear motion,0.6
 Kinematics-Linear Motion,Rotational motion at constant angular acceleration,0.1
 Kinematics-Linear Motion,Centripetal acceleration and centripetal force,0.1
 Kinematics-Linear Motion,Rotational motion on horizontal and vertical planes,0.1
@@ -24,11 +24,11 @@ Kinematics-Linear Motion,Centre of mass and torque,0.1
 Kinematics-Linear Motion,Moment of inertia and parallel axis theorem,0.1
 Kinematics-Linear Motion,Rotational kinetic energy,0.1
 Kinematics-Linear Motion,Angular momentum,0.1
-Kinematics-Linear Motion,Conservation of angular momentum,0.1
+Kinematics-Linear Motion,Conservation of angular momentum,0.3
 Kinematics-Linear Motion,Newton’s law of gravitation,0.1
 Kinematics-Linear Motion,Gravitational field,0.1
 Kinematics-Linear Motion,Gravitational potential,0.1
 Kinematics-Linear Motion,The motion of satellite,0.1
-Kinematics-Linear Motion,Escape velocity,0.1
+Kinematics-Linear Motion,Escape velocity,0.9
 Kinematics-Linear Motion,Center of gravity,0.1
 Kinematics-Linear Motion,Force equilibrium and torque equlilbrium,0.1

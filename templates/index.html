@@ -27,6 +27,27 @@
         </div>
         <div class="modal-footer">
             <button class="close-btn btn btn-danger">Close</button>
+            <button id="showDiff" class="btn btn-primary">Show Diff</button>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- The Modal -->
+<div id="diffModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close-btn close">&times;</span>
+            <h4>View Comparison: <strong id="modal-title">Kinematics-Linear Motion</strong></h2>
+        </div>
+        <div class="modal-body">
+            <p id="visualdiff">
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button class="close-btn btn btn-danger">Close</button>
         </div>
     </div>
 
@@ -144,6 +165,10 @@
         const outputstudents = 'static/file/outputstudents.csv';
         const output = 'static/file/output.csv';
         $getJSON(outputstudents, output).then(res => {
+
+            const delta = instance.diff(res.allOutputFile, res.outputstudents);
+            visualdiff.innerHTML = jsondiffpatch.formatters.html.format(delta, res.allOutputFile);
+
             res.allOutputFile.forEach(function (d, index) {
                 $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + res.outputstudents.find(x => x.target == d.target).value + '</td><td>' + d.value + '</td></tr > ')
             })
@@ -154,12 +179,53 @@
     // When the user clicks on <span> (x), close the modal
     $(".close-btn").click(function () {
         $("#myModal").css({ "display": "none" });
+        $("#diffModal").css({ "display": "none" });
     });
+
+    $("#showDiff").click(function () {
+        $("#myModal").css({ "display": "none" });
+        $("#diffModal").css({ "display": "block" });
+    });
+
+
+    /* global jsondiffpatch */
+    const instance = jsondiffpatch.create({
+        objectHash: function (obj, index) {
+            if (typeof obj._id !== 'undefined') {
+                return obj._id;
+            }
+            if (typeof obj.id !== 'undefined') {
+                return obj.id;
+            }
+            if (typeof obj.name !== 'undefined') {
+                return obj.name;
+            }
+            return '$$index:' + index;
+        },
+    });
+
+    const dom = {
+        ready: function (fn) {
+            if (document.addEventListener) {
+                document.addEventListener('DOMContentLoaded', fn);
+            } else {
+                document.attachEvent('onreadystatechange', function () {
+                    if (document.readyState === 'interactive') {
+                        fn();
+                    }
+                });
+            }
+        },
+
+    };
+
+
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == document.getElementById('myModal')) {
             $("#myModal").css({ "display": "none" });
+            $("#diffModal").css({ "display": "none" });
         }
     }
 
