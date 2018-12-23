@@ -169,7 +169,7 @@
             const delta = instance.diff(res.allOutputFile, res.outputstudents);
             visualdiff.innerHTML = jsondiffpatch.formatters.html.format(delta, res.allOutputFile);
 
-            res.allOutputFile.forEach(function (d, index) {
+            res.outputstudents.forEach(function (d, index) {
                 $("#tBody").append('<tr><th scope = "row" >' + index + '</th><td>' + d.target + '</td><td>' + res.outputstudents.find(x => x.target == d.target).value + '</td><td>' + d.value + '</td></tr > ')
             })
         })
