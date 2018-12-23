@@ -165,9 +165,6 @@
         const outputstudents = 'static/file/outputstudents.csv';
         const output = 'static/file/output.csv';
         $getJSON(outputstudents, output).then(res => {
-
-            console.log(res);
-
             const delta = instance.diff(res.allOutputFile, res.outputstudents);
             visualdiff.innerHTML = jsondiffpatch.formatters.html.format(delta, res.allOutputFile);
 
