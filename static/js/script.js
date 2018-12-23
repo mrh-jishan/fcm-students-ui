@@ -357,17 +357,23 @@ $getData = function (url) {
 $getOutputData = function (url, source) {
     return new Promise(resolve => {
         d3.csv(url, function (error, links) {
-            const data = links.filter(fd => fd.source == source);
+            const data = links.filter(fd => fd.source == source || fd.target == source);
             resolve(data);
         });
     });
 }
 
+
 $getJSON = function (outputstudents, output) {
     return new Promise(resolve => {
         $getData(outputstudents).then(data => {
+            const unique_output = data.filter((e, i) => {
+                return data.findIndex((x) => {
+                    return x.source == e.source && x.target == e.target;
+                }) == i;
+            });
             $getOutputData(output, data[0].source).then(allData => {
-                resolve({ outputstudents: data, allOutputFile: allData });
+                resolve({ outputstudents: unique_output, allOutputFile: allData });
             });
         });
     });
