@@ -1,60 +1,3 @@
-html{
-    overflow: hidden;
-}
-
-#panel{
-    position: absolute;
-    height: 100%;    
-    background: transparent;
-    right: 0;
-    top: 0;
-}
-
-#panel_content{
-    position: relative;
-    width: 175px;
-    height: 100%;
-    background: #dff0d8;
-    float:right;
-}
-
-#panel-tab{
-    position: relative;
-    width: 0px;
-    height: 100%;
-    background-color: transparent;
-    float:left;
-}
-
-#myTab{
-    position: relative;
-    top: 150px;
-    background: #777;
-    color: #FFF;
-    height: 53px;
-    right: 100px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    transform: rotate(90deg);
-}
-
-#myTab:hover{
-    background: #111311;
-    color: #FFF;
-    cursor: pointer;
-}
-
-#myTab p{
-    margin: 0;
-    width: 149px;
-} 
-
-.position-absolute{
-    position: absolute;
-}
-
-
 /* modal css */
 
 /* The Modal (background) */
@@ -115,4 +58,9 @@ html{
 
 .modal-footer {
   padding: 2px 6px;
+}
+
+
+#selectedNode.table td, #selectedNode.table th{
+    padding: 0px !important;
 }
