@@ -13,7 +13,7 @@ drawFCM = (filterText) => {
         });
 
         var width = $("#container").innerWidth(),
-            height = window.innerHeight-100,
+            height = window.innerHeight - 100,
             color = d3.scale.category20c();
 
 
@@ -35,13 +35,14 @@ drawFCM = (filterText) => {
 
         // asign a type per value to encode opacity
         links.forEach(function (link) {
-            if (v(link.value) <= 0.1) {
+            console.log((link.value));
+            if ((link.value) <= 0.1) {
                 link.type = "twofive";
-            } else if (v(link.value) <= 0.1 && v(link.value) > 0.2) {
+            } else if ((link.value) <= 0.1 && (link.value) > 0.2) {
                 link.type = "fivezero";
-            } else if (v(link.value) <= 0.2 && v(link.value) > 0.3) {
+            } else if ((link.value) <= 0.2 && (link.value) > 0.3) {
                 link.type = "sevenfive";
-            } else if (v(link.value) <= 0.3 && v(link.value) > 0.4) {
+            } else if ((link.value) <= 0.3 && (link.value) > 0.4) {
                 link.type = "onezerozero";
             }
         });
@@ -154,20 +155,20 @@ drawFCM = (filterText) => {
                 .style("stroke-width", ".5px")
                 .style("font", "20px sans-serif");
 
-
-            // + res.outputstudents.find(x => x.target == d.target).value + 
-
             $html = '';
-            links.filter((e) => e.source.name === d.name || e.target.name === d.name).forEach((res, index) => {
-                console.log(res);
-                $html += `<tr>
-                    <td>${res.source.name}</td>
-                    <td>${res.target.name}</td>
-                    <td>${res.value}</td>
-                    <td>${getExpertsValue(res)}</td>
-                </tr >`;
-            });
-            $("#selectedNode tbody").html($html);
+            links.filter((e) => e.source.name === d.name || e.target.name === d.name)
+                .forEach((res, index) => {
+                    getExpertsValue(res, v => {
+                        $html += `<tr>
+                        <td>${res.source.name}</td>
+                        <td>${res.target.name}</td>
+                        <td>${res.value}</td>
+                        <td>${ v.value}</td>
+                         </tr >`;
+                        $("#selectedNode tbody").html($html);
+                    })
+                });
+            // $("#selectedNode tbody").html($html);
 
             // d3.select(this).select("circle").transition()
             //     .duration(750)
@@ -399,10 +400,8 @@ $getJSON = function (outputstudents, output) {
 
 
 
-getExpertsValue = (data) => {
-    $getOutputData('static/file/output.csv', data.source).then(res => {
-        console.log(res);
+getExpertsValue = (data, cb) => {
+    $getData('static/file/output.csv').then(res => {
+        cb(res.find(d => d.source == data.source.name && d.target == data.target.name))
     })
-
-    return 'robin';
 }
