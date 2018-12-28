@@ -1,13 +1,15 @@
-import os
-from flask import Flask, render_template, redirect, jsonify, request
 import csv
 import io
+import os
+
+from flask import Flask, jsonify, redirect, render_template, request
 
 app = Flask(__name__)
 app.debug = True
 
-outputFile = 'static/file/output.csv'
-outputFileStudents = 'static/file/outputstudents.csv'
+experts_data = 'static/file/experts.csv'
+students_data = 'static/file/students.csv'
+
 
 @app.after_request
 def add_header(r):
@@ -20,19 +22,27 @@ def add_header(r):
     r.headers["Expires"] = "0"
     r.headers['Cache-Control'] = 'public, max-age=0'
     return r
-    
+
 
 @app.route('/')
 def root():
     return redirect("/index"), 302
 
+
 @app.route('/index', methods=['GET'])
 def index():
     return render_template('index.html', data='')
 
-@app.route('/data', methods=['GET'])
-def getData():
-    with open(outputFile, 'r') as csvfile:
+
+@app.route('/students-data', methods=['GET'])
+def get_students_data():
+    with open(students_data, 'r') as csvfile:
+        data = list(csv.reader(csvfile, delimiter=','))
+        return jsonify(data)
+
+@app.route('/experts-data', methods=['GET'])
+def get_experts_data():
+    with open(experts_data, 'r') as csvfile:
         data = list(csv.reader(csvfile, delimiter=','))
         return jsonify(data)
 
@@ -65,46 +75,47 @@ def load_topic_subtopic_data():
         data = list(csv.reader(csvfile, delimiter=','))
         return data
 
+
 def update_topic_subtopic_data(data):
-    with open(outputFile, 'a+') as file:
+    with open(experts_data, 'a+') as file:
         itercars = iter(data)
         next(itercars)
         for row in itercars:
             writer = csv.writer(file)
             if row[0] and row[1]:
-                writer.writerow([row[0],row[1],99999])
+                writer.writerow([row[0], row[1], 99999])
             if row[1] and row[2]:
-                writer.writerow([row[1],row[2],999999])
+                writer.writerow([row[1], row[2], 999999])
     file.close()
 
 
 def write_into_file(data):
-    with open(outputFile, 'w+') as file:
-        if not os.stat(outputFile).st_size == 0:
-             file.truncate(0)
+    with open(experts_data, 'w+') as file:
+        if not os.stat(experts_data).st_size == 0:
+            file.truncate(0)
         writer = csv.writer(file)
         writer.writerow(["source", "target", "value"])
         for idx, column in enumerate(data):
             for x in range(len(column)):
-                if not (data[0][x]=="null" or  data[idx][x]=="null" or column[0]=="null" or data[0][x]=="" or  data[idx][x]=="" or column[0]==""):
-                    row = [column[0] , data[0][x] , data[idx][x]]
+                if not (data[0][x] == "null" or data[idx][x] == "null" or column[0] == "null" or data[0][x] == "" or data[idx][x] == "" or column[0] == ""):
+                    row = [column[0], data[0][x], data[idx][x]]
                     writer = csv.writer(file)
                     writer.writerow(row)
     file.close()
-    topic_subtopic_data = load_topic_subtopic_data()
-    update_topic_subtopic_data(topic_subtopic_data)
+    # topic_subtopic_data = load_topic_subtopic_data()
+    # update_topic_subtopic_data(topic_subtopic_data)
 
 
 def write_students_data_into_file(data):
-    with open(outputFileStudents, 'w+') as file:
-        if not os.stat(outputFileStudents).st_size == 0:
-             file.truncate(0)
+    with open(students_data, 'w+') as file:
+        if not os.stat(students_data).st_size == 0:
+            file.truncate(0)
         writer = csv.writer(file)
         writer.writerow(["source", "target", "value"])
         for idx, column in enumerate(data):
             for x in range(len(column)):
-                if not (data[0][x]=="null" or  data[idx][x]=="null" or column[0]=="null" or data[0][x]=="" or  data[idx][x]=="" or column[0]==""):
-                    row = [column[0] , data[0][x] , data[idx][x]]
+                if not (data[0][x] == "null" or data[idx][x] == "null" or column[0] == "null" or data[0][x] == "" or data[idx][x] == "" or column[0] == ""):
+                    row = [column[0], data[0][x], data[idx][x]]
                     writer = csv.writer(file)
                     writer.writerow(row)
     file.close()

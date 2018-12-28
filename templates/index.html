@@ -34,6 +34,15 @@
     <div class="row">
         <div class="col-md-3">
             <div class="row">
+
+                <div class="col-md-12 pt-4">
+                    <div class="form-group">
+                        <label for="itemList">Select Item List</label>
+                        <select id="itemList" class="form-control">
+                            <option value="null">Select a option</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="col-md-12 pt-4">
                     <form method="post" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
@@ -45,21 +54,15 @@
 
                     </form>
                 </div>
-                <div class="col-md-12 pt-4">
-                    <div class="form-group">
-                        <label for="itemList">Select Item List</label>
-                        <select id="itemList" class="form-control">
-                            <option value="null">Select a option</option>
-                        </select>
-                    </div>
+                <!-- <div class="col-md-12 pt-4">
                     <div class="form-group">
                         <button class="btn btn-info" id="myBtn">Viw Compare Data</button>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-info pt-" id="expetBtb">Viw Exparts Data</button>
+                        <button class="btn btn-info" id="expetBtb">Viw Exparts Data</button>
                     </div>
 
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="col-md-8">
@@ -85,14 +88,13 @@
 </div>
 
 <script>
-    fetch('/data').then(function (res) {
+    fetch('/students-data').then(function (res) {
         res.json().then(function (data) {
             items = [];
             data.slice(1).forEach(function (res) {
                 items.push(res[0])
                 items.push(res[1])
             })
-
             uItem = Array.from(new Set(items));
             uItem.forEach(function (item) {
                 $('#itemList').append('<option value="' + item + '">' + item + '</option>');
@@ -120,13 +122,14 @@
     }
 
     if ($.urlParam('param')) {
-        drawFCM($.urlParam('param'));
+        view_students_data($.urlParam('param'));
     }
 
     // When the user clicks the button, open the modal 
     $("#myBtn").click(function () {
-        const outputstudents = 'static/file/outputstudents.csv';
-        const output = 'static/file/output.csv';
+        const outputstudents = 'static/file/students.csv';
+        const output = 'static/file/experts.csv';
+
         $getJSON(outputstudents, output).then(res => {
             res.outputstudents.forEach(function (d, index) {
                 $("#tBody").append(`<tr>

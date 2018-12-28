@@ -1,0 +1,67 @@
+source,target,value
+Kinematics-Linear Motion,Kinematics-Linear Motion,1
+Kinematics-Linear Motion,Kinematics-Free Fall,0.25
+Kinematics-Linear Motion,Kinematics-Projectile Motion,0.25
+Kinematics-Linear Motion,Dynamics -Newton’s Laws of Motion,0.3
+Kinematics-Linear Motion,Dynamics -Motion on inclined planes,0.25
+Kinematics-Linear Motion,"Work, kinetic energy and potential energy",0.3
+Kinematics-Linear Motion,Dynamics-Work-energy theorem,0.3
+Kinematics-Linear Motion,Dynamics-Conservation of energy,0.3
+Kinematics-Linear Motion,Dynamics-Power,0.3
+Kinematics-Linear Motion,Dynamics-Linear momentum,0.286
+Kinematics-Linear Motion,Dynamics-Conservation of linear momentum and impulse,0.3
+Kinematics-Linear Motion,Dynamics-Elastic collision,0.2
+Kinematics-Linear Motion,Dynamics-Inelastic collision,0.3
+Kinematics-Linear Motion,Dynamics-Collision in 2-dimension,0.3
+Kinematics-Linear Motion,Angular displacement,0.1
+Kinematics-Linear Motion,Velocity and acceleration,0.1
+Kinematics-Linear Motion,Relation between rotational motion and linear motion,0.1
+Kinematics-Linear Motion,Rotational motion at constant angular acceleration,0.1
+Kinematics-Linear Motion,Centripetal acceleration and centripetal force,0.1
+Kinematics-Linear Motion,Rotational motion on horizontal and vertical planes,0.1
+Kinematics-Linear Motion,Conical pendulum,0.1
+Kinematics-Linear Motion,Centre of mass and torque,0.1
+Kinematics-Linear Motion,Moment of inertia and parallel axis theorem,0.1
+Kinematics-Linear Motion,Rotational kinetic energy,0.1
+Kinematics-Linear Motion,Angular momentum,0.1
+Kinematics-Linear Motion,Conservation of angular momentum,0.1
+Kinematics-Linear Motion,Newton’s law of gravitation,0.1
+Kinematics-Linear Motion,Gravitational field,0.1
+Kinematics-Linear Motion,Gravitational potential,0.1
+Kinematics-Linear Motion,The motion of satellite,0.1
+Kinematics-Linear Motion,Escape velocity,0.1
+Kinematics-Linear Motion,Center of gravity,0.1
+Kinematics-Linear Motion,Force equilibrium and torque equlilbrium,0.1
+Kinematics-Linear Motion,Kinematics-Linear Motion,0.1
+Kinematics-Free Fall,Kinematics-Linear Motion,1.1
+Kinematics-Projectile Motion,Kinematics-Linear Motion,2.1
+Dynamics -Newton’s Laws of Motion,Kinematics-Linear Motion,3.1
+Dynamics -Motion on inclined planes,Kinematics-Linear Motion,4.1
+"Work, kinetic energy and potential energy",Kinematics-Linear Motion,5.1
+Dynamics-Work-energy theorem,Kinematics-Linear Motion,6.1
+Dynamics-Conservation of energy,Kinematics-Linear Motion,7.1
+Dynamics-Power,Kinematics-Linear Motion,8.1
+Dynamics-Linear momentum,Kinematics-Linear Motion,9.1
+Dynamics-Conservation of linear momentum and impulse,Kinematics-Linear Motion,10.1
+Dynamics-Elastic collision,Kinematics-Linear Motion,11.1
+Dynamics-Inelastic collision,Kinematics-Linear Motion,12.1
+Dynamics-Collision in 2-dimension,Kinematics-Linear Motion,13.1
+Angular displacement,Kinematics-Linear Motion,14.1
+Velocity and acceleration,Kinematics-Linear Motion,15.1
+Relation between rotational motion and linear motion,Kinematics-Linear Motion,16.1
+Rotational motion at constant angular acceleration,Kinematics-Linear Motion,17.1
+Centripetal acceleration and centripetal force,Kinematics-Linear Motion,18.1
+Rotational motion on horizontal and vertical planes,Kinematics-Linear Motion,19.1
+Conical pendulum,Kinematics-Linear Motion,20.1
+Centre of mass and torque,Kinematics-Linear Motion,21.1
+Moment of inertia and parallel axis theorem,Kinematics-Linear Motion,22.1
+Rotational kinetic energy,Kinematics-Linear Motion,23.1
+Angular momentum,Kinematics-Linear Motion,24.1
+Conservation of angular momentum,Kinematics-Linear Motion,25.1
+Newton’s law of gravitation,Kinematics-Linear Motion,26.1
+Gravitational field,Kinematics-Linear Motion,27.1
+Gravitational potential,Kinematics-Linear Motion,28.1
+The motion of satellite,Kinematics-Linear Motion,29.1
+Escape velocity,Kinematics-Linear Motion,30.1
+Center of gravity,Kinematics-Linear Motion,31.1
+Force equilibrium and torque equlilbrium,Kinematics-Linear Motion,32.1
