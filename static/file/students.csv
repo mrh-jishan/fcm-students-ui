@@ -1,10 +1,10 @@
 source,target,value
 Kinematics-Linear Motion,Kinematics-Linear Motion,1
-Kinematics-Linear Motion,Kinematics-Free Fall,0.25
-Kinematics-Linear Motion,Kinematics-Projectile Motion,0.25
-Kinematics-Linear Motion,Dynamics -Newton’s Laws of Motion,0.3
-Kinematics-Linear Motion,Dynamics -Motion on inclined planes,0.25
-Kinematics-Linear Motion,"Work, kinetic energy and potential energy",0.3
+Kinematics-Linear Motion,Kinematics-Free Fall,0.45
+Kinematics-Linear Motion,Kinematics-Projectile Motion,0.15
+Kinematics-Linear Motion,Dynamics -Newton’s Laws of Motion,0.13
+Kinematics-Linear Motion,Dynamics -Motion on inclined planes,0.75
+Kinematics-Linear Motion,"Work, kinetic energy and potential energy",0.13
 Kinematics-Linear Motion,Dynamics-Work-energy theorem,0.3
 Kinematics-Linear Motion,Dynamics-Conservation of energy,0.3
 Kinematics-Linear Motion,Dynamics-Power,0.3

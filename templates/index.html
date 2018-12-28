@@ -2,159 +2,159 @@
 
 {% block content %}
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h4>View Comparison: <strong id="modal-title">Kinematics-Linear Motion</strong></h2>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>View Comparison: <strong id="modal-title">Kinematics-Linear Motion</strong></h4>
                 <button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-        </div>
-        <div class="modal-body">
-            <table class="table table-bordered">
-                <thead>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Sub-topic</th>
                         <th scope="col">Experts</th>
                         <th scope="col">Students</th>
                     </tr>
-                </thead>
-                <tbody id="tBody">
-                </tbody>
-            </table>
-        </div>
-        <div class="modal-footer">
-            <button class="close-btn btn btn-danger">Close</button>
+                    </thead>
+                    <tbody id="tBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="close-btn btn btn-danger">Close</button>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="row">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
 
-                <div class="col-md-12 pt-4">
-                    <div class="form-group">
-                        <label for="itemList">Select Item List</label>
-                        <select id="itemList" class="form-control">
-                            <option value="null">Select a option</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12 pt-4">
-                    <form method="post" enctype="multipart/form-data" novalidate>
+                    <div class="col-md-12 pt-4">
                         <div class="form-group">
-                            <label for="fileupload">Upload students data</label>
-                            <input type="file" class="form-control" name="data_file" id="data_file">
-                            <small>{{data}}</small>
+                            <label for="itemList">Select Item List</label>
+                            <select id="itemList" class="form-control">
+                                <option value="null">Select a option</option>
+                            </select>
                         </div>
-                        <button class="btn btn-info">Upload File</button>
+                    </div>
+                    <div class="col-md-12 pt-4">
+                        <form method="post" enctype="multipart/form-data" novalidate>
+                            <div class="form-group">
+                                <label for="fileupload">Upload students data</label>
+                                <input type="file" class="form-control" name="data_file" id="data_file">
+                                <small>{{ data }}</small>
+                            </div>
+                            <button class="btn btn-info">Upload File</button>
 
-                    </form>
+                        </form>
+                    </div>
+                    <!-- <div class="col-md-12 pt-4">
+                        <div class="form-group">
+                            <button class="btn btn-info" id="myBtn">Viw Compare Data</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-info" id="expetBtb">Viw Exparts Data</button>
+                        </div>
+
+                    </div> -->
                 </div>
-                <!-- <div class="col-md-12 pt-4">
-                    <div class="form-group">
-                        <button class="btn btn-info" id="myBtn">Viw Compare Data</button>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-info" id="expetBtb">Viw Exparts Data</button>
-                    </div>
-
-                </div> -->
             </div>
-        </div>
-        <div class="col-md-8">
-            <div class="row" id="container">
+            <div class="col-md-8">
+                <div class="row" id="container">
+                </div>
             </div>
-        </div>
 
-        <div class="col-md-12 pt-3">
-            <table class="table table-bordered" id="selectedNode">
-                <thead>
+            <div class="col-md-12 pt-3">
+                <table class="table table-bordered" id="selectedNode">
+                    <thead>
                     <tr>
                         <th scope="col">From</th>
                         <th scope="col">To</th>
                         <th scope="col">Students</th>
                         <th scope="col">Experts</th>
                     </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
+
     </div>
 
-</div>
-
-<script>
-    fetch('/students-data').then(function (res) {
-        res.json().then(function (data) {
-            items = [];
-            data.slice(1).forEach(function (res) {
-                items.push(res[0])
-                items.push(res[1])
-            })
-            uItem = Array.from(new Set(items));
-            uItem.forEach(function (item) {
-                $('#itemList').append('<option value="' + item + '">' + item + '</option>');
+    <script>
+        fetch('/students-data').then(function (res) {
+            res.json().then(function (data) {
+                items = [];
+                data.slice(1).forEach(function (res) {
+                    items.push(res[0])
+                    items.push(res[1])
+                })
+                uItem = Array.from(new Set(items));
+                uItem.forEach(function (item) {
+                    $('#itemList').append('<option value="' + item + '">' + item + '</option>');
+                })
             })
         })
-    })
 
-    $("#itemList").change(function () {
-        $("#itemList option:selected").each(function () {
-            if ($(this).text() != null) {
-                location.href = 'index?param=' + $(this).text()
-            }
+        $("#itemList").change(function () {
+            $("#itemList option:selected").each(function () {
+                if ($(this).text() != null) {
+                    location.href = 'index?param=' + $(this).text()
+                }
 
+            });
         });
-    });
 
 
-    $.urlParam = function (param) {
-        const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
-        if (results == null) {
-            return null;
-        } else {
-            return decodeURI(results[1] || 0);
+        $.urlParam = function (param) {
+            const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+            if (results == null) {
+                return null;
+            } else {
+                return decodeURI(results[1] || 0);
+            }
         }
-    }
 
-    if ($.urlParam('param')) {
-        view_students_data($.urlParam('param'));
-    }
+        if ($.urlParam('param')) {
+            view_students_data($.urlParam('param'));
+        }
 
-    // When the user clicks the button, open the modal 
-    $("#myBtn").click(function () {
-        const outputstudents = 'static/file/students.csv';
-        const output = 'static/file/experts.csv';
+        // When the user clicks the button, open the modal
+        $("#myBtn").click(function () {
+            const outputstudents = 'static/file/students.csv';
+            const output = 'static/file/experts.csv';
 
-        $getJSON(outputstudents, output).then(res => {
-            res.outputstudents.forEach(function (d, index) {
-                $("#tBody").append(`<tr>
+            $getJSON(outputstudents, output).then(res => {
+                res.outputstudents.forEach(function (d, index) {
+                    $("#tBody").append(`<tr>
                         <th scope = "row" >${index}</th>
                         <td>${d.target}</td>
                         <td>${res.outputstudents.find(x => x.target == d.target).value}</td>
                         <td>${d.value}</td>
                     </tr >`)
+                })
             })
-        })
-        $("#modal-title").text($.urlParam('param'));
-        $("#myModal").css({ "display": "block" });
-    });
+            $("#modal-title").text($.urlParam('param'));
+            $("#myModal").css({"display": "block"});
+        });
 
-    // When the user clicks on <span> (x), close the modal
-    $(".close-btn").click(function () {
-        $("#myModal").css({ "display": "none" });
-    });
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == document.getElementById('myModal')) {
-            $("#myModal").css({ "display": "none" });
+        // When the user clicks on <span> (x), close the modal
+        $(".close-btn").click(function () {
+            $("#myModal").css({"display": "none"});
+        });
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('myModal')) {
+                $("#myModal").css({"display": "none"});
+            }
         }
-    }
 
-</script>
+    </script>
 
 {% endblock %}

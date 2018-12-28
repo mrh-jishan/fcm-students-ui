@@ -1,16 +1,29 @@
 // get the data
 view_students_data = (filterText) => {
-    d3.csv("static/file/students.csv", function (error, links) {
+    d3.csv("static/file/students.csv", async (error, links) => {
         var nodes = {};
 
         links = links.filter((res) => res.source == filterText || res.target == filterText)
 
+        experts_data = await $getData('static/file/experts.csv');
+
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
-            link.source = nodes[link.source] || (nodes[link.source] = { name: link.source });
-            link.target = nodes[link.target] || (nodes[link.target] = { name: link.target });
+            link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+            link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
             link.value = +link.value;
         });
+
+        // links.forEach((link) => {
+        //     checking_with_experts_data(link).then(res => {
+        //         if (res) {
+        //             link.type = 'yellow-line';
+        //         } else {
+        //             link.type = 'red-line';
+        //         }
+        //     });
+        //
+        // });
 
         var width = $("#container").innerWidth(),
             height = window.innerHeight - 100,
@@ -34,18 +47,7 @@ view_students_data = (filterText) => {
         // v.domain([0, d3.max(links, (d) => d.value)]);
 
         // asign a type per value to encode opacity
-        links.forEach(function (link) {
-            // console.log((link.value));
-            if ((link.value) <= 0.1) {
-                link.type = "twofive";
-            } else if ((link.value) <= 0.1 || (link.value) > 0.2) {
-                link.type = "fivezero";
-            } else if ((link.value) <= 0.2 || (link.value) > 0.3) {
-                link.type = "sevenfive";
-            } else if ((link.value) <= 0.3 || (link.value) > 0.4) {
-                link.type = "onezerozero";
-            }
-        });
+
 
         var svg = d3.select("#container")
             .append("svg")
@@ -68,23 +70,18 @@ view_students_data = (filterText) => {
             .append("svg:path")
             .attr("d", "M0,-5L10,0L0,5");
 
-
-
-        // add path
+        // add path 'link ' + d.type
         // add the links and the arrows
         var path = svg.append("svg:g")
             .selectAll("path")
             .data(force.links())
             .enter()
             .append("svg:path")
-            .attr("class", (d) => {
-                // console.log(d) //set the color of the line -----------------------------
-                const data = getExpertsData(d);
-                return "link " + d.type;
+            .attr("class", (data) => {
+                return experts_data.some(d => d.source == data.source.name && d.target == data.target.name && data.value == d.value) ? 'link' : 'link red-line'
             })
             .attr("id", (d) => "invis_" + d.source.index + "-" + d.value + "-" + d.target.index)
             .attr("marker-end", "url(#end)");
-
 
 
         var pathLabel = svg.selectAll(".pathLabel")
@@ -97,11 +94,14 @@ view_students_data = (filterText) => {
             .append("svg:textPath")
             .attr("startOffset", "50%")
             .attr("text-anchor", "middle")
-            .attr("xlink:href", (d) => { return "#invis_" + d.source.index + "-" + d.value + "-" + d.target.index; })
+            .attr("xlink:href", (d) => {
+                return "#invis_" + d.source.index + "-" + d.value + "-" + d.target.index;
+            })
             .style("fill", "#000000")
             .style("font-size", 15)
-            .text(function (d) { return d.value; });
-
+            .text(function (d) {
+                return d.value;
+            });
 
 
         // define the nodes
@@ -127,7 +127,9 @@ view_students_data = (filterText) => {
         node.append("text")
             .attr("x", 12)
             .attr("dy", ".35em")
-            .text(function (d) { return d.name; });
+            .text(function (d) {
+                return d.name;
+            });
 
 
         // var g = svg.append("g")
@@ -176,6 +178,7 @@ view_students_data = (filterText) => {
 
                     })
                 });
+
             // $("#selectedNode tbody").html($html);
 
             // d3.select(this).select("circle").transition()
@@ -203,8 +206,6 @@ view_students_data = (filterText) => {
 }
 
 
-
-
 // get the data
 drawFCM = (filterText) => {
     d3.csv("static/file/experts.csv", function (error, links) {
@@ -214,8 +215,8 @@ drawFCM = (filterText) => {
 
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
-            link.source = nodes[link.source] || (nodes[link.source] = { name: link.source });
-            link.target = nodes[link.target] || (nodes[link.target] = { name: link.target });
+            link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+            link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
             link.value = +link.value;
         });
 
@@ -276,7 +277,6 @@ drawFCM = (filterText) => {
             .attr("d", "M0,-5L10,0L0,5");
 
 
-
         // add path
         // add the links and the arrows
         var path = svg.append("svg:g")
@@ -293,7 +293,6 @@ drawFCM = (filterText) => {
             .attr("marker-end", "url(#end)");
 
 
-
         var pathLabel = svg.selectAll(".pathLabel")
             .data(force.links());
 
@@ -304,11 +303,14 @@ drawFCM = (filterText) => {
             .append("svg:textPath")
             .attr("startOffset", "50%")
             .attr("text-anchor", "middle")
-            .attr("xlink:href", (d) => { return "#invis_" + d.source.index + "-" + d.value + "-" + d.target.index; })
+            .attr("xlink:href", (d) => {
+                return "#invis_" + d.source.index + "-" + d.value + "-" + d.target.index;
+            })
             .style("fill", "#000000")
             .style("font-size", 15)
-            .text(function (d) { return d.value; });
-
+            .text(function (d) {
+                return d.value;
+            });
 
 
         // define the nodes
@@ -334,7 +336,9 @@ drawFCM = (filterText) => {
         node.append("text")
             .attr("x", 12)
             .attr("dy", ".35em")
-            .text(function (d) { return d.name; });
+            .text(function (d) {
+                return d.name;
+            });
 
 
         // var g = svg.append("g")
@@ -415,9 +419,9 @@ draw_fcm_for_students = () => {
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
             link.source = nodes[link.source] ||
-                (nodes[link.source] = { name: link.source });
+                (nodes[link.source] = {name: link.source});
             link.target = nodes[link.target] ||
-                (nodes[link.target] = { name: link.target });
+                (nodes[link.target] = {name: link.target});
             link.value = +link.value;
         });
 
@@ -439,7 +443,9 @@ draw_fcm_for_students = () => {
         var v = d3.scale.linear().range([0, 400]);
 
         // Scale the range of the data
-        v.domain([0, d3.max(links, function (d) { return d.value; })]);
+        v.domain([0, d3.max(links, function (d) {
+            return d.value;
+        })]);
 
         // asign a type per value to encode opacity
         links.forEach(function (link) {
@@ -473,19 +479,18 @@ draw_fcm_for_students = () => {
             .attr("d", "M0,-5L10,0L0,5");
 
 
-
-
         // add path
         // add the links and the arrows
         var path = svg.append("svg:g").selectAll("path")
             .data(force.links())
             .enter().append("svg:path")
-            .attr("class", function (d) { return "link " + d.type; })
+            .attr("class", function (d) {
+                return "link " + d.type;
+            })
             .attr("id", function (d) {
                 return "invis_" + d.source.index + "-" + d.value + "-" + d.target.index;
             })
             .attr("marker-end", "url(#end)");
-
 
 
         var pathLabel = svg.selectAll(".pathLabel")
@@ -496,11 +501,14 @@ draw_fcm_for_students = () => {
             .append("svg:textPath")
             .attr("startOffset", "50%")
             .attr("text-anchor", "middle")
-            .attr("xlink:href", function (d) { return "#invis_" + d.source.index + "-" + d.value + "-" + d.target.index; })
+            .attr("xlink:href", function (d) {
+                return "#invis_" + d.source.index + "-" + d.value + "-" + d.target.index;
+            })
             .style("fill", "#000000")
             .style("font-size", 15)
-            .text(function (d) { return d.value; });
-
+            .text(function (d) {
+                return d.value;
+            });
 
 
         // define the nodes
@@ -516,14 +524,18 @@ draw_fcm_for_students = () => {
         // add the nodes
         node.append("circle")
             .attr("r", 5)
-            .style("fill", function (d) { return color(d.name); });
+            .style("fill", function (d) {
+                return color(d.name);
+            });
 
 
         // add the text 
         node.append("text")
             .attr("x", 12)
             .attr("dy", ".35em")
-            .text(function (d) { return d.name; });
+            .text(function (d) {
+                return d.name;
+            });
 
         // add the curvy lines
         function tick() {
@@ -541,7 +553,6 @@ draw_fcm_for_students = () => {
                     d.target.x + "," +
                     d.target.y;
             });
-
 
 
             node.attr("transform", function (d) {
@@ -600,13 +611,9 @@ $getOutputData = function (url, source) {
 $getJSON = function (outputstudents, output) {
     return new Promise(resolve => {
         $getData(outputstudents).then(data => {
-            const unique_output = data.filter((e, i) => {
-                return data.findIndex((x) => {
-                    return x.source == e.source && x.target == e.target;
-                }) == i;
-            });
+            const unique_output = data.filter((e, i) => data.findIndex((x) => x.source == e.source && x.target == e.target) == i);
             $getOutputData(output, data[0].source).then(allData => {
-                resolve({ outputstudents: unique_output, allOutputFile: allData });
+                resolve({outputstudents: unique_output, allOutputFile: allData});
             });
         });
     });
@@ -619,11 +626,9 @@ getExpertsValue = (data, cb) => {
 }
 
 
-getExpertsData = (data) => {
-
-    getExpertsValue(data, res => {
-        // console.log(res);
+checking_with_experts_data = async (data) => {
+    return $getData('static/file/experts.csv').then(res => {
+        var result = res.some(d => d.source == data.source.name && d.target == data.target.name && data.value == d.value)
+        return result;
     })
-    // console.log(data);
-    return true;
 }
