@@ -42,9 +42,24 @@
                     </div>
                 </div>
                 <div class="col-md-12 pt-4">
-                    <form method="post" enctype="multipart/form-data" novalidate>
+                    <form method="post" action="students" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="fileupload">Upload students data</label>
+                            <input type="file" class="form-control" name="students_data_file" id="students_data_file">
+                            <small>{{ data }}</small>
+                        </div>
+                        <div class="btn-group layout-gap">
+                            <button class="btn btn-info btn-sm">Upload File</button>
+                            <!-- <button class="btn btn-secondary btn-sm" id="view_experts">Viw Experts Data</button> -->
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-md-12 pt-4">
+                    <form method="post" enctype="multipart/form-data" novalidate>
+                        <div class="form-group">
+                            <label for="fileupload">Upload experts data</label>
                             <input type="file" class="form-control" name="data_file" id="data_file">
                             <small>{{ data }}</small>
                         </div>
