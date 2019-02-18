@@ -7,7 +7,7 @@
         <div class="modal-header">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="modalitemList">Select Item List</label>
+                    <label for="modalitemList">Select Item List - <span id="modal-title"></span></label>
                     <select id="modalitemList" class="form-control">
                         <option value="null">Select a option</option>
                     </select>
@@ -89,7 +89,7 @@
             uItem = Array.from(new Set(items));
             // console.log(uItem);
             uItem.forEach(function (item) {
-                $('#itemList').append('<option value="' + item + '">' + item + '</option>');
+                $('#itemList, #modalitemList').append('<option value="' + item + '">' + item + '</option>');
             })
         })
     })
@@ -121,9 +121,7 @@
     $("#view_experts").click(function ($event) {
         $event.preventDefault();
 
-
         // const outputstudents = 'static/file/students.csv';
-
         // $getJSON(outputstudents, output).then(res => {
         //     res.outputstudents.forEach(function (d, index) {
         //         $("#tBody").append(`<tr>
@@ -134,7 +132,8 @@
         //             </tr >`)
         //     })
         // })
-        // $("#modal-title").text($.urlParam('param'));
+        
+        $("#modal-title").text($.urlParam('param'));
         $("#myModal").css({ "display": "block" });
     });
 
