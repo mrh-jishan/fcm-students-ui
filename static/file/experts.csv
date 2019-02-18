@@ -1,5 +1,5 @@
 source,target,value
-Kinematics-Linear Motion,Kinematics-Linear Motion,10
+Kinematics-Linear Motion,Kinematics-Linear Motion,1
 Kinematics-Linear Motion,Kinematics-Free Fall,0.25
 Kinematics-Linear Motion,Kinematics-Projectile Motion,0.25
 Kinematics-Linear Motion,Dynamics -Newton’s Laws of Motion,0.3
@@ -10,7 +10,7 @@ Kinematics-Linear Motion,Dynamics-Conservation of energy,0.3
 Kinematics-Linear Motion,Dynamics-Power,0.3
 Kinematics-Linear Motion,Dynamics-Linear momentum,0.286
 Kinematics-Linear Motion,Dynamics-Conservation of linear momentum and impulse,0.3
-Kinematics-Linear Motion,Dynamics-Elastic collision,0.40
+Kinematics-Linear Motion,Dynamics-Elastic collision,0.2
 Kinematics-Linear Motion,Dynamics-Inelastic collision,0.3
 Kinematics-Linear Motion,Dynamics-Collision in 2-dimension,0.3
 Kinematics-Linear Motion,Angular displacement,0.1
@@ -32,36 +32,1059 @@ Kinematics-Linear Motion,The motion of satellite,0.1
 Kinematics-Linear Motion,Escape velocity,0.1
 Kinematics-Linear Motion,Center of gravity,0.1
 Kinematics-Linear Motion,Force equilibrium and torque equlilbrium,0.1
-Kinematics-Linear Motion,Kinematics-Linear Motion,0.1
-Kinematics-Free Fall,Kinematics-Linear Motion,1.1
-Kinematics-Projectile Motion,Kinematics-Linear Motion,2.1
-Dynamics -Newton’s Laws of Motion,Kinematics-Linear Motion,3.1
-Dynamics -Motion on inclined planes,Kinematics-Linear Motion,4.1
-"Work, kinetic energy and potential energy",Kinematics-Linear Motion,5.1
-Dynamics-Work-energy theorem,Kinematics-Linear Motion,6.1
-Dynamics-Conservation of energy,Kinematics-Linear Motion,7.1
-Dynamics-Power,Kinematics-Linear Motion,8.1
-Dynamics-Linear momentum,Kinematics-Linear Motion,9.1
-Dynamics-Conservation of linear momentum and impulse,Kinematics-Linear Motion,10.1
-Dynamics-Elastic collision,Kinematics-Linear Motion,11.1
-Dynamics-Inelastic collision,Kinematics-Linear Motion,12.1
-Dynamics-Collision in 2-dimension,Kinematics-Linear Motion,13.1
-Angular displacement,Kinematics-Linear Motion,14.1
-Velocity and acceleration,Kinematics-Linear Motion,15.1
-Relation between rotational motion and linear motion,Kinematics-Linear Motion,16.1
-Rotational motion at constant angular acceleration,Kinematics-Linear Motion,17.1
-Centripetal acceleration and centripetal force,Kinematics-Linear Motion,18.1
-Rotational motion on horizontal and vertical planes,Kinematics-Linear Motion,19.1
-Conical pendulum,Kinematics-Linear Motion,20.1
-Centre of mass and torque,Kinematics-Linear Motion,21.1
-Moment of inertia and parallel axis theorem,Kinematics-Linear Motion,22.1
-Rotational kinetic energy,Kinematics-Linear Motion,23.1
-Angular momentum,Kinematics-Linear Motion,24.1
-Conservation of angular momentum,Kinematics-Linear Motion,25.1
-Newton’s law of gravitation,Kinematics-Linear Motion,26.1
-Gravitational field,Kinematics-Linear Motion,27.1
-Gravitational potential,Kinematics-Linear Motion,28.1
-The motion of satellite,Kinematics-Linear Motion,29.1
-Escape velocity,Kinematics-Linear Motion,30.1
-Center of gravity,Kinematics-Linear Motion,31.1
-Force equilibrium and torque equlilbrium,Kinematics-Linear Motion,32.1
+Kinematics-Free Fall,Kinematics-Linear Motion,0.25
+Kinematics-Free Fall,Kinematics-Free Fall,1
+Kinematics-Free Fall,Kinematics-Projectile Motion,0.3
+Kinematics-Free Fall,Dynamics -Newton’s Laws of Motion,0.4
+Kinematics-Free Fall,Dynamics -Motion on inclined planes,0.3
+Kinematics-Free Fall,"Work, kinetic energy and potential energy",0.4
+Kinematics-Free Fall,Dynamics-Work-energy theorem,0.4
+Kinematics-Free Fall,Dynamics-Conservation of energy,0.4
+Kinematics-Free Fall,Dynamics-Power,0.4
+Kinematics-Free Fall,Dynamics-Linear momentum,0.4
+Kinematics-Free Fall,Dynamics-Conservation of linear momentum and impulse,0.2
+Kinematics-Free Fall,Dynamics-Elastic collision,0.2
+Kinematics-Free Fall,Dynamics-Inelastic collision,0.4
+Kinematics-Free Fall,Dynamics-Collision in 2-dimension,0.4
+Kinematics-Free Fall,Angular displacement,0.2
+Kinematics-Free Fall,Velocity and acceleration,0.2
+Kinematics-Free Fall,Relation between rotational motion and linear motion,0.2
+Kinematics-Free Fall,Rotational motion at constant angular acceleration,0.2
+Kinematics-Free Fall,Centripetal acceleration and centripetal force,0.2
+Kinematics-Free Fall,Rotational motion on horizontal and vertical planes,0.2
+Kinematics-Free Fall,Conical pendulum,0.2
+Kinematics-Free Fall,Centre of mass and torque,0.2
+Kinematics-Free Fall,Moment of inertia and parallel axis theorem,0.2
+Kinematics-Free Fall,Rotational kinetic energy,0.2
+Kinematics-Free Fall,Angular momentum,0.2
+Kinematics-Free Fall,Conservation of angular momentum,0.2
+Kinematics-Free Fall,Newton’s law of gravitation,0.2
+Kinematics-Free Fall,Gravitational field,0.2
+Kinematics-Free Fall,Gravitational potential,0.2
+Kinematics-Free Fall,The motion of satellite,0.2
+Kinematics-Free Fall,Escape velocity,0.2
+Kinematics-Free Fall,Center of gravity,0.2
+Kinematics-Free Fall,Force equilibrium and torque equlilbrium,0.2
+Kinematics-Projectile Motion,Kinematics-Linear Motion,0.25
+Kinematics-Projectile Motion,Kinematics-Free Fall,0.3
+Kinematics-Projectile Motion,Kinematics-Projectile Motion,1
+Kinematics-Projectile Motion,Dynamics -Newton’s Laws of Motion,0.4
+Kinematics-Projectile Motion,Dynamics -Motion on inclined planes,0.3
+Kinematics-Projectile Motion,"Work, kinetic energy and potential energy",0.4
+Kinematics-Projectile Motion,Dynamics-Work-energy theorem,0.4
+Kinematics-Projectile Motion,Dynamics-Conservation of energy,0.4
+Kinematics-Projectile Motion,Dynamics-Power,0.4
+Kinematics-Projectile Motion,Dynamics-Linear momentum,0.4
+Kinematics-Projectile Motion,Dynamics-Conservation of linear momentum and impulse,0.2
+Kinematics-Projectile Motion,Dynamics-Elastic collision,0.2
+Kinematics-Projectile Motion,Dynamics-Inelastic collision,0.4
+Kinematics-Projectile Motion,Dynamics-Collision in 2-dimension,0.4
+Kinematics-Projectile Motion,Angular displacement,0.2
+Kinematics-Projectile Motion,Velocity and acceleration,0.2
+Kinematics-Projectile Motion,Relation between rotational motion and linear motion,0.2
+Kinematics-Projectile Motion,Rotational motion at constant angular acceleration,0.2
+Kinematics-Projectile Motion,Centripetal acceleration and centripetal force,0.2
+Kinematics-Projectile Motion,Rotational motion on horizontal and vertical planes,0.2
+Kinematics-Projectile Motion,Conical pendulum,0.2
+Kinematics-Projectile Motion,Centre of mass and torque,0.2
+Kinematics-Projectile Motion,Moment of inertia and parallel axis theorem,0.2
+Kinematics-Projectile Motion,Rotational kinetic energy,0.2
+Kinematics-Projectile Motion,Angular momentum,0.2
+Kinematics-Projectile Motion,Conservation of angular momentum,0.2
+Kinematics-Projectile Motion,Newton’s law of gravitation,0.2
+Kinematics-Projectile Motion,Gravitational field,0.2
+Kinematics-Projectile Motion,Gravitational potential,0.2
+Kinematics-Projectile Motion,The motion of satellite,0.2
+Kinematics-Projectile Motion,Escape velocity,0.2
+Kinematics-Projectile Motion,Center of gravity,0.2
+Kinematics-Projectile Motion,Force equilibrium and torque equlilbrium,0.2
+Dynamics -Newton’s Laws of Motion,Kinematics-Linear Motion,0.3
+Dynamics -Newton’s Laws of Motion,Kinematics-Free Fall,0.4
+Dynamics -Newton’s Laws of Motion,Kinematics-Projectile Motion,0.4
+Dynamics -Newton’s Laws of Motion,Dynamics -Newton’s Laws of Motion,1
+Dynamics -Newton’s Laws of Motion,Dynamics -Motion on inclined planes,0.4
+Dynamics -Newton’s Laws of Motion,"Work, kinetic energy and potential energy",0.5
+Dynamics -Newton’s Laws of Motion,Dynamics-Work-energy theorem,0.5
+Dynamics -Newton’s Laws of Motion,Dynamics-Conservation of energy,0.5
+Dynamics -Newton’s Laws of Motion,Dynamics-Power,0.5
+Dynamics -Newton’s Laws of Motion,Dynamics-Linear momentum,0.5
+Dynamics -Newton’s Laws of Motion,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics -Newton’s Laws of Motion,Dynamics-Elastic collision,0.2
+Dynamics -Newton’s Laws of Motion,Dynamics-Inelastic collision,0.5
+Dynamics -Newton’s Laws of Motion,Dynamics-Collision in 2-dimension,0.5
+Dynamics -Newton’s Laws of Motion,Angular displacement,0.2
+Dynamics -Newton’s Laws of Motion,Velocity and acceleration,0.2
+Dynamics -Newton’s Laws of Motion,Relation between rotational motion and linear motion,0.2
+Dynamics -Newton’s Laws of Motion,Rotational motion at constant angular acceleration,0.2
+Dynamics -Newton’s Laws of Motion,Centripetal acceleration and centripetal force,0.2
+Dynamics -Newton’s Laws of Motion,Rotational motion on horizontal and vertical planes,0.2
+Dynamics -Newton’s Laws of Motion,Conical pendulum,0.2
+Dynamics -Newton’s Laws of Motion,Centre of mass and torque,0.2
+Dynamics -Newton’s Laws of Motion,Moment of inertia and parallel axis theorem,0.2
+Dynamics -Newton’s Laws of Motion,Rotational kinetic energy,0.2
+Dynamics -Newton’s Laws of Motion,Angular momentum,0.2
+Dynamics -Newton’s Laws of Motion,Conservation of angular momentum,0.2
+Dynamics -Newton’s Laws of Motion,Newton’s law of gravitation,0.2
+Dynamics -Newton’s Laws of Motion,Gravitational field,0.2
+Dynamics -Newton’s Laws of Motion,Gravitational potential,0.2
+Dynamics -Newton’s Laws of Motion,The motion of satellite,0.2
+Dynamics -Newton’s Laws of Motion,Escape velocity,0.2
+Dynamics -Newton’s Laws of Motion,Center of gravity,0.2
+Dynamics -Newton’s Laws of Motion,Force equilibrium and torque equlilbrium,0.2
+Dynamics -Motion on inclined planes,Kinematics-Linear Motion,0.25
+Dynamics -Motion on inclined planes,Kinematics-Free Fall,0.3
+Dynamics -Motion on inclined planes,Kinematics-Projectile Motion,0.3
+Dynamics -Motion on inclined planes,Dynamics -Newton’s Laws of Motion,0.4
+Dynamics -Motion on inclined planes,Dynamics -Motion on inclined planes,1
+Dynamics -Motion on inclined planes,"Work, kinetic energy and potential energy",0.4
+Dynamics -Motion on inclined planes,Dynamics-Work-energy theorem,0.4
+Dynamics -Motion on inclined planes,Dynamics-Conservation of energy,0.4
+Dynamics -Motion on inclined planes,Dynamics-Power,0.4
+Dynamics -Motion on inclined planes,Dynamics-Linear momentum,0.4
+Dynamics -Motion on inclined planes,Dynamics-Conservation of linear momentum and impulse,0.2
+Dynamics -Motion on inclined planes,Dynamics-Elastic collision,0.2
+Dynamics -Motion on inclined planes,Dynamics-Inelastic collision,0.4
+Dynamics -Motion on inclined planes,Dynamics-Collision in 2-dimension,0.4
+Dynamics -Motion on inclined planes,Angular displacement,0.2
+Dynamics -Motion on inclined planes,Velocity and acceleration,0.2
+Dynamics -Motion on inclined planes,Relation between rotational motion and linear motion,0.2
+Dynamics -Motion on inclined planes,Rotational motion at constant angular acceleration,0.2
+Dynamics -Motion on inclined planes,Centripetal acceleration and centripetal force,0.2
+Dynamics -Motion on inclined planes,Rotational motion on horizontal and vertical planes,0.2
+Dynamics -Motion on inclined planes,Conical pendulum,0.2
+Dynamics -Motion on inclined planes,Centre of mass and torque,0.2
+Dynamics -Motion on inclined planes,Moment of inertia and parallel axis theorem,0.2
+Dynamics -Motion on inclined planes,Rotational kinetic energy,0.2
+Dynamics -Motion on inclined planes,Angular momentum,0.2
+Dynamics -Motion on inclined planes,Conservation of angular momentum,0.2
+Dynamics -Motion on inclined planes,Newton’s law of gravitation,0.2
+Dynamics -Motion on inclined planes,Gravitational field,0.2
+Dynamics -Motion on inclined planes,Gravitational potential,0.2
+Dynamics -Motion on inclined planes,The motion of satellite,0.2
+Dynamics -Motion on inclined planes,Escape velocity,0.2
+Dynamics -Motion on inclined planes,Center of gravity,0.2
+Dynamics -Motion on inclined planes,Force equilibrium and torque equlilbrium,0.2
+"Work, kinetic energy and potential energy",Kinematics-Linear Motion,0.3
+"Work, kinetic energy and potential energy",Kinematics-Free Fall,0.4
+"Work, kinetic energy and potential energy",Kinematics-Projectile Motion,0.4
+"Work, kinetic energy and potential energy",Dynamics -Newton’s Laws of Motion,0.5
+"Work, kinetic energy and potential energy",Dynamics -Motion on inclined planes,0.4
+"Work, kinetic energy and potential energy","Work, kinetic energy and potential energy",1
+"Work, kinetic energy and potential energy",Dynamics-Work-energy theorem,0.5
+"Work, kinetic energy and potential energy",Dynamics-Conservation of energy,0.5
+"Work, kinetic energy and potential energy",Dynamics-Power,0.5
+"Work, kinetic energy and potential energy",Dynamics-Linear momentum,0.5
+"Work, kinetic energy and potential energy",Dynamics-Conservation of linear momentum and impulse,0.25
+"Work, kinetic energy and potential energy",Dynamics-Elastic collision,0.2
+"Work, kinetic energy and potential energy",Dynamics-Inelastic collision,0.5
+"Work, kinetic energy and potential energy",Dynamics-Collision in 2-dimension,0.5
+"Work, kinetic energy and potential energy",Angular displacement,0.2
+"Work, kinetic energy and potential energy",Velocity and acceleration,0.2
+"Work, kinetic energy and potential energy",Relation between rotational motion and linear motion,0.2
+"Work, kinetic energy and potential energy",Rotational motion at constant angular acceleration,0.2
+"Work, kinetic energy and potential energy",Centripetal acceleration and centripetal force,0.2
+"Work, kinetic energy and potential energy",Rotational motion on horizontal and vertical planes,0.2
+"Work, kinetic energy and potential energy",Conical pendulum,0.2
+"Work, kinetic energy and potential energy",Centre of mass and torque,0.2
+"Work, kinetic energy and potential energy",Moment of inertia and parallel axis theorem,0.2
+"Work, kinetic energy and potential energy",Rotational kinetic energy,0.2
+"Work, kinetic energy and potential energy",Angular momentum,0.2
+"Work, kinetic energy and potential energy",Conservation of angular momentum,0.2
+"Work, kinetic energy and potential energy",Newton’s law of gravitation,0.2
+"Work, kinetic energy and potential energy",Gravitational field,0.2
+"Work, kinetic energy and potential energy",Gravitational potential,0.2
+"Work, kinetic energy and potential energy",The motion of satellite,0.2
+"Work, kinetic energy and potential energy",Escape velocity,0.2
+"Work, kinetic energy and potential energy",Center of gravity,0.2
+"Work, kinetic energy and potential energy",Force equilibrium and torque equlilbrium,0.2
+Dynamics-Work-energy theorem,Kinematics-Linear Motion,0.3
+Dynamics-Work-energy theorem,Kinematics-Free Fall,0.4
+Dynamics-Work-energy theorem,Kinematics-Projectile Motion,0.4
+Dynamics-Work-energy theorem,Dynamics -Newton’s Laws of Motion,0.5
+Dynamics-Work-energy theorem,Dynamics -Motion on inclined planes,0.4
+Dynamics-Work-energy theorem,"Work, kinetic energy and potential energy",0.5
+Dynamics-Work-energy theorem,Dynamics-Work-energy theorem,1
+Dynamics-Work-energy theorem,Dynamics-Conservation of energy,0.5
+Dynamics-Work-energy theorem,Dynamics-Power,0.5
+Dynamics-Work-energy theorem,Dynamics-Linear momentum,0.5
+Dynamics-Work-energy theorem,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics-Work-energy theorem,Dynamics-Elastic collision,0.2
+Dynamics-Work-energy theorem,Dynamics-Inelastic collision,0.5
+Dynamics-Work-energy theorem,Dynamics-Collision in 2-dimension,0.5
+Dynamics-Work-energy theorem,Angular displacement,0.2
+Dynamics-Work-energy theorem,Velocity and acceleration,0.2
+Dynamics-Work-energy theorem,Relation between rotational motion and linear motion,0.2
+Dynamics-Work-energy theorem,Rotational motion at constant angular acceleration,0.2
+Dynamics-Work-energy theorem,Centripetal acceleration and centripetal force,0.2
+Dynamics-Work-energy theorem,Rotational motion on horizontal and vertical planes,0.2
+Dynamics-Work-energy theorem,Conical pendulum,0.2
+Dynamics-Work-energy theorem,Centre of mass and torque,0.2
+Dynamics-Work-energy theorem,Moment of inertia and parallel axis theorem,0.2
+Dynamics-Work-energy theorem,Rotational kinetic energy,0.2
+Dynamics-Work-energy theorem,Angular momentum,0.2
+Dynamics-Work-energy theorem,Conservation of angular momentum,0.2
+Dynamics-Work-energy theorem,Newton’s law of gravitation,0.2
+Dynamics-Work-energy theorem,Gravitational field,0.2
+Dynamics-Work-energy theorem,Gravitational potential,0.2
+Dynamics-Work-energy theorem,The motion of satellite,0.2
+Dynamics-Work-energy theorem,Escape velocity,0.2
+Dynamics-Work-energy theorem,Center of gravity,0.2
+Dynamics-Work-energy theorem,Force equilibrium and torque equlilbrium,0.2
+Dynamics-Conservation of energy,Kinematics-Linear Motion,0.3
+Dynamics-Conservation of energy,Kinematics-Free Fall,0.4
+Dynamics-Conservation of energy,Kinematics-Projectile Motion,0.4
+Dynamics-Conservation of energy,Dynamics -Newton’s Laws of Motion,0.5
+Dynamics-Conservation of energy,Dynamics -Motion on inclined planes,0.4
+Dynamics-Conservation of energy,"Work, kinetic energy and potential energy",0.5
+Dynamics-Conservation of energy,Dynamics-Work-energy theorem,0.5
+Dynamics-Conservation of energy,Dynamics-Conservation of energy,1
+Dynamics-Conservation of energy,Dynamics-Power,0.5
+Dynamics-Conservation of energy,Dynamics-Linear momentum,0.5
+Dynamics-Conservation of energy,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics-Conservation of energy,Dynamics-Elastic collision,0.2
+Dynamics-Conservation of energy,Dynamics-Inelastic collision,0.5
+Dynamics-Conservation of energy,Dynamics-Collision in 2-dimension,0.5
+Dynamics-Conservation of energy,Angular displacement,0.2
+Dynamics-Conservation of energy,Velocity and acceleration,0.2
+Dynamics-Conservation of energy,Relation between rotational motion and linear motion,0.2
+Dynamics-Conservation of energy,Rotational motion at constant angular acceleration,0.2
+Dynamics-Conservation of energy,Centripetal acceleration and centripetal force,0.2
+Dynamics-Conservation of energy,Rotational motion on horizontal and vertical planes,0.2
+Dynamics-Conservation of energy,Conical pendulum,0.2
+Dynamics-Conservation of energy,Centre of mass and torque,0.2
+Dynamics-Conservation of energy,Moment of inertia and parallel axis theorem,0.2
+Dynamics-Conservation of energy,Rotational kinetic energy,0.2
+Dynamics-Conservation of energy,Angular momentum,0.2
+Dynamics-Conservation of energy,Conservation of angular momentum,0.2
+Dynamics-Conservation of energy,Newton’s law of gravitation,0.2
+Dynamics-Conservation of energy,Gravitational field,0.2
+Dynamics-Conservation of energy,Gravitational potential,0.2
+Dynamics-Conservation of energy,The motion of satellite,0.2
+Dynamics-Conservation of energy,Escape velocity,0.2
+Dynamics-Conservation of energy,Center of gravity,0.2
+Dynamics-Conservation of energy,Force equilibrium and torque equlilbrium,0.2
+Dynamics-Power,Kinematics-Linear Motion,0.3
+Dynamics-Power,Kinematics-Free Fall,0.4
+Dynamics-Power,Kinematics-Projectile Motion,0.4
+Dynamics-Power,Dynamics -Newton’s Laws of Motion,0.5
+Dynamics-Power,Dynamics -Motion on inclined planes,0.4
+Dynamics-Power,"Work, kinetic energy and potential energy",0.5
+Dynamics-Power,Dynamics-Work-energy theorem,0.5
+Dynamics-Power,Dynamics-Conservation of energy,0.5
+Dynamics-Power,Dynamics-Power,1
+Dynamics-Power,Dynamics-Linear momentum,0.5
+Dynamics-Power,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics-Power,Dynamics-Elastic collision,0.2
+Dynamics-Power,Dynamics-Inelastic collision,0.5
+Dynamics-Power,Dynamics-Collision in 2-dimension,0.5
+Dynamics-Power,Angular displacement,0.2
+Dynamics-Power,Velocity and acceleration,0.2
+Dynamics-Power,Relation between rotational motion and linear motion,0.2
+Dynamics-Power,Rotational motion at constant angular acceleration,0.2
+Dynamics-Power,Centripetal acceleration and centripetal force,0.2
+Dynamics-Power,Rotational motion on horizontal and vertical planes,0.2
+Dynamics-Power,Conical pendulum,0.2
+Dynamics-Power,Centre of mass and torque,0.2
+Dynamics-Power,Moment of inertia and parallel axis theorem,0.2
+Dynamics-Power,Rotational kinetic energy,0.2
+Dynamics-Power,Angular momentum,0.2
+Dynamics-Power,Conservation of angular momentum,0.2
+Dynamics-Power,Newton’s law of gravitation,0.2
+Dynamics-Power,Gravitational field,0.2
+Dynamics-Power,Gravitational potential,0.2
+Dynamics-Power,The motion of satellite,0.2
+Dynamics-Power,Escape velocity,0.2
+Dynamics-Power,Center of gravity,0.2
+Dynamics-Power,Force equilibrium and torque equlilbrium,0.2
+Dynamics-Linear momentum,Kinematics-Linear Motion,0.3
+Dynamics-Linear momentum,Kinematics-Free Fall,0.4
+Dynamics-Linear momentum,Kinematics-Projectile Motion,0.4
+Dynamics-Linear momentum,Dynamics -Newton’s Laws of Motion,0.5
+Dynamics-Linear momentum,Dynamics -Motion on inclined planes,0.4
+Dynamics-Linear momentum,"Work, kinetic energy and potential energy",0.5
+Dynamics-Linear momentum,Dynamics-Work-energy theorem,0.5
+Dynamics-Linear momentum,Dynamics-Conservation of energy,0.5
+Dynamics-Linear momentum,Dynamics-Power,0.5
+Dynamics-Linear momentum,Dynamics-Linear momentum,1
+Dynamics-Linear momentum,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics-Linear momentum,Dynamics-Elastic collision,0.2
+Dynamics-Linear momentum,Dynamics-Inelastic collision,0.5
+Dynamics-Linear momentum,Dynamics-Collision in 2-dimension,0.5
+Dynamics-Linear momentum,Angular displacement,0.2
+Dynamics-Linear momentum,Velocity and acceleration,0.2
+Dynamics-Linear momentum,Relation between rotational motion and linear motion,0.2
+Dynamics-Linear momentum,Rotational motion at constant angular acceleration,0.2
+Dynamics-Linear momentum,Centripetal acceleration and centripetal force,0.2
+Dynamics-Linear momentum,Rotational motion on horizontal and vertical planes,0.2
+Dynamics-Linear momentum,Conical pendulum,0.2
+Dynamics-Linear momentum,Centre of mass and torque,0.2
+Dynamics-Linear momentum,Moment of inertia and parallel axis theorem,0.2
+Dynamics-Linear momentum,Rotational kinetic energy,0.2
+Dynamics-Linear momentum,Angular momentum,0.2
+Dynamics-Linear momentum,Conservation of angular momentum,0.2
+Dynamics-Linear momentum,Newton’s law of gravitation,0.2
+Dynamics-Linear momentum,Gravitational field,0.2
+Dynamics-Linear momentum,Gravitational potential,0.2
+Dynamics-Linear momentum,The motion of satellite,0.2
+Dynamics-Linear momentum,Escape velocity,0.2
+Dynamics-Linear momentum,Center of gravity,0.2
+Dynamics-Linear momentum,Force equilibrium and torque equlilbrium,0.2
+Dynamics-Conservation of linear momentum and impulse,Kinematics-Linear Motion,0.2
+Dynamics-Conservation of linear momentum and impulse,Kinematics-Free Fall,0.2
+Dynamics-Conservation of linear momentum and impulse,Kinematics-Projectile Motion,0.2
+Dynamics-Conservation of linear momentum and impulse,Dynamics -Newton’s Laws of Motion,0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics -Motion on inclined planes,0.2
+Dynamics-Conservation of linear momentum and impulse,"Work, kinetic energy and potential energy",0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Work-energy theorem,0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Conservation of energy,0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Power,0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Linear momentum,0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Conservation of linear momentum and impulse,1
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Elastic collision,0.2
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Inelastic collision,0.25
+Dynamics-Conservation of linear momentum and impulse,Dynamics-Collision in 2-dimension,0.25
+Dynamics-Conservation of linear momentum and impulse,Angular displacement,0.1
+Dynamics-Conservation of linear momentum and impulse,Velocity and acceleration,0.1
+Dynamics-Conservation of linear momentum and impulse,Relation between rotational motion and linear motion,0.1
+Dynamics-Conservation of linear momentum and impulse,Rotational motion at constant angular acceleration,0.1
+Dynamics-Conservation of linear momentum and impulse,Centripetal acceleration and centripetal force,0.1
+Dynamics-Conservation of linear momentum and impulse,Rotational motion on horizontal and vertical planes,0.1
+Dynamics-Conservation of linear momentum and impulse,Conical pendulum,0.1
+Dynamics-Conservation of linear momentum and impulse,Centre of mass and torque,0.1
+Dynamics-Conservation of linear momentum and impulse,Moment of inertia and parallel axis theorem,0.1
+Dynamics-Conservation of linear momentum and impulse,Rotational kinetic energy,0.1
+Dynamics-Conservation of linear momentum and impulse,Angular momentum,0.1
+Dynamics-Conservation of linear momentum and impulse,Conservation of angular momentum,0.1
+Dynamics-Conservation of linear momentum and impulse,Newton’s law of gravitation,0.1
+Dynamics-Conservation of linear momentum and impulse,Gravitational field,0.1
+Dynamics-Conservation of linear momentum and impulse,Gravitational potential,0.1
+Dynamics-Conservation of linear momentum and impulse,The motion of satellite,0.1
+Dynamics-Conservation of linear momentum and impulse,Escape velocity,0.1
+Dynamics-Conservation of linear momentum and impulse,Center of gravity,0.1
+Dynamics-Conservation of linear momentum and impulse,Force equilibrium and torque equlilbrium,0.1
+Dynamics-Elastic collision,Kinematics-Linear Motion,0.2
+Dynamics-Elastic collision,Kinematics-Free Fall,0.2
+Dynamics-Elastic collision,Kinematics-Projectile Motion,0.2
+Dynamics-Elastic collision,Dynamics -Newton’s Laws of Motion,0.2
+Dynamics-Elastic collision,Dynamics -Motion on inclined planes,0.3
+Dynamics-Elastic collision,"Work, kinetic energy and potential energy",0.2
+Dynamics-Elastic collision,Dynamics-Work-energy theorem,0.2
+Dynamics-Elastic collision,Dynamics-Conservation of energy,0.2
+Dynamics-Elastic collision,Dynamics-Power,0.2
+Dynamics-Elastic collision,Dynamics-Linear momentum,0.2
+Dynamics-Elastic collision,Dynamics-Conservation of linear momentum and impulse,0.1
+Dynamics-Elastic collision,Dynamics-Elastic collision,1
+Dynamics-Elastic collision,Dynamics-Inelastic collision,0.2
+Dynamics-Elastic collision,Dynamics-Collision in 2-dimension,0.2
+Dynamics-Elastic collision,Angular displacement,0.1
+Dynamics-Elastic collision,Velocity and acceleration,0.1
+Dynamics-Elastic collision,Relation between rotational motion and linear motion,0.1
+Dynamics-Elastic collision,Rotational motion at constant angular acceleration,0.1
+Dynamics-Elastic collision,Centripetal acceleration and centripetal force,0.1
+Dynamics-Elastic collision,Rotational motion on horizontal and vertical planes,0.1
+Dynamics-Elastic collision,Conical pendulum,0.1
+Dynamics-Elastic collision,Centre of mass and torque,0.1
+Dynamics-Elastic collision,Moment of inertia and parallel axis theorem,0.1
+Dynamics-Elastic collision,Rotational kinetic energy,0.1
+Dynamics-Elastic collision,Angular momentum,0.1
+Dynamics-Elastic collision,Conservation of angular momentum,0.1
+Dynamics-Elastic collision,Newton’s law of gravitation,0.1
+Dynamics-Elastic collision,Gravitational field,0.1
+Dynamics-Elastic collision,Gravitational potential,0.1
+Dynamics-Elastic collision,The motion of satellite,0.1
+Dynamics-Elastic collision,Escape velocity,0.1
+Dynamics-Elastic collision,Center of gravity,0.1
+Dynamics-Elastic collision,Force equilibrium and torque equlilbrium,0.1
+Dynamics-Inelastic collision,Kinematics-Linear Motion,0.3
+Dynamics-Inelastic collision,Kinematics-Free Fall,0.4
+Dynamics-Inelastic collision,Kinematics-Projectile Motion,0.4
+Dynamics-Inelastic collision,Dynamics -Newton’s Laws of Motion,0.5
+Dynamics-Inelastic collision,Dynamics -Motion on inclined planes,0.4
+Dynamics-Inelastic collision,"Work, kinetic energy and potential energy",0.5
+Dynamics-Inelastic collision,Dynamics-Work-energy theorem,0.5
+Dynamics-Inelastic collision,Dynamics-Conservation of energy,0.5
+Dynamics-Inelastic collision,Dynamics-Power,0.5
+Dynamics-Inelastic collision,Dynamics-Linear momentum,0.5
+Dynamics-Inelastic collision,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics-Inelastic collision,Dynamics-Elastic collision,0.2
+Dynamics-Inelastic collision,Dynamics-Inelastic collision,1
+Dynamics-Inelastic collision,Dynamics-Collision in 2-dimension,0.5
+Dynamics-Inelastic collision,Angular displacement,0.2
+Dynamics-Inelastic collision,Velocity and acceleration,0.2
+Dynamics-Inelastic collision,Relation between rotational motion and linear motion,0.2
+Dynamics-Inelastic collision,Rotational motion at constant angular acceleration,0.2
+Dynamics-Inelastic collision,Centripetal acceleration and centripetal force,0.2
+Dynamics-Inelastic collision,Rotational motion on horizontal and vertical planes,0.2
+Dynamics-Inelastic collision,Conical pendulum,0.2
+Dynamics-Inelastic collision,Centre of mass and torque,0.2
+Dynamics-Inelastic collision,Moment of inertia and parallel axis theorem,0.2
+Dynamics-Inelastic collision,Rotational kinetic energy,0.2
+Dynamics-Inelastic collision,Angular momentum,0.2
+Dynamics-Inelastic collision,Conservation of angular momentum,0.2
+Dynamics-Inelastic collision,Newton’s law of gravitation,0.2
+Dynamics-Inelastic collision,Gravitational field,0.2
+Dynamics-Inelastic collision,Gravitational potential,0.2
+Dynamics-Inelastic collision,The motion of satellite,0.2
+Dynamics-Inelastic collision,Escape velocity,0.2
+Dynamics-Inelastic collision,Center of gravity,0.2
+Dynamics-Inelastic collision,Force equilibrium and torque equlilbrium,0.2
+Dynamics-Collision in 2-dimension,Kinematics-Linear Motion,0.3
+Dynamics-Collision in 2-dimension,Kinematics-Free Fall,0.4
+Dynamics-Collision in 2-dimension,Kinematics-Projectile Motion,0.4
+Dynamics-Collision in 2-dimension,Dynamics -Newton’s Laws of Motion,0.5
+Dynamics-Collision in 2-dimension,Dynamics -Motion on inclined planes,0.4
+Dynamics-Collision in 2-dimension,"Work, kinetic energy and potential energy",0.5
+Dynamics-Collision in 2-dimension,Dynamics-Work-energy theorem,0.5
+Dynamics-Collision in 2-dimension,Dynamics-Conservation of energy,0.5
+Dynamics-Collision in 2-dimension,Dynamics-Power,0.5
+Dynamics-Collision in 2-dimension,Dynamics-Linear momentum,0.5
+Dynamics-Collision in 2-dimension,Dynamics-Conservation of linear momentum and impulse,0.25
+Dynamics-Collision in 2-dimension,Dynamics-Elastic collision,0.2
+Dynamics-Collision in 2-dimension,Dynamics-Inelastic collision,0.5
+Dynamics-Collision in 2-dimension,Dynamics-Collision in 2-dimension,1
+Dynamics-Collision in 2-dimension,Angular displacement,0.2
+Dynamics-Collision in 2-dimension,Velocity and acceleration,0.2
+Dynamics-Collision in 2-dimension,Relation between rotational motion and linear motion,0.2
+Dynamics-Collision in 2-dimension,Rotational motion at constant angular acceleration,0.2
+Dynamics-Collision in 2-dimension,Centripetal acceleration and centripetal force,0.2
+Dynamics-Collision in 2-dimension,Rotational motion on horizontal and vertical planes,0.2
+Dynamics-Collision in 2-dimension,Conical pendulum,0.2
+Dynamics-Collision in 2-dimension,Centre of mass and torque,0.2
+Dynamics-Collision in 2-dimension,Moment of inertia and parallel axis theorem,0.2
+Dynamics-Collision in 2-dimension,Rotational kinetic energy,0.2
+Dynamics-Collision in 2-dimension,Angular momentum,0.2
+Dynamics-Collision in 2-dimension,Conservation of angular momentum,0.2
+Dynamics-Collision in 2-dimension,Newton’s law of gravitation,0.2
+Dynamics-Collision in 2-dimension,Gravitational field,0.2
+Dynamics-Collision in 2-dimension,Gravitational potential,0.2
+Dynamics-Collision in 2-dimension,The motion of satellite,0.2
+Dynamics-Collision in 2-dimension,Escape velocity,0.2
+Dynamics-Collision in 2-dimension,Center of gravity,0.2
+Dynamics-Collision in 2-dimension,Force equilibrium and torque equlilbrium,0.2
+Angular displacement,Kinematics-Linear Motion,0.1
+Angular displacement,Kinematics-Free Fall,0.2
+Angular displacement,Kinematics-Projectile Motion,0.2
+Angular displacement,Dynamics -Newton’s Laws of Motion,0.2
+Angular displacement,Dynamics -Motion on inclined planes,0.2
+Angular displacement,"Work, kinetic energy and potential energy",0.2
+Angular displacement,Dynamics-Work-energy theorem,0.2
+Angular displacement,Dynamics-Conservation of energy,0.2
+Angular displacement,Dynamics-Power,0.2
+Angular displacement,Dynamics-Linear momentum,0.2
+Angular displacement,Dynamics-Conservation of linear momentum and impulse,0.1
+Angular displacement,Dynamics-Elastic collision,0.1
+Angular displacement,Dynamics-Inelastic collision,0.2
+Angular displacement,Dynamics-Collision in 2-dimension,0.2
+Angular displacement,Angular displacement,1
+Angular displacement,Velocity and acceleration,0.5
+Angular displacement,Relation between rotational motion and linear motion,0.5
+Angular displacement,Rotational motion at constant angular acceleration,0.5
+Angular displacement,Centripetal acceleration and centripetal force,0.5
+Angular displacement,Rotational motion on horizontal and vertical planes,0.5
+Angular displacement,Conical pendulum,0.5
+Angular displacement,Centre of mass and torque,0.5
+Angular displacement,Moment of inertia and parallel axis theorem,0.5
+Angular displacement,Rotational kinetic energy,0.5
+Angular displacement,Angular momentum,0.5
+Angular displacement,Conservation of angular momentum,0.5
+Angular displacement,Newton’s law of gravitation,0.2
+Angular displacement,Gravitational field,0.2
+Angular displacement,Gravitational potential,0.2
+Angular displacement,The motion of satellite,0.2
+Angular displacement,Escape velocity,0.2
+Angular displacement,Center of gravity,0.2
+Angular displacement,Force equilibrium and torque equlilbrium,0.2
+Velocity and acceleration,Kinematics-Linear Motion,0.1
+Velocity and acceleration,Kinematics-Free Fall,0.2
+Velocity and acceleration,Kinematics-Projectile Motion,0.2
+Velocity and acceleration,Dynamics -Newton’s Laws of Motion,0.2
+Velocity and acceleration,Dynamics -Motion on inclined planes,0.2
+Velocity and acceleration,"Work, kinetic energy and potential energy",0.2
+Velocity and acceleration,Dynamics-Work-energy theorem,0.2
+Velocity and acceleration,Dynamics-Conservation of energy,0.2
+Velocity and acceleration,Dynamics-Power,0.2
+Velocity and acceleration,Dynamics-Linear momentum,0.2
+Velocity and acceleration,Dynamics-Conservation of linear momentum and impulse,0.1
+Velocity and acceleration,Dynamics-Elastic collision,0.1
+Velocity and acceleration,Dynamics-Inelastic collision,0.2
+Velocity and acceleration,Dynamics-Collision in 2-dimension,0.2
+Velocity and acceleration,Angular displacement,0.5
+Velocity and acceleration,Velocity and acceleration,1
+Velocity and acceleration,Relation between rotational motion and linear motion,0.5
+Velocity and acceleration,Rotational motion at constant angular acceleration,0.5
+Velocity and acceleration,Centripetal acceleration and centripetal force,0.5
+Velocity and acceleration,Rotational motion on horizontal and vertical planes,0.5
+Velocity and acceleration,Conical pendulum,0.5
+Velocity and acceleration,Centre of mass and torque,0.5
+Velocity and acceleration,Moment of inertia and parallel axis theorem,0.5
+Velocity and acceleration,Rotational kinetic energy,0.5
+Velocity and acceleration,Angular momentum,0.5
+Velocity and acceleration,Conservation of angular momentum,0.5
+Velocity and acceleration,Newton’s law of gravitation,0.2
+Velocity and acceleration,Gravitational field,0.2
+Velocity and acceleration,Gravitational potential,0.2
+Velocity and acceleration,The motion of satellite,0.2
+Velocity and acceleration,Escape velocity,0.2
+Velocity and acceleration,Center of gravity,0.2
+Velocity and acceleration,Force equilibrium and torque equlilbrium,0.2
+Relation between rotational motion and linear motion,Kinematics-Linear Motion,0.1
+Relation between rotational motion and linear motion,Kinematics-Free Fall,0.2
+Relation between rotational motion and linear motion,Kinematics-Projectile Motion,0.2
+Relation between rotational motion and linear motion,Dynamics -Newton’s Laws of Motion,0.2
+Relation between rotational motion and linear motion,Dynamics -Motion on inclined planes,0.2
+Relation between rotational motion and linear motion,"Work, kinetic energy and potential energy",0.2
+Relation between rotational motion and linear motion,Dynamics-Work-energy theorem,0.2
+Relation between rotational motion and linear motion,Dynamics-Conservation of energy,0.2
+Relation between rotational motion and linear motion,Dynamics-Power,0.2
+Relation between rotational motion and linear motion,Dynamics-Linear momentum,0.2
+Relation between rotational motion and linear motion,Dynamics-Conservation of linear momentum and impulse,0.1
+Relation between rotational motion and linear motion,Dynamics-Elastic collision,0.1
+Relation between rotational motion and linear motion,Dynamics-Inelastic collision,0.2
+Relation between rotational motion and linear motion,Dynamics-Collision in 2-dimension,0.2
+Relation between rotational motion and linear motion,Angular displacement,0.5
+Relation between rotational motion and linear motion,Velocity and acceleration,0.5
+Relation between rotational motion and linear motion,Relation between rotational motion and linear motion,1
+Relation between rotational motion and linear motion,Rotational motion at constant angular acceleration,0.5
+Relation between rotational motion and linear motion,Centripetal acceleration and centripetal force,0.5
+Relation between rotational motion and linear motion,Rotational motion on horizontal and vertical planes,0.5
+Relation between rotational motion and linear motion,Conical pendulum,0.5
+Relation between rotational motion and linear motion,Centre of mass and torque,0.5
+Relation between rotational motion and linear motion,Moment of inertia and parallel axis theorem,0.5
+Relation between rotational motion and linear motion,Rotational kinetic energy,0.5
+Relation between rotational motion and linear motion,Angular momentum,0.5
+Relation between rotational motion and linear motion,Conservation of angular momentum,0.5
+Relation between rotational motion and linear motion,Newton’s law of gravitation,0.2
+Relation between rotational motion and linear motion,Gravitational field,0.2
+Relation between rotational motion and linear motion,Gravitational potential,0.2
+Relation between rotational motion and linear motion,The motion of satellite,0.2
+Relation between rotational motion and linear motion,Escape velocity,0.2
+Relation between rotational motion and linear motion,Center of gravity,0.2
+Relation between rotational motion and linear motion,Force equilibrium and torque equlilbrium,0.2
+Rotational motion at constant angular acceleration,Kinematics-Linear Motion,0.1
+Rotational motion at constant angular acceleration,Kinematics-Free Fall,0.2
+Rotational motion at constant angular acceleration,Kinematics-Projectile Motion,0.2
+Rotational motion at constant angular acceleration,Dynamics -Newton’s Laws of Motion,0.2
+Rotational motion at constant angular acceleration,Dynamics -Motion on inclined planes,0.2
+Rotational motion at constant angular acceleration,"Work, kinetic energy and potential energy",0.2
+Rotational motion at constant angular acceleration,Dynamics-Work-energy theorem,0.2
+Rotational motion at constant angular acceleration,Dynamics-Conservation of energy,0.2
+Rotational motion at constant angular acceleration,Dynamics-Power,0.2
+Rotational motion at constant angular acceleration,Dynamics-Linear momentum,0.2
+Rotational motion at constant angular acceleration,Dynamics-Conservation of linear momentum and impulse,0.1
+Rotational motion at constant angular acceleration,Dynamics-Elastic collision,0.1
+Rotational motion at constant angular acceleration,Dynamics-Inelastic collision,0.2
+Rotational motion at constant angular acceleration,Dynamics-Collision in 2-dimension,0.2
+Rotational motion at constant angular acceleration,Angular displacement,0.5
+Rotational motion at constant angular acceleration,Velocity and acceleration,0.5
+Rotational motion at constant angular acceleration,Relation between rotational motion and linear motion,0.5
+Rotational motion at constant angular acceleration,Rotational motion at constant angular acceleration,1
+Rotational motion at constant angular acceleration,Centripetal acceleration and centripetal force,0.5
+Rotational motion at constant angular acceleration,Rotational motion on horizontal and vertical planes,0.5
+Rotational motion at constant angular acceleration,Conical pendulum,0.5
+Rotational motion at constant angular acceleration,Centre of mass and torque,0.5
+Rotational motion at constant angular acceleration,Moment of inertia and parallel axis theorem,0.5
+Rotational motion at constant angular acceleration,Rotational kinetic energy,0.5
+Rotational motion at constant angular acceleration,Angular momentum,0.5
+Rotational motion at constant angular acceleration,Conservation of angular momentum,0.5
+Rotational motion at constant angular acceleration,Newton’s law of gravitation,0.2
+Rotational motion at constant angular acceleration,Gravitational field,0.2
+Rotational motion at constant angular acceleration,Gravitational potential,0.2
+Rotational motion at constant angular acceleration,The motion of satellite,0.2
+Rotational motion at constant angular acceleration,Escape velocity,0.2
+Rotational motion at constant angular acceleration,Center of gravity,0.2
+Rotational motion at constant angular acceleration,Force equilibrium and torque equlilbrium,0.2
+Centripetal acceleration and centripetal force,Kinematics-Linear Motion,0.1
+Centripetal acceleration and centripetal force,Kinematics-Free Fall,0.2
+Centripetal acceleration and centripetal force,Kinematics-Projectile Motion,0.2
+Centripetal acceleration and centripetal force,Dynamics -Newton’s Laws of Motion,0.2
+Centripetal acceleration and centripetal force,Dynamics -Motion on inclined planes,0.2
+Centripetal acceleration and centripetal force,"Work, kinetic energy and potential energy",0.2
+Centripetal acceleration and centripetal force,Dynamics-Work-energy theorem,0.2
+Centripetal acceleration and centripetal force,Dynamics-Conservation of energy,0.2
+Centripetal acceleration and centripetal force,Dynamics-Power,0.2
+Centripetal acceleration and centripetal force,Dynamics-Linear momentum,0.2
+Centripetal acceleration and centripetal force,Dynamics-Conservation of linear momentum and impulse,0.1
+Centripetal acceleration and centripetal force,Dynamics-Elastic collision,0.1
+Centripetal acceleration and centripetal force,Dynamics-Inelastic collision,0.2
+Centripetal acceleration and centripetal force,Dynamics-Collision in 2-dimension,0.2
+Centripetal acceleration and centripetal force,Angular displacement,0.5
+Centripetal acceleration and centripetal force,Velocity and acceleration,0.5
+Centripetal acceleration and centripetal force,Relation between rotational motion and linear motion,0.5
+Centripetal acceleration and centripetal force,Rotational motion at constant angular acceleration,0.5
+Centripetal acceleration and centripetal force,Centripetal acceleration and centripetal force,1
+Centripetal acceleration and centripetal force,Rotational motion on horizontal and vertical planes,0.5
+Centripetal acceleration and centripetal force,Conical pendulum,0.5
+Centripetal acceleration and centripetal force,Centre of mass and torque,0.5
+Centripetal acceleration and centripetal force,Moment of inertia and parallel axis theorem,0.5
+Centripetal acceleration and centripetal force,Rotational kinetic energy,0.5
+Centripetal acceleration and centripetal force,Angular momentum,0.5
+Centripetal acceleration and centripetal force,Conservation of angular momentum,0.5
+Centripetal acceleration and centripetal force,Newton’s law of gravitation,0.2
+Centripetal acceleration and centripetal force,Gravitational field,0.2
+Centripetal acceleration and centripetal force,Gravitational potential,0.2
+Centripetal acceleration and centripetal force,The motion of satellite,0.2
+Centripetal acceleration and centripetal force,Escape velocity,0.2
+Centripetal acceleration and centripetal force,Center of gravity,0.2
+Centripetal acceleration and centripetal force,Force equilibrium and torque equlilbrium,0.2
+Rotational motion on horizontal and vertical planes,Kinematics-Linear Motion,0.1
+Rotational motion on horizontal and vertical planes,Kinematics-Free Fall,0.2
+Rotational motion on horizontal and vertical planes,Kinematics-Projectile Motion,0.2
+Rotational motion on horizontal and vertical planes,Dynamics -Newton’s Laws of Motion,0.2
+Rotational motion on horizontal and vertical planes,Dynamics -Motion on inclined planes,0.2
+Rotational motion on horizontal and vertical planes,"Work, kinetic energy and potential energy",0.2
+Rotational motion on horizontal and vertical planes,Dynamics-Work-energy theorem,0.2
+Rotational motion on horizontal and vertical planes,Dynamics-Conservation of energy,0.2
+Rotational motion on horizontal and vertical planes,Dynamics-Power,0.2
+Rotational motion on horizontal and vertical planes,Dynamics-Linear momentum,0.2
+Rotational motion on horizontal and vertical planes,Dynamics-Conservation of linear momentum and impulse,0.1
+Rotational motion on horizontal and vertical planes,Dynamics-Elastic collision,0.1
+Rotational motion on horizontal and vertical planes,Dynamics-Inelastic collision,0.2
+Rotational motion on horizontal and vertical planes,Dynamics-Collision in 2-dimension,0.2
+Rotational motion on horizontal and vertical planes,Angular displacement,0.5
+Rotational motion on horizontal and vertical planes,Velocity and acceleration,0.5
+Rotational motion on horizontal and vertical planes,Relation between rotational motion and linear motion,0.5
+Rotational motion on horizontal and vertical planes,Rotational motion at constant angular acceleration,0.5
+Rotational motion on horizontal and vertical planes,Centripetal acceleration and centripetal force,0.5
+Rotational motion on horizontal and vertical planes,Rotational motion on horizontal and vertical planes,1
+Rotational motion on horizontal and vertical planes,Conical pendulum,0.5
+Rotational motion on horizontal and vertical planes,Centre of mass and torque,0.5
+Rotational motion on horizontal and vertical planes,Moment of inertia and parallel axis theorem,0.5
+Rotational motion on horizontal and vertical planes,Rotational kinetic energy,0.5
+Rotational motion on horizontal and vertical planes,Angular momentum,0.5
+Rotational motion on horizontal and vertical planes,Conservation of angular momentum,0.5
+Rotational motion on horizontal and vertical planes,Newton’s law of gravitation,0.2
+Rotational motion on horizontal and vertical planes,Gravitational field,0.2
+Rotational motion on horizontal and vertical planes,Gravitational potential,0.2
+Rotational motion on horizontal and vertical planes,The motion of satellite,0.2
+Rotational motion on horizontal and vertical planes,Escape velocity,0.2
+Rotational motion on horizontal and vertical planes,Center of gravity,0.2
+Rotational motion on horizontal and vertical planes,Force equilibrium and torque equlilbrium,0.2
+Conical pendulum,Kinematics-Linear Motion,0.1
+Conical pendulum,Kinematics-Free Fall,0.2
+Conical pendulum,Kinematics-Projectile Motion,0.2
+Conical pendulum,Dynamics -Newton’s Laws of Motion,0.2
+Conical pendulum,Dynamics -Motion on inclined planes,0.2
+Conical pendulum,"Work, kinetic energy and potential energy",0.2
+Conical pendulum,Dynamics-Work-energy theorem,0.2
+Conical pendulum,Dynamics-Conservation of energy,0.2
+Conical pendulum,Dynamics-Power,0.2
+Conical pendulum,Dynamics-Linear momentum,0.2
+Conical pendulum,Dynamics-Conservation of linear momentum and impulse,0.1
+Conical pendulum,Dynamics-Elastic collision,0.1
+Conical pendulum,Dynamics-Inelastic collision,0.2
+Conical pendulum,Dynamics-Collision in 2-dimension,0.2
+Conical pendulum,Angular displacement,0.5
+Conical pendulum,Velocity and acceleration,0.5
+Conical pendulum,Relation between rotational motion and linear motion,0.5
+Conical pendulum,Rotational motion at constant angular acceleration,0.5
+Conical pendulum,Centripetal acceleration and centripetal force,0.5
+Conical pendulum,Rotational motion on horizontal and vertical planes,0.5
+Conical pendulum,Conical pendulum,1
+Conical pendulum,Centre of mass and torque,0.5
+Conical pendulum,Moment of inertia and parallel axis theorem,0.5
+Conical pendulum,Rotational kinetic energy,0.5
+Conical pendulum,Angular momentum,0.5
+Conical pendulum,Conservation of angular momentum,0.5
+Conical pendulum,Newton’s law of gravitation,0.2
+Conical pendulum,Gravitational field,0.2
+Conical pendulum,Gravitational potential,0.2
+Conical pendulum,The motion of satellite,0.2
+Conical pendulum,Escape velocity,0.2
+Conical pendulum,Center of gravity,0.2
+Conical pendulum,Force equilibrium and torque equlilbrium,0.2
+Centre of mass and torque,Kinematics-Linear Motion,0.1
+Centre of mass and torque,Kinematics-Free Fall,0.2
+Centre of mass and torque,Kinematics-Projectile Motion,0.2
+Centre of mass and torque,Dynamics -Newton’s Laws of Motion,0.2
+Centre of mass and torque,Dynamics -Motion on inclined planes,0.2
+Centre of mass and torque,"Work, kinetic energy and potential energy",0.2
+Centre of mass and torque,Dynamics-Work-energy theorem,0.2
+Centre of mass and torque,Dynamics-Conservation of energy,0.2
+Centre of mass and torque,Dynamics-Power,0.2
+Centre of mass and torque,Dynamics-Linear momentum,0.2
+Centre of mass and torque,Dynamics-Conservation of linear momentum and impulse,0.1
+Centre of mass and torque,Dynamics-Elastic collision,0.1
+Centre of mass and torque,Dynamics-Inelastic collision,0.2
+Centre of mass and torque,Dynamics-Collision in 2-dimension,0.2
+Centre of mass and torque,Angular displacement,0.5
+Centre of mass and torque,Velocity and acceleration,0.5
+Centre of mass and torque,Relation between rotational motion and linear motion,0.5
+Centre of mass and torque,Rotational motion at constant angular acceleration,0.5
+Centre of mass and torque,Centripetal acceleration and centripetal force,0.5
+Centre of mass and torque,Rotational motion on horizontal and vertical planes,0.5
+Centre of mass and torque,Conical pendulum,0.5
+Centre of mass and torque,Centre of mass and torque,1
+Centre of mass and torque,Moment of inertia and parallel axis theorem,0.5
+Centre of mass and torque,Rotational kinetic energy,0.5
+Centre of mass and torque,Angular momentum,0.5
+Centre of mass and torque,Conservation of angular momentum,0.5
+Centre of mass and torque,Newton’s law of gravitation,0.2
+Centre of mass and torque,Gravitational field,0.2
+Centre of mass and torque,Gravitational potential,0.2
+Centre of mass and torque,The motion of satellite,0.2
+Centre of mass and torque,Escape velocity,0.2
+Centre of mass and torque,Center of gravity,0.2
+Centre of mass and torque,Force equilibrium and torque equlilbrium,0.2
+Moment of inertia and parallel axis theorem,Kinematics-Linear Motion,0.1
+Moment of inertia and parallel axis theorem,Kinematics-Free Fall,0.2
+Moment of inertia and parallel axis theorem,Kinematics-Projectile Motion,0.2
+Moment of inertia and parallel axis theorem,Dynamics -Newton’s Laws of Motion,0.2
+Moment of inertia and parallel axis theorem,Dynamics -Motion on inclined planes,0.2
+Moment of inertia and parallel axis theorem,"Work, kinetic energy and potential energy",0.2
+Moment of inertia and parallel axis theorem,Dynamics-Work-energy theorem,0.2
+Moment of inertia and parallel axis theorem,Dynamics-Conservation of energy,0.2
+Moment of inertia and parallel axis theorem,Dynamics-Power,0.2
+Moment of inertia and parallel axis theorem,Dynamics-Linear momentum,0.2
+Moment of inertia and parallel axis theorem,Dynamics-Conservation of linear momentum and impulse,0.1
+Moment of inertia and parallel axis theorem,Dynamics-Elastic collision,0.1
+Moment of inertia and parallel axis theorem,Dynamics-Inelastic collision,0.2
+Moment of inertia and parallel axis theorem,Dynamics-Collision in 2-dimension,0.2
+Moment of inertia and parallel axis theorem,Angular displacement,0.5
+Moment of inertia and parallel axis theorem,Velocity and acceleration,0.5
+Moment of inertia and parallel axis theorem,Relation between rotational motion and linear motion,0.5
+Moment of inertia and parallel axis theorem,Rotational motion at constant angular acceleration,0.5
+Moment of inertia and parallel axis theorem,Centripetal acceleration and centripetal force,0.5
+Moment of inertia and parallel axis theorem,Rotational motion on horizontal and vertical planes,0.5
+Moment of inertia and parallel axis theorem,Conical pendulum,0.5
+Moment of inertia and parallel axis theorem,Centre of mass and torque,0.5
+Moment of inertia and parallel axis theorem,Moment of inertia and parallel axis theorem,1
+Moment of inertia and parallel axis theorem,Rotational kinetic energy,0.5
+Moment of inertia and parallel axis theorem,Angular momentum,0.5
+Moment of inertia and parallel axis theorem,Conservation of angular momentum,0.5
+Moment of inertia and parallel axis theorem,Newton’s law of gravitation,0.2
+Moment of inertia and parallel axis theorem,Gravitational field,0.2
+Moment of inertia and parallel axis theorem,Gravitational potential,0.2
+Moment of inertia and parallel axis theorem,The motion of satellite,0.2
+Moment of inertia and parallel axis theorem,Escape velocity,0.2
+Moment of inertia and parallel axis theorem,Center of gravity,0.2
+Moment of inertia and parallel axis theorem,Force equilibrium and torque equlilbrium,0.2
+Rotational kinetic energy,Kinematics-Linear Motion,0.1
+Rotational kinetic energy,Kinematics-Free Fall,0.2
+Rotational kinetic energy,Kinematics-Projectile Motion,0.2
+Rotational kinetic energy,Dynamics -Newton’s Laws of Motion,0.2
+Rotational kinetic energy,Dynamics -Motion on inclined planes,0.2
+Rotational kinetic energy,"Work, kinetic energy and potential energy",0.2
+Rotational kinetic energy,Dynamics-Work-energy theorem,0.2
+Rotational kinetic energy,Dynamics-Conservation of energy,0.2
+Rotational kinetic energy,Dynamics-Power,0.2
+Rotational kinetic energy,Dynamics-Linear momentum,0.2
+Rotational kinetic energy,Dynamics-Conservation of linear momentum and impulse,0.1
+Rotational kinetic energy,Dynamics-Elastic collision,0.1
+Rotational kinetic energy,Dynamics-Inelastic collision,0.2
+Rotational kinetic energy,Dynamics-Collision in 2-dimension,0.2
+Rotational kinetic energy,Angular displacement,0.5
+Rotational kinetic energy,Velocity and acceleration,0.5
+Rotational kinetic energy,Relation between rotational motion and linear motion,0.5
+Rotational kinetic energy,Rotational motion at constant angular acceleration,0.5
+Rotational kinetic energy,Centripetal acceleration and centripetal force,0.5
+Rotational kinetic energy,Rotational motion on horizontal and vertical planes,0.5
+Rotational kinetic energy,Conical pendulum,0.5
+Rotational kinetic energy,Centre of mass and torque,0.5
+Rotational kinetic energy,Moment of inertia and parallel axis theorem,0.5
+Rotational kinetic energy,Rotational kinetic energy,1
+Rotational kinetic energy,Angular momentum,0.5
+Rotational kinetic energy,Conservation of angular momentum,0.5
+Rotational kinetic energy,Newton’s law of gravitation,0.2
+Rotational kinetic energy,Gravitational field,0.2
+Rotational kinetic energy,Gravitational potential,0.2
+Rotational kinetic energy,The motion of satellite,0.2
+Rotational kinetic energy,Escape velocity,0.2
+Rotational kinetic energy,Center of gravity,0.2
+Rotational kinetic energy,Force equilibrium and torque equlilbrium,0.2
+Angular momentum,Kinematics-Linear Motion,0.1
+Angular momentum,Kinematics-Free Fall,0.2
+Angular momentum,Kinematics-Projectile Motion,0.2
+Angular momentum,Dynamics -Newton’s Laws of Motion,0.2
+Angular momentum,Dynamics -Motion on inclined planes,0.2
+Angular momentum,"Work, kinetic energy and potential energy",0.2
+Angular momentum,Dynamics-Work-energy theorem,0.2
+Angular momentum,Dynamics-Conservation of energy,0.2
+Angular momentum,Dynamics-Power,0.2
+Angular momentum,Dynamics-Linear momentum,0.2
+Angular momentum,Dynamics-Conservation of linear momentum and impulse,0.1
+Angular momentum,Dynamics-Elastic collision,0.1
+Angular momentum,Dynamics-Inelastic collision,0.2
+Angular momentum,Dynamics-Collision in 2-dimension,0.2
+Angular momentum,Angular displacement,0.5
+Angular momentum,Velocity and acceleration,0.5
+Angular momentum,Relation between rotational motion and linear motion,0.5
+Angular momentum,Rotational motion at constant angular acceleration,0.5
+Angular momentum,Centripetal acceleration and centripetal force,0.5
+Angular momentum,Rotational motion on horizontal and vertical planes,0.5
+Angular momentum,Conical pendulum,0.5
+Angular momentum,Centre of mass and torque,0.5
+Angular momentum,Moment of inertia and parallel axis theorem,0.5
+Angular momentum,Rotational kinetic energy,0.5
+Angular momentum,Angular momentum,1
+Angular momentum,Conservation of angular momentum,0.5
+Angular momentum,Newton’s law of gravitation,0.2
+Angular momentum,Gravitational field,0.2
+Angular momentum,Gravitational potential,0.2
+Angular momentum,The motion of satellite,0.2
+Angular momentum,Escape velocity,0.2
+Angular momentum,Center of gravity,0.2
+Angular momentum,Force equilibrium and torque equlilbrium,0.2
+Conservation of angular momentum,Kinematics-Linear Motion,0.1
+Conservation of angular momentum,Kinematics-Free Fall,0.2
+Conservation of angular momentum,Kinematics-Projectile Motion,0.2
+Conservation of angular momentum,Dynamics -Newton’s Laws of Motion,0.2
+Conservation of angular momentum,Dynamics -Motion on inclined planes,0.2
+Conservation of angular momentum,"Work, kinetic energy and potential energy",0.2
+Conservation of angular momentum,Dynamics-Work-energy theorem,0.2
+Conservation of angular momentum,Dynamics-Conservation of energy,0.2
+Conservation of angular momentum,Dynamics-Power,0.2
+Conservation of angular momentum,Dynamics-Linear momentum,0.2
+Conservation of angular momentum,Dynamics-Conservation of linear momentum and impulse,0.1
+Conservation of angular momentum,Dynamics-Elastic collision,0.1
+Conservation of angular momentum,Dynamics-Inelastic collision,0.2
+Conservation of angular momentum,Dynamics-Collision in 2-dimension,0.2
+Conservation of angular momentum,Angular displacement,0.5
+Conservation of angular momentum,Velocity and acceleration,0.5
+Conservation of angular momentum,Relation between rotational motion and linear motion,0.5
+Conservation of angular momentum,Rotational motion at constant angular acceleration,0.5
+Conservation of angular momentum,Centripetal acceleration and centripetal force,0.5
+Conservation of angular momentum,Rotational motion on horizontal and vertical planes,0.5
+Conservation of angular momentum,Conical pendulum,0.5
+Conservation of angular momentum,Centre of mass and torque,0.5
+Conservation of angular momentum,Moment of inertia and parallel axis theorem,0.5
+Conservation of angular momentum,Rotational kinetic energy,0.5
+Conservation of angular momentum,Angular momentum,0.5
+Conservation of angular momentum,Conservation of angular momentum,1
+Conservation of angular momentum,Newton’s law of gravitation,0.2
+Conservation of angular momentum,Gravitational field,0.2
+Conservation of angular momentum,Gravitational potential,0.2
+Conservation of angular momentum,The motion of satellite,0.2
+Conservation of angular momentum,Escape velocity,0.2
+Conservation of angular momentum,Center of gravity,0.2
+Conservation of angular momentum,Force equilibrium and torque equlilbrium,0.2
+Newton’s law of gravitation,Kinematics-Linear Motion,0.1
+Newton’s law of gravitation,Kinematics-Free Fall,0.2
+Newton’s law of gravitation,Kinematics-Projectile Motion,0.2
+Newton’s law of gravitation,Dynamics -Newton’s Laws of Motion,0.2
+Newton’s law of gravitation,Dynamics -Motion on inclined planes,0.2
+Newton’s law of gravitation,"Work, kinetic energy and potential energy",0.2
+Newton’s law of gravitation,Dynamics-Work-energy theorem,0.2
+Newton’s law of gravitation,Dynamics-Conservation of energy,0.2
+Newton’s law of gravitation,Dynamics-Power,0.2
+Newton’s law of gravitation,Dynamics-Linear momentum,0.2
+Newton’s law of gravitation,Dynamics-Conservation of linear momentum and impulse,0.1
+Newton’s law of gravitation,Dynamics-Elastic collision,0.1
+Newton’s law of gravitation,Dynamics-Inelastic collision,0.2
+Newton’s law of gravitation,Dynamics-Collision in 2-dimension,0.2
+Newton’s law of gravitation,Angular displacement,0.2
+Newton’s law of gravitation,Velocity and acceleration,0.2
+Newton’s law of gravitation,Relation between rotational motion and linear motion,0.2
+Newton’s law of gravitation,Rotational motion at constant angular acceleration,0.2
+Newton’s law of gravitation,Centripetal acceleration and centripetal force,0.2
+Newton’s law of gravitation,Rotational motion on horizontal and vertical planes,0.2
+Newton’s law of gravitation,Conical pendulum,0.2
+Newton’s law of gravitation,Centre of mass and torque,0.2
+Newton’s law of gravitation,Moment of inertia and parallel axis theorem,0.2
+Newton’s law of gravitation,Rotational kinetic energy,0.2
+Newton’s law of gravitation,Angular momentum,0.2
+Newton’s law of gravitation,Conservation of angular momentum,0.2
+Newton’s law of gravitation,Newton’s law of gravitation,1
+Newton’s law of gravitation,Gravitational field,0.5
+Newton’s law of gravitation,Gravitational potential,0.5
+Newton’s law of gravitation,The motion of satellite,0.5
+Newton’s law of gravitation,Escape velocity,0.5
+Newton’s law of gravitation,Center of gravity,0.2
+Newton’s law of gravitation,Force equilibrium and torque equlilbrium,0.2
+Gravitational field,Kinematics-Linear Motion,0.1
+Gravitational field,Kinematics-Free Fall,0.2
+Gravitational field,Kinematics-Projectile Motion,0.2
+Gravitational field,Dynamics -Newton’s Laws of Motion,0.2
+Gravitational field,Dynamics -Motion on inclined planes,0.2
+Gravitational field,"Work, kinetic energy and potential energy",0.2
+Gravitational field,Dynamics-Work-energy theorem,0.2
+Gravitational field,Dynamics-Conservation of energy,0.2
+Gravitational field,Dynamics-Power,0.2
+Gravitational field,Dynamics-Linear momentum,0.2
+Gravitational field,Dynamics-Conservation of linear momentum and impulse,0.1
+Gravitational field,Dynamics-Elastic collision,0.1
+Gravitational field,Dynamics-Inelastic collision,0.2
+Gravitational field,Dynamics-Collision in 2-dimension,0.2
+Gravitational field,Angular displacement,0.2
+Gravitational field,Velocity and acceleration,0.2
+Gravitational field,Relation between rotational motion and linear motion,0.2
+Gravitational field,Rotational motion at constant angular acceleration,0.2
+Gravitational field,Centripetal acceleration and centripetal force,0.2
+Gravitational field,Rotational motion on horizontal and vertical planes,0.2
+Gravitational field,Conical pendulum,0.2
+Gravitational field,Centre of mass and torque,0.2
+Gravitational field,Moment of inertia and parallel axis theorem,0.2
+Gravitational field,Rotational kinetic energy,0.2
+Gravitational field,Angular momentum,0.2
+Gravitational field,Conservation of angular momentum,0.2
+Gravitational field,Newton’s law of gravitation,0.5
+Gravitational field,Gravitational field,1
+Gravitational field,Gravitational potential,0.5
+Gravitational field,The motion of satellite,0.5
+Gravitational field,Escape velocity,0.5
+Gravitational field,Center of gravity,0.2
+Gravitational field,Force equilibrium and torque equlilbrium,0.2
+Gravitational potential,Kinematics-Linear Motion,0.1
+Gravitational potential,Kinematics-Free Fall,0.2
+Gravitational potential,Kinematics-Projectile Motion,0.2
+Gravitational potential,Dynamics -Newton’s Laws of Motion,0.2
+Gravitational potential,Dynamics -Motion on inclined planes,0.2
+Gravitational potential,"Work, kinetic energy and potential energy",0.2
+Gravitational potential,Dynamics-Work-energy theorem,0.2
+Gravitational potential,Dynamics-Conservation of energy,0.2
+Gravitational potential,Dynamics-Power,0.2
+Gravitational potential,Dynamics-Linear momentum,0.2
+Gravitational potential,Dynamics-Conservation of linear momentum and impulse,0.1
+Gravitational potential,Dynamics-Elastic collision,0.1
+Gravitational potential,Dynamics-Inelastic collision,0.2
+Gravitational potential,Dynamics-Collision in 2-dimension,0.2
+Gravitational potential,Angular displacement,0.2
+Gravitational potential,Velocity and acceleration,0.2
+Gravitational potential,Relation between rotational motion and linear motion,0.2
+Gravitational potential,Rotational motion at constant angular acceleration,0.2
+Gravitational potential,Centripetal acceleration and centripetal force,0.2
+Gravitational potential,Rotational motion on horizontal and vertical planes,0.2
+Gravitational potential,Conical pendulum,0.2
+Gravitational potential,Centre of mass and torque,0.2
+Gravitational potential,Moment of inertia and parallel axis theorem,0.2
+Gravitational potential,Rotational kinetic energy,0.2
+Gravitational potential,Angular momentum,0.2
+Gravitational potential,Conservation of angular momentum,0.2
+Gravitational potential,Newton’s law of gravitation,0.5
+Gravitational potential,Gravitational field,0.5
+Gravitational potential,Gravitational potential,1
+Gravitational potential,The motion of satellite,0.5
+Gravitational potential,Escape velocity,0.5
+Gravitational potential,Center of gravity,0.2
+Gravitational potential,Force equilibrium and torque equlilbrium,0.2
+The motion of satellite,Kinematics-Linear Motion,0.1
+The motion of satellite,Kinematics-Free Fall,0.2
+The motion of satellite,Kinematics-Projectile Motion,0.2
+The motion of satellite,Dynamics -Newton’s Laws of Motion,0.2
+The motion of satellite,Dynamics -Motion on inclined planes,0.2
+The motion of satellite,"Work, kinetic energy and potential energy",0.2
+The motion of satellite,Dynamics-Work-energy theorem,0.2
+The motion of satellite,Dynamics-Conservation of energy,0.2
+The motion of satellite,Dynamics-Power,0.2
+The motion of satellite,Dynamics-Linear momentum,0.2
+The motion of satellite,Dynamics-Conservation of linear momentum and impulse,0.1
+The motion of satellite,Dynamics-Elastic collision,0.1
+The motion of satellite,Dynamics-Inelastic collision,0.2
+The motion of satellite,Dynamics-Collision in 2-dimension,0.2
+The motion of satellite,Angular displacement,0.2
+The motion of satellite,Velocity and acceleration,0.2
+The motion of satellite,Relation between rotational motion and linear motion,0.2
+The motion of satellite,Rotational motion at constant angular acceleration,0.2
+The motion of satellite,Centripetal acceleration and centripetal force,0.2
+The motion of satellite,Rotational motion on horizontal and vertical planes,0.2
+The motion of satellite,Conical pendulum,0.2
+The motion of satellite,Centre of mass and torque,0.2
+The motion of satellite,Moment of inertia and parallel axis theorem,0.2
+The motion of satellite,Rotational kinetic energy,0.2
+The motion of satellite,Angular momentum,0.2
+The motion of satellite,Conservation of angular momentum,0.2
+The motion of satellite,Newton’s law of gravitation,0.5
+The motion of satellite,Gravitational field,0.5
+The motion of satellite,Gravitational potential,0.5
+The motion of satellite,The motion of satellite,1
+The motion of satellite,Escape velocity,0.5
+The motion of satellite,Center of gravity,0.2
+The motion of satellite,Force equilibrium and torque equlilbrium,0.2
+Escape velocity,Kinematics-Linear Motion,0.1
+Escape velocity,Kinematics-Free Fall,0.2
+Escape velocity,Kinematics-Projectile Motion,0.2
+Escape velocity,Dynamics -Newton’s Laws of Motion,0.2
+Escape velocity,Dynamics -Motion on inclined planes,0.2
+Escape velocity,"Work, kinetic energy and potential energy",0.2
+Escape velocity,Dynamics-Work-energy theorem,0.2
+Escape velocity,Dynamics-Conservation of energy,0.2
+Escape velocity,Dynamics-Power,0.2
+Escape velocity,Dynamics-Linear momentum,0.2
+Escape velocity,Dynamics-Conservation of linear momentum and impulse,0.1
+Escape velocity,Dynamics-Elastic collision,0.1
+Escape velocity,Dynamics-Inelastic collision,0.2
+Escape velocity,Dynamics-Collision in 2-dimension,0.2
+Escape velocity,Angular displacement,0.2
+Escape velocity,Velocity and acceleration,0.2
+Escape velocity,Relation between rotational motion and linear motion,0.2
+Escape velocity,Rotational motion at constant angular acceleration,0.2
+Escape velocity,Centripetal acceleration and centripetal force,0.2
+Escape velocity,Rotational motion on horizontal and vertical planes,0.2
+Escape velocity,Conical pendulum,0.2
+Escape velocity,Centre of mass and torque,0.2
+Escape velocity,Moment of inertia and parallel axis theorem,0.2
+Escape velocity,Rotational kinetic energy,0.2
+Escape velocity,Angular momentum,0.2
+Escape velocity,Conservation of angular momentum,0.2
+Escape velocity,Newton’s law of gravitation,0.5
+Escape velocity,Gravitational field,0.5
+Escape velocity,Gravitational potential,0.5
+Escape velocity,The motion of satellite,0.5
+Escape velocity,Escape velocity,1
+Escape velocity,Center of gravity,0.2
+Escape velocity,Force equilibrium and torque equlilbrium,0.2
+Center of gravity,Kinematics-Linear Motion,0.1
+Center of gravity,Kinematics-Free Fall,0.2
+Center of gravity,Kinematics-Projectile Motion,0.2
+Center of gravity,Dynamics -Newton’s Laws of Motion,0.2
+Center of gravity,Dynamics -Motion on inclined planes,0.2
+Center of gravity,"Work, kinetic energy and potential energy",0.2
+Center of gravity,Dynamics-Work-energy theorem,0.2
+Center of gravity,Dynamics-Conservation of energy,0.2
+Center of gravity,Dynamics-Power,0.2
+Center of gravity,Dynamics-Linear momentum,0.2
+Center of gravity,Dynamics-Conservation of linear momentum and impulse,0.1
+Center of gravity,Dynamics-Elastic collision,0.1
+Center of gravity,Dynamics-Inelastic collision,0.2
+Center of gravity,Dynamics-Collision in 2-dimension,0.2
+Center of gravity,Angular displacement,0.2
+Center of gravity,Velocity and acceleration,0.2
+Center of gravity,Relation between rotational motion and linear motion,0.2
+Center of gravity,Rotational motion at constant angular acceleration,0.2
+Center of gravity,Centripetal acceleration and centripetal force,0.2
+Center of gravity,Rotational motion on horizontal and vertical planes,0.2
+Center of gravity,Conical pendulum,0.2
+Center of gravity,Centre of mass and torque,0.2
+Center of gravity,Moment of inertia and parallel axis theorem,0.2
+Center of gravity,Rotational kinetic energy,0.2
+Center of gravity,Angular momentum,0.2
+Center of gravity,Conservation of angular momentum,0.2
+Center of gravity,Newton’s law of gravitation,0.2
+Center of gravity,Gravitational field,0.2
+Center of gravity,Gravitational potential,0.2
+Center of gravity,The motion of satellite,0.2
+Center of gravity,Escape velocity,0.2
+Center of gravity,Center of gravity,1
+Center of gravity,Force equilibrium and torque equlilbrium,0.5
+Force equilibrium and torque equlilbrium,Kinematics-Linear Motion,0.1
+Force equilibrium and torque equlilbrium,Kinematics-Free Fall,0.2
+Force equilibrium and torque equlilbrium,Kinematics-Projectile Motion,0.2
+Force equilibrium and torque equlilbrium,Dynamics -Newton’s Laws of Motion,0.2
+Force equilibrium and torque equlilbrium,Dynamics -Motion on inclined planes,0.2
+Force equilibrium and torque equlilbrium,"Work, kinetic energy and potential energy",0.2
+Force equilibrium and torque equlilbrium,Dynamics-Work-energy theorem,0.2
+Force equilibrium and torque equlilbrium,Dynamics-Conservation of energy,0.2
+Force equilibrium and torque equlilbrium,Dynamics-Power,0.2
+Force equilibrium and torque equlilbrium,Dynamics-Linear momentum,0.2
+Force equilibrium and torque equlilbrium,Dynamics-Conservation of linear momentum and impulse,0.1
+Force equilibrium and torque equlilbrium,Dynamics-Elastic collision,0.1
+Force equilibrium and torque equlilbrium,Dynamics-Inelastic collision,0.2
+Force equilibrium and torque equlilbrium,Dynamics-Collision in 2-dimension,0.2
+Force equilibrium and torque equlilbrium,Angular displacement,0.2
+Force equilibrium and torque equlilbrium,Velocity and acceleration,0.2
+Force equilibrium and torque equlilbrium,Relation between rotational motion and linear motion,0.2
+Force equilibrium and torque equlilbrium,Rotational motion at constant angular acceleration,0.2
+Force equilibrium and torque equlilbrium,Centripetal acceleration and centripetal force,0.2
+Force equilibrium and torque equlilbrium,Rotational motion on horizontal and vertical planes,0.2
+Force equilibrium and torque equlilbrium,Conical pendulum,0.2
+Force equilibrium and torque equlilbrium,Centre of mass and torque,0.2
+Force equilibrium and torque equlilbrium,Moment of inertia and parallel axis theorem,0.2
+Force equilibrium and torque equlilbrium,Rotational kinetic energy,0.2
+Force equilibrium and torque equlilbrium,Angular momentum,0.2
+Force equilibrium and torque equlilbrium,Conservation of angular momentum,0.2
+Force equilibrium and torque equlilbrium,Newton’s law of gravitation,0.2
+Force equilibrium and torque equlilbrium,Gravitational field,0.2
+Force equilibrium and torque equlilbrium,Gravitational potential,0.2
+Force equilibrium and torque equlilbrium,The motion of satellite,0.2
+Force equilibrium and torque equlilbrium,Escape velocity,0.2
+Force equilibrium and torque equlilbrium,Center of gravity,0.5
+Force equilibrium and torque equlilbrium,Force equilibrium and torque equlilbrium,1

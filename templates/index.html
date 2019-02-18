@@ -2,159 +2,153 @@
 
 {% block content %}
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4>View Comparison: <strong id="modal-title">Kinematics-Linear Motion</strong></h4>
-                <button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="modalitemList">Select Item List</label>
+                    <select id="modalitemList" class="form-control">
+                        <option value="null">Select a option</option>
+                    </select>
+                </div>
+
             </div>
-            <div class="modal-body">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Sub-topic</th>
-                        <th scope="col">Experts</th>
-                        <th scope="col">Students</th>
-                    </tr>
-                    </thead>
-                    <tbody id="tBody">
-                    </tbody>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button class="close-btn btn btn-danger">Close</button>
-            </div>
+
+            <button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+            <button class="close-btn btn btn-danger">Close</button>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="row">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="row">
 
-                    <div class="col-md-12 pt-4">
-                        <div class="form-group">
-                            <label for="itemList">Select Item List</label>
-                            <select id="itemList" class="form-control">
-                                <option value="null">Select a option</option>
-                            </select>
-                        </div>
+                <div class="col-md-12 pt-4">
+                    <div class="form-group">
+                        <label for="itemList">Select Item List</label>
+                        <select id="itemList" class="form-control">
+                            <option value="null">Select a option</option>
+                        </select>
                     </div>
-                    <div class="col-md-12 pt-4">
-                        <form method="post" enctype="multipart/form-data" novalidate>
-                            <div class="form-group">
-                                <label for="fileupload">Upload students data</label>
-                                <input type="file" class="form-control" name="data_file" id="data_file">
-                                <small>{{ data }}</small>
-                            </div>
-                            <button class="btn btn-info">Upload File</button>
-
-                        </form>
-                    </div>
-                    <!-- <div class="col-md-12 pt-4">
+                </div>
+                <div class="col-md-12 pt-4">
+                    <form method="post" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
-                            <button class="btn btn-info" id="myBtn">Viw Compare Data</button>
+                            <label for="fileupload">Upload students data</label>
+                            <input type="file" class="form-control" name="data_file" id="data_file">
+                            <small>{{ data }}</small>
                         </div>
-                        <div class="form-group">
-                            <button class="btn btn-info" id="expetBtb">Viw Exparts Data</button>
+                        <div class="btn-group layout-gap">
+                            <button class="btn btn-info btn-sm">Upload File</button>
+                            <button class="btn btn-secondary btn-sm" id="view_experts">Viw Experts Data</button>
                         </div>
-
-                    </div> -->
+                    </form>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="row" id="container">
-                </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row" id="container">
             </div>
+        </div>
 
-            <div class="col-md-12 pt-3">
-                <table class="table table-bordered" id="selectedNode">
-                    <thead>
+        <div class="col-md-12 pt-3">
+            <table class="table table-bordered" id="selectedNode">
+                <thead>
                     <tr>
                         <th scope="col">From</th>
                         <th scope="col">To</th>
                         <th scope="col">Students</th>
                         <th scope="col">Experts</th>
                     </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
-
     </div>
 
-    <script>
-        fetch('/students-data').then(function (res) {
-            res.json().then(function (data) {
-                items = [];
-                data.slice(1).forEach(function (res) {
-                    items.push(res[0])
-                    items.push(res[1])
-                })
-                uItem = Array.from(new Set(items));
-                uItem.forEach(function (item) {
-                    $('#itemList').append('<option value="' + item + '">' + item + '</option>');
-                })
+</div>
+
+<script>
+    fetch('/students-data').then(function (res) {
+        res.json().then(function (data) {
+            items = [];
+            data.slice(1).forEach(function (res) {
+                items.push(res[0])
+                items.push(res[1])
+            })
+            uItem = Array.from(new Set(items));
+            // console.log(uItem);
+            uItem.forEach(function (item) {
+                $('#itemList').append('<option value="' + item + '">' + item + '</option>');
             })
         })
+    })
 
-        $("#itemList").change(function () {
-            $("#itemList option:selected").each(function () {
-                if ($(this).text() != null) {
-                    location.href = 'index?param=' + $(this).text()
-                }
-
-            });
-        });
-
-
-        $.urlParam = function (param) {
-            const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
-            if (results == null) {
-                return null;
-            } else {
-                return decodeURI(results[1] || 0);
+    $("#itemList").change(function () {
+        $("#itemList option:selected").each(function () {
+            if ($(this).text() != null) {
+                location.href = 'index?param=' + $(this).text()
             }
-        }
 
-        if ($.urlParam('param')) {
-            view_students_data($.urlParam('param'));
-        }
-
-        // When the user clicks the button, open the modal
-        $("#myBtn").click(function () {
-            const outputstudents = 'static/file/students.csv';
-            const output = 'static/file/experts.csv';
-
-            $getJSON(outputstudents, output).then(res => {
-                res.outputstudents.forEach(function (d, index) {
-                    $("#tBody").append(`<tr>
-                        <th scope = "row" >${index}</th>
-                        <td>${d.target}</td>
-                        <td>${res.outputstudents.find(x => x.target == d.target).value}</td>
-                        <td>${d.value}</td>
-                    </tr >`)
-                })
-            })
-            $("#modal-title").text($.urlParam('param'));
-            $("#myModal").css({"display": "block"});
         });
+    });
 
-        // When the user clicks on <span> (x), close the modal
-        $(".close-btn").click(function () {
-            $("#myModal").css({"display": "none"});
-        });
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == document.getElementById('myModal')) {
-                $("#myModal").css({"display": "none"});
-            }
+
+    $.urlParam = function (param) {
+        const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+        if (results == null) {
+            return null;
+        } else {
+            return decodeURI(results[1] || 0);
         }
+    }
 
-    </script>
+    if ($.urlParam('param')) {
+        view_students_data($.urlParam('param'));
+    }
+
+    // When the user clicks the button, open the modal
+    $("#view_experts").click(function ($event) {
+        $event.preventDefault();
+
+
+        // const outputstudents = 'static/file/students.csv';
+
+        // $getJSON(outputstudents, output).then(res => {
+        //     res.outputstudents.forEach(function (d, index) {
+        //         $("#tBody").append(`<tr>
+        //                 <th scope = "row" >${index}</th>
+        //                 <td>${d.target}</td>
+        //                 <td>${res.outputstudents.find(x => x.target == d.target).value}</td>
+        //                 <td>${d.value}</td>
+        //             </tr >`)
+        //     })
+        // })
+        // $("#modal-title").text($.urlParam('param'));
+        $("#myModal").css({ "display": "block" });
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    $(".close-btn").click(function () {
+        $("#myModal").css({ "display": "none" });
+    });
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == document.getElementById('myModal')) {
+            $("#myModal").css({ "display": "none" });
+        }
+    }
+
+</script>
 
 {% endblock %}
