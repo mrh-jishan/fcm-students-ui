@@ -138,7 +138,7 @@ view_students_data = (filterText) => {
             links.filter((e) => e.source.name === d.name || e.target.name === d.name).forEach((res, index) => {
                 $data = experts_data.find(d => d.source == res.source.name && d.target == res.target.name);
 
-                console.log(data);
+                console.log($data);
 
                 // $html += `<tr><td>${res.source.name}</td>
                 //     <td>${res.target.name}</td>
