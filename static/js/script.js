@@ -137,10 +137,13 @@ view_students_data = (filterText) => {
             $html = '';
             links.filter((e) => e.source.name === d.name || e.target.name === d.name).forEach((res, index) => {
                 $data = experts_data.find(d => d.source == res.source.name && d.target == res.target.name);
-                $html += `<tr><td>${res.source.name}</td>
-                    <td>${res.target.name}</td>
-                    <td>${res.value}</td>
-                    <td>${ $data.value ? data.value : ''}</td></tr >`;
+
+                console.log(data);
+
+                // $html += `<tr><td>${res.source.name}</td>
+                //     <td>${res.target.name}</td>
+                //     <td>${res.value}</td>
+                //     <td>${$data.value}</td></tr >`;
             });
 
             $("#selectedNode tbody").html($html);
