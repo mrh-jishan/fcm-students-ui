@@ -140,10 +140,10 @@ view_students_data = (filterText) => {
 
                 console.log($data);
 
-                // $html += `<tr><td>${res.source.name}</td>
-                //     <td>${res.target.name}</td>
-                //     <td>${res.value}</td>
-                //     <td>${$data.value}</td></tr >`;
+                $html += `<tr><td>${res.source.name}</td>
+                    <td>${res.target.name}</td>
+                    <td>${res.value}</td>
+                    <td>${$data.value}</td></tr >`;
             });
 
             $("#selectedNode tbody").html($html);
