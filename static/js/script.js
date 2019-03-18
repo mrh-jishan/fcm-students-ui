@@ -9,8 +9,8 @@ view_students_data = (filterText) => {
 
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
-            link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
-            link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+            link.source = nodes[link.source] || (nodes[link.source] = { name: link.source });
+            link.target = nodes[link.target] || (nodes[link.target] = { name: link.target });
             link.value = +link.value;
         });
 
@@ -140,7 +140,7 @@ view_students_data = (filterText) => {
                 $html += `<tr><td>${res.source.name}</td>
                     <td>${res.target.name}</td>
                     <td>${res.value}</td>
-                    <td>${ $data.value}</td></tr >`;
+                    <td>${ $data.value ? data.value : ''}</td></tr >`;
             });
 
             $("#selectedNode tbody").html($html);
@@ -179,8 +179,8 @@ view_experts_data = (filterText) => {
 
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
-            link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
-            link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+            link.source = nodes[link.source] || (nodes[link.source] = { name: link.source });
+            link.target = nodes[link.target] || (nodes[link.target] = { name: link.target });
             link.value = +link.value;
         });
 
@@ -375,7 +375,7 @@ $getJSON = function (outputstudents, output) {
         $getData(outputstudents).then(data => {
             const unique_output = data.filter((e, i) => data.findIndex((x) => x.source == e.source && x.target == e.target) == i);
             $getOutputData(output, data[0].source).then(allData => {
-                resolve({outputstudents: unique_output, allOutputFile: allData});
+                resolve({ outputstudents: unique_output, allOutputFile: allData });
             });
         });
     });
