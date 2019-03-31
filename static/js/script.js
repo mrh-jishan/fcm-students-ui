@@ -9,8 +9,8 @@ view_students_data = (filterText) => {
 
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
-            link.source = nodes[link.source] || (nodes[link.source] = { name: link.source });
-            link.target = nodes[link.target] || (nodes[link.target] = { name: link.target });
+            link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+            link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
             link.value = +link.value;
         });
 
@@ -56,7 +56,20 @@ view_students_data = (filterText) => {
             .data(force.links())
             .enter()
             .append("svg:path")
-            .attr("class", (data) => experts_data.some(d => d.source == data.source.name && d.target == data.target.name && data.value == d.value) ? 'link' : 'link red-line')
+            .attr("class", (data) => {
+                // console.log(data);
+                if (data.value <= 60) {
+                    return 'link red-line';
+                } else if (data.value > 60 && data.value <= 75) {
+                    return 'link orange-line';
+                } else if (data.value > 75 && data.value <= 90) {
+                    return 'link yellow-line';
+                } else {
+                    return 'link green-line';
+                }
+                // console.log(experts_data);
+                // return experts_data.some(d => d.source == data.source.name && d.target == data.target.name && data.value == d.value) ? 'link' : 'link red-line';
+            })
             .attr("id", (d) => "invis_" + d.source.index + "-" + d.value + "-" + d.target.index)
             .attr("marker-end", "url(#end)");
 
@@ -135,11 +148,10 @@ view_students_data = (filterText) => {
                 .style("font", "20px sans-serif");
 
             $html = '';
+
             links.filter((e) => e.source.name === d.name || e.target.name === d.name).forEach((res, index) => {
                 $data = experts_data.find(d => d.source == res.source.name && d.target == res.target.name);
-
                 // console.log($data);
-
                 $html += `<tr><td>${res.source.name}</td>
                     <td>${res.target.name}</td>
                     <td>${res.value}</td>
@@ -182,8 +194,8 @@ view_experts_data = (filterText) => {
 
         // Compute the distinct nodes from the links.
         links.forEach(function (link) {
-            link.source = nodes[link.source] || (nodes[link.source] = { name: link.source });
-            link.target = nodes[link.target] || (nodes[link.target] = { name: link.target });
+            link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+            link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
             link.value = +link.value;
         });
 
@@ -370,7 +382,7 @@ $getOutputData = function (url, source) {
             resolve(data);
         });
     });
-}
+};
 
 
 $getJSON = function (outputstudents, output) {
@@ -378,17 +390,11 @@ $getJSON = function (outputstudents, output) {
         $getData(outputstudents).then(data => {
             const unique_output = data.filter((e, i) => data.findIndex((x) => x.source == e.source && x.target == e.target) == i);
             $getOutputData(output, data[0].source).then(allData => {
-                resolve({ outputstudents: unique_output, allOutputFile: allData });
+                resolve({outputstudents: unique_output, allOutputFile: allData});
             });
         });
     });
-}
-
-// getExpertsValue = (data, cb) => {
-//     $getData('static/file/experts.csv').then(res => {
-//         cb(res.find(d => d.source == data.source.name && d.target == data.target.name))
-//     })
-// }
+};
 
 
 checking_with_experts_data = async (data) => {
@@ -396,4 +402,4 @@ checking_with_experts_data = async (data) => {
         var result = res.some(d => d.source == data.source.name && d.target == data.target.name && data.value == d.value)
         return result;
     })
-}
+};

@@ -1,375 +1,430 @@
 source,target,value
-﻿,﻿,﻿
-﻿,t,t
-﻿,t+2,t+2
-﻿,t+2,t+2
-﻿,t+3,t+3
-﻿,t+4,t+4
-﻿,t+6,t+6
-﻿,t+7,t+7
-﻿,t+8,t+8
-﻿,t+9,t+9
-﻿,t+10,t+10
-Center of gravity,﻿,Center of gravity
-Center of gravity,t,100
-Center of gravity,t+2,100
-Center of gravity,t+2,100
-Center of gravity,t+3,116
-Center of gravity,t+4,124
-Center of gravity,t+6,100
-Center of gravity,t+7,100
-Center of gravity,t+8,100
-Center of gravity,t+9,100
-Center of gravity,t+10,100
-Rotational motion at constant angular acceleration,﻿,Rotational motion at constant angular acceleration
-Rotational motion at constant angular acceleration,t,20
-Rotational motion at constant angular acceleration,t+2,20
-Rotational motion at constant angular acceleration,t+2,20
-Rotational motion at constant angular acceleration,t+3,36
-Rotational motion at constant angular acceleration,t+4,44
-Rotational motion at constant angular acceleration,t+6,57.2
-Rotational motion at constant angular acceleration,t+7,57.2
-Rotational motion at constant angular acceleration,t+8,57.2
-Rotational motion at constant angular acceleration,t+9,67.88
-Rotational motion at constant angular acceleration,t+10,67.88
-Gravitational field,﻿,Gravitational field
-Gravitational field,t,20
-Gravitational field,t+2,20
-Gravitational field,t+2,20
-Gravitational field,t+3,36
-Gravitational field,t+4,44
-Gravitational field,t+6,57.2
-Gravitational field,t+7,57.2
-Gravitational field,t+8,57.2
-Gravitational field,t+9,67.88
-Gravitational field,t+10,67.88
-Rotational motion on horizontal and vertical planes,﻿,Rotational motion on horizontal and vertical planes
+Gravitational field,t,100
+Gravitational field,t+1,100
+Gravitational field,t+2,100
+Gravitational field,t+3,100
+Gravitational field,t+4,100.8
+Gravitational field,t+5,100
+Gravitational field,t+6,100
+Gravitational field,t+7,100
+Gravitational field,t+8,100
+Gravitational field,t+9,100
+Gravitational field,t+10,100
+Gravitational field,t+11,100
+Gravitational field,t+12,100
 Rotational motion on horizontal and vertical planes,t,20
-Rotational motion on horizontal and vertical planes,t+2,20
-Rotational motion on horizontal and vertical planes,t+2,20
-Rotational motion on horizontal and vertical planes,t+3,36
-Rotational motion on horizontal and vertical planes,t+4,44
-Rotational motion on horizontal and vertical planes,t+6,57.2
-Rotational motion on horizontal and vertical planes,t+7,57.2
-Rotational motion on horizontal and vertical planes,t+8,57.2
-Rotational motion on horizontal and vertical planes,t+9,67.88
-Rotational motion on horizontal and vertical planes,t+10,67.88
-Centripetal acceleration and centripetal force,﻿,Centripetal acceleration and centripetal force
+Rotational motion on horizontal and vertical planes,t+1,100
+Rotational motion on horizontal and vertical planes,t+2,100
+Rotational motion on horizontal and vertical planes,t+3,100
+Rotational motion on horizontal and vertical planes,t+4,100
+Rotational motion on horizontal and vertical planes,t+5,100
+Rotational motion on horizontal and vertical planes,t+6,100
+Rotational motion on horizontal and vertical planes,t+7,100
+Rotational motion on horizontal and vertical planes,t+8,100
+Rotational motion on horizontal and vertical planes,t+9,100
+Rotational motion on horizontal and vertical planes,t+10,100
+Rotational motion on horizontal and vertical planes,t+11,100
+Rotational motion on horizontal and vertical planes,t+12,100
+Rotational motion at constant angular acceleration,t,20
+Rotational motion at constant angular acceleration,t+1,28
+Rotational motion at constant angular acceleration,t+2,100
+Rotational motion at constant angular acceleration,t+3,100
+Rotational motion at constant angular acceleration,t+4,100
+Rotational motion at constant angular acceleration,t+5,100
+Rotational motion at constant angular acceleration,t+6,100
+Rotational motion at constant angular acceleration,t+7,100
+Rotational motion at constant angular acceleration,t+8,100
+Rotational motion at constant angular acceleration,t+9,100
+Rotational motion at constant angular acceleration,t+10,100
+Rotational motion at constant angular acceleration,t+11,100
+Rotational motion at constant angular acceleration,t+12,100
 Centripetal acceleration and centripetal force,t,20
-Centripetal acceleration and centripetal force,t+2,20
-Centripetal acceleration and centripetal force,t+2,20
-Centripetal acceleration and centripetal force,t+3,36
-Centripetal acceleration and centripetal force,t+4,44
-Centripetal acceleration and centripetal force,t+6,57.2
-Centripetal acceleration and centripetal force,t+7,57.2
-Centripetal acceleration and centripetal force,t+8,57.2
-Centripetal acceleration and centripetal force,t+9,67.88
-Centripetal acceleration and centripetal force,t+10,67.88
-Escape velocity,﻿,Escape velocity
+Centripetal acceleration and centripetal force,t+1,60
+Centripetal acceleration and centripetal force,t+2,96
+Centripetal acceleration and centripetal force,t+3,96
+Centripetal acceleration and centripetal force,t+4,100
+Centripetal acceleration and centripetal force,t+5,100
+Centripetal acceleration and centripetal force,t+6,100
+Centripetal acceleration and centripetal force,t+7,100
+Centripetal acceleration and centripetal force,t+8,100
+Centripetal acceleration and centripetal force,t+9,100
+Centripetal acceleration and centripetal force,t+10,100
+Centripetal acceleration and centripetal force,t+11,100
+Centripetal acceleration and centripetal force,t+12,100
 Escape velocity,t,20
-Escape velocity,t+2,20
-Escape velocity,t+2,20
-Escape velocity,t+3,36
-Escape velocity,t+4,44
-Escape velocity,t+6,57.2
-Escape velocity,t+7,57.2
-Escape velocity,t+8,57.2
-Escape velocity,t+9,67.88
-Escape velocity,t+10,67.88
-"Work, kinetic energy and potential energy",﻿,"Work, kinetic energy and potential energy"
+Escape velocity,t+1,36
+Escape velocity,t+2,50.4
+Escape velocity,t+3,50.4
+Escape velocity,t+4,51.2
+Escape velocity,t+5,51.2
+Escape velocity,t+6,100
+Escape velocity,t+7,100
+Escape velocity,t+8,100
+Escape velocity,t+9,100
+Escape velocity,t+10,100
+Escape velocity,t+11,100
+Escape velocity,t+12,100
 "Work, kinetic energy and potential energy",t,20
-"Work, kinetic energy and potential energy",t+2,20
-"Work, kinetic energy and potential energy",t+2,20
-"Work, kinetic energy and potential energy",t+3,100
-"Work, kinetic energy and potential energy",t+4,100
-"Work, kinetic energy and potential energy",t+6,100
+"Work, kinetic energy and potential energy",t+1,28
+"Work, kinetic energy and potential energy",t+2,35.2
+"Work, kinetic energy and potential energy",t+3,35.2
+"Work, kinetic energy and potential energy",t+4,35.6
+"Work, kinetic energy and potential energy",t+5,35.6
+"Work, kinetic energy and potential energy",t+6,45.36
 "Work, kinetic energy and potential energy",t+7,100
 "Work, kinetic energy and potential energy",t+8,100
 "Work, kinetic energy and potential energy",t+9,100
 "Work, kinetic energy and potential energy",t+10,100
-Dynamics -Motion on inclined planes,﻿,Dynamics -Motion on inclined planes
-Dynamics -Motion on inclined planes,t,20
-Dynamics -Motion on inclined planes,t+2,20
-Dynamics -Motion on inclined planes,t+2,20
-Dynamics -Motion on inclined planes,t+3,60
-Dynamics -Motion on inclined planes,t+4,80
-Dynamics -Motion on inclined planes,t+6,99.8
-Dynamics -Motion on inclined planes,t+7,99.8
-Dynamics -Motion on inclined planes,t+8,99.8
+"Work, kinetic energy and potential energy",t+11,100
+"Work, kinetic energy and potential energy",t+12,100
+Dynamics -Motion on inclined planes,t,19
+Dynamics -Motion on inclined planes,t+1,27
+Dynamics -Motion on inclined planes,t+2,34.2
+Dynamics -Motion on inclined planes,t+3,34.2
+Dynamics -Motion on inclined planes,t+4,35
+Dynamics -Motion on inclined planes,t+5,35
+Dynamics -Motion on inclined planes,t+6,44.76
+Dynamics -Motion on inclined planes,t+7,66.616
+Dynamics -Motion on inclined planes,t+8,100
 Dynamics -Motion on inclined planes,t+9,100
 Dynamics -Motion on inclined planes,t+10,100
-Dynamics-Work-energy theorem,﻿,Dynamics-Work-energy theorem
-Dynamics-Work-energy theorem,t,20
-Dynamics-Work-energy theorem,t+2,20
-Dynamics-Work-energy theorem,t+2,20
-Dynamics-Work-energy theorem,t+3,60
-Dynamics-Work-energy theorem,t+4,100
-Dynamics-Work-energy theorem,t+6,100
-Dynamics-Work-energy theorem,t+7,100
-Dynamics-Work-energy theorem,t+8,100
+Dynamics -Motion on inclined planes,t+11,100
+Dynamics -Motion on inclined planes,t+12,100
+Dynamics-Work-energy theorem,t,19
+Dynamics-Work-energy theorem,t+1,27
+Dynamics-Work-energy theorem,t+2,34.2
+Dynamics-Work-energy theorem,t+3,34.2
+Dynamics-Work-energy theorem,t+4,35
+Dynamics-Work-energy theorem,t+5,35
+Dynamics-Work-energy theorem,t+6,44.76
+Dynamics-Work-energy theorem,t+7,72.08
+Dynamics-Work-energy theorem,t+8,85.4336
 Dynamics-Work-energy theorem,t+9,100
 Dynamics-Work-energy theorem,t+10,100
-Angular momentum,﻿,Angular momentum
-Angular momentum,t,20
-Angular momentum,t+2,20
-Angular momentum,t+2,20
-Angular momentum,t+3,36
-Angular momentum,t+4,44
-Angular momentum,t+6,57.2
-Angular momentum,t+7,57.2
-Angular momentum,t+8,57.2
-Angular momentum,t+9,67.88
-Angular momentum,t+10,67.88
-Kinematics-Linear Motion,﻿,Kinematics-Linear Motion
-Kinematics-Linear Motion,t,10
-Kinematics-Linear Motion,t+2,10
-Kinematics-Linear Motion,t+2,10
-Kinematics-Linear Motion,t+3,34
-Kinematics-Linear Motion,t+4,46
-Kinematics-Linear Motion,t+6,59.2
-Kinematics-Linear Motion,t+7,59.2
-Kinematics-Linear Motion,t+8,59.2
-Kinematics-Linear Motion,t+9,69.88
-Kinematics-Linear Motion,t+10,69.88
-Kinematics-Free Fall,﻿,Kinematics-Free Fall
-Kinematics-Free Fall,t,20
-Kinematics-Free Fall,t+2,20
-Kinematics-Free Fall,t+2,20
-Kinematics-Free Fall,t+3,52
-Kinematics-Free Fall,t+4,68
-Kinematics-Free Fall,t+6,81.2
-Kinematics-Free Fall,t+7,81.2
-Kinematics-Free Fall,t+8,81.2
-Kinematics-Free Fall,t+9,91.88
-Kinematics-Free Fall,t+10,91.88
-Kinematics-Projectile Motion,﻿,Kinematics-Projectile Motion
-Kinematics-Projectile Motion,t,20
-Kinematics-Projectile Motion,t+2,20
-Kinematics-Projectile Motion,t+2,20
-Kinematics-Projectile Motion,t+3,52
-Kinematics-Projectile Motion,t+4,68
-Kinematics-Projectile Motion,t+6,81.2
-Kinematics-Projectile Motion,t+7,81.2
-Kinematics-Projectile Motion,t+8,81.2
-Kinematics-Projectile Motion,t+9,91.88
-Kinematics-Projectile Motion,t+10,91.88
-Dynamics -Newton’s Laws of Motion,﻿,Dynamics -Newton’s Laws of Motion
-Dynamics -Newton’s Laws of Motion,t,20
-Dynamics -Newton’s Laws of Motion,t+2,20
-Dynamics -Newton’s Laws of Motion,t+2,20
-Dynamics -Newton’s Laws of Motion,t+3,60
-Dynamics -Newton’s Laws of Motion,t+4,80
-Dynamics -Newton’s Laws of Motion,t+6,93.2
-Dynamics -Newton’s Laws of Motion,t+7,93.2
-Dynamics -Newton’s Laws of Motion,t+8,93.2
-Dynamics -Newton’s Laws of Motion,t+9,100
-Dynamics -Newton’s Laws of Motion,t+10,100
-Dynamics-Conservation of energy,﻿,Dynamics-Conservation of energy
-Dynamics-Conservation of energy,t,20
-Dynamics-Conservation of energy,t+2,20
-Dynamics-Conservation of energy,t+2,20
-Dynamics-Conservation of energy,t+3,40
-Dynamics-Conservation of energy,t+4,50
-Dynamics-Conservation of energy,t+6,63.2
-Dynamics-Conservation of energy,t+7,63.2
-Dynamics-Conservation of energy,t+8,63.2
-Dynamics-Conservation of energy,t+9,76.55
-Dynamics-Conservation of energy,t+10,76.55
-Dynamics-Power,﻿,Dynamics-Power
-Dynamics-Power,t,20
-Dynamics-Power,t+2,20
-Dynamics-Power,t+2,20
-Dynamics-Power,t+3,60
-Dynamics-Power,t+4,80
-Dynamics-Power,t+6,93.2
-Dynamics-Power,t+7,93.2
-Dynamics-Power,t+8,93.2
-Dynamics-Power,t+9,100
-Dynamics-Power,t+10,100
-Dynamics-Linear momentum,﻿,Dynamics-Linear momentum
-Dynamics-Linear momentum,t,20
-Dynamics-Linear momentum,t+2,20
-Dynamics-Linear momentum,t+2,20
-Dynamics-Linear momentum,t+3,60
-Dynamics-Linear momentum,t+4,80
-Dynamics-Linear momentum,t+6,93.2
-Dynamics-Linear momentum,t+7,93.2
-Dynamics-Linear momentum,t+8,93.2
-Dynamics-Linear momentum,t+9,100
-Dynamics-Linear momentum,t+10,100
-Dynamics-Conservation of linear momentum and impulse,﻿,Dynamics-Conservation of linear momentum and impulse
-Dynamics-Conservation of linear momentum and impulse,t,10
-Dynamics-Conservation of linear momentum and impulse,t+2,10
-Dynamics-Conservation of linear momentum and impulse,t+2,10
-Dynamics-Conservation of linear momentum and impulse,t+3,30
-Dynamics-Conservation of linear momentum and impulse,t+4,40
-Dynamics-Conservation of linear momentum and impulse,t+6,46.6
-Dynamics-Conservation of linear momentum and impulse,t+7,46.6
-Dynamics-Conservation of linear momentum and impulse,t+8,46.6
-Dynamics-Conservation of linear momentum and impulse,t+9,100
-Dynamics-Conservation of linear momentum and impulse,t+10,100
-Dynamics-Elastic collision,﻿,Dynamics-Elastic collision
-Dynamics-Elastic collision,t,10
-Dynamics-Elastic collision,t+2,10
-Dynamics-Elastic collision,t+2,10
-Dynamics-Elastic collision,t+3,26
-Dynamics-Elastic collision,t+4,34
-Dynamics-Elastic collision,t+6,100
-Dynamics-Elastic collision,t+7,100
-Dynamics-Elastic collision,t+8,100
-Dynamics-Elastic collision,t+9,100
-Dynamics-Elastic collision,t+10,100
-Dynamics-Inelastic collision,﻿,Dynamics-Inelastic collision
-Dynamics-Inelastic collision,t,20
-Dynamics-Inelastic collision,t+2,20
-Dynamics-Inelastic collision,t+2,20
-Dynamics-Inelastic collision,t+3,60
-Dynamics-Inelastic collision,t+4,80
-Dynamics-Inelastic collision,t+6,93.2
-Dynamics-Inelastic collision,t+7,93.2
-Dynamics-Inelastic collision,t+8,93.2
-Dynamics-Inelastic collision,t+9,100
-Dynamics-Inelastic collision,t+10,100
-Dynamics-Collision in 2-dimension,﻿,Dynamics-Collision in 2-dimension
-Dynamics-Collision in 2-dimension,t,20
-Dynamics-Collision in 2-dimension,t+2,20
-Dynamics-Collision in 2-dimension,t+2,20
-Dynamics-Collision in 2-dimension,t+3,60
-Dynamics-Collision in 2-dimension,t+4,80
-Dynamics-Collision in 2-dimension,t+6,93.2
-Dynamics-Collision in 2-dimension,t+7,93.2
-Dynamics-Collision in 2-dimension,t+8,93.2
-Dynamics-Collision in 2-dimension,t+9,100
-Dynamics-Collision in 2-dimension,t+10,100
-Angular displacement,﻿,Angular displacement
-Angular displacement,t,20
-Angular displacement,t+2,20
-Angular displacement,t+2,20
-Angular displacement,t+3,36
-Angular displacement,t+4,44
-Angular displacement,t+6,50.6
-Angular displacement,t+7,50.6
-Angular displacement,t+8,50.6
-Angular displacement,t+9,55.94
-Angular displacement,t+10,55.94
-Velocity and acceleration,﻿,Velocity and acceleration
-Velocity and acceleration,t,20
-Velocity and acceleration,t+2,20
-Velocity and acceleration,t+2,20
-Velocity and acceleration,t+3,36
-Velocity and acceleration,t+4,44
-Velocity and acceleration,t+6,50.6
-Velocity and acceleration,t+7,50.6
-Velocity and acceleration,t+8,50.6
-Velocity and acceleration,t+9,55.94
-Velocity and acceleration,t+10,55.94
-Relation between rotational motion and linear motion,﻿,Relation between rotational motion and linear motion
-Relation between rotational motion and linear motion,t,20
-Relation between rotational motion and linear motion,t+2,20
-Relation between rotational motion and linear motion,t+2,20
-Relation between rotational motion and linear motion,t+3,36
-Relation between rotational motion and linear motion,t+4,44
-Relation between rotational motion and linear motion,t+6,50.6
-Relation between rotational motion and linear motion,t+7,50.6
-Relation between rotational motion and linear motion,t+8,50.6
-Relation between rotational motion and linear motion,t+9,55.94
-Relation between rotational motion and linear motion,t+10,55.94
-Conical pendulum,﻿,Conical pendulum
-Conical pendulum,t,20
-Conical pendulum,t+2,20
-Conical pendulum,t+2,20
-Conical pendulum,t+3,36
-Conical pendulum,t+4,44
-Conical pendulum,t+6,50.6
-Conical pendulum,t+7,50.6
-Conical pendulum,t+8,50.6
-Conical pendulum,t+9,55.94
-Conical pendulum,t+10,55.94
-Centre of mass and torque,﻿,Centre of mass and torque
-Centre of mass and torque,t,20
-Centre of mass and torque,t+2,20
-Centre of mass and torque,t+2,20
-Centre of mass and torque,t+3,36
-Centre of mass and torque,t+4,44
-Centre of mass and torque,t+6,50.6
-Centre of mass and torque,t+7,50.6
-Centre of mass and torque,t+8,50.6
-Centre of mass and torque,t+9,55.94
-Centre of mass and torque,t+10,55.94
-Moment of inertia and parallel axis theorem,﻿,Moment of inertia and parallel axis theorem
-Moment of inertia and parallel axis theorem,t,20
-Moment of inertia and parallel axis theorem,t+2,20
-Moment of inertia and parallel axis theorem,t+2,20
-Moment of inertia and parallel axis theorem,t+3,36
-Moment of inertia and parallel axis theorem,t+4,44
-Moment of inertia and parallel axis theorem,t+6,50.6
-Moment of inertia and parallel axis theorem,t+7,50.6
-Moment of inertia and parallel axis theorem,t+8,50.6
-Moment of inertia and parallel axis theorem,t+9,55.94
-Moment of inertia and parallel axis theorem,t+10,55.94
-Rotational kinetic energy,﻿,Rotational kinetic energy
-Rotational kinetic energy,t,20
-Rotational kinetic energy,t+2,20
-Rotational kinetic energy,t+2,20
-Rotational kinetic energy,t+3,36
-Rotational kinetic energy,t+4,44
-Rotational kinetic energy,t+6,50.6
-Rotational kinetic energy,t+7,50.6
-Rotational kinetic energy,t+8,50.6
-Rotational kinetic energy,t+9,55.94
-Rotational kinetic energy,t+10,55.94
-Conservation of angular momentum,﻿,Conservation of angular momentum
-Conservation of angular momentum,t,20
-Conservation of angular momentum,t+2,20
-Conservation of angular momentum,t+2,20
-Conservation of angular momentum,t+3,36
-Conservation of angular momentum,t+4,44
-Conservation of angular momentum,t+6,50.6
-Conservation of angular momentum,t+7,50.6
-Conservation of angular momentum,t+8,50.6
-Conservation of angular momentum,t+9,55.94
-Conservation of angular momentum,t+10,55.94
-Newton’s law of gravitation,﻿,Newton’s law of gravitation
+Dynamics-Work-energy theorem,t+11,100
+Dynamics-Work-energy theorem,t+12,100
+Angular momentum,t,19
+Angular momentum,t+1,59
+Angular momentum,t+2,95
+Angular momentum,t+3,95
+Angular momentum,t+4,95.8
+Angular momentum,t+5,95.8
+Angular momentum,t+6,100
+Angular momentum,t+7,100
+Angular momentum,t+8,100
+Angular momentum,t+9,100
+Angular momentum,t+10,100
+Angular momentum,t+11,100
+Angular momentum,t+12,100
+Kinematics-Linear Motion,t,19
+Kinematics-Linear Motion,t+1,27
+Kinematics-Linear Motion,t+2,34.2
+Kinematics-Linear Motion,t+3,34.2
+Kinematics-Linear Motion,t+4,34.6
+Kinematics-Linear Motion,t+5,34.6
+Kinematics-Linear Motion,t+6,39.48
+Kinematics-Linear Motion,t+7,55.872
+Kinematics-Linear Motion,t+8,64.218
+Kinematics-Linear Motion,t+9,68.58792
+Kinematics-Linear Motion,t+10,68.58792
+Kinematics-Linear Motion,t+11,100
+Kinematics-Linear Motion,t+12,100
+Kinematics-Free Fall,t,19
+Kinematics-Free Fall,t+1,35
+Kinematics-Free Fall,t+2,49.4
+Kinematics-Free Fall,t+3,49.4
+Kinematics-Free Fall,t+4,50.2
+Kinematics-Free Fall,t+5,50.2
+Kinematics-Free Fall,t+6,59.96
+Kinematics-Free Fall,t+7,81.816
+Kinematics-Free Fall,t+8,91.8312
+Kinematics-Free Fall,t+9,97.65776
+Kinematics-Free Fall,t+10,97.65776
+Kinematics-Free Fall,t+11,100
+Kinematics-Free Fall,t+12,100
+Kinematics-Projectile Motion,t,19
+Kinematics-Projectile Motion,t+1,35
+Kinematics-Projectile Motion,t+2,49.4
+Kinematics-Projectile Motion,t+3,49.4
+Kinematics-Projectile Motion,t+4,50.2
+Kinematics-Projectile Motion,t+5,50.2
+Kinematics-Projectile Motion,t+6,59.96
+Kinematics-Projectile Motion,t+7,81.816
+Kinematics-Projectile Motion,t+8,91.8312
+Kinematics-Projectile Motion,t+9,97.65776
+Kinematics-Projectile Motion,t+10,97.65776
+Kinematics-Projectile Motion,t+11,100
+Kinematics-Projectile Motion,t+12,100
+Dynamics -Newton’s Laws of Motion,t,19
+Dynamics -Newton’s Laws of Motion,t+1,35
+Dynamics -Newton’s Laws of Motion,t+2,49.4
+Dynamics -Newton’s Laws of Motion,t+3,49.4
+Dynamics -Newton’s Laws of Motion,t+4,50.2
+Dynamics -Newton’s Laws of Motion,t+5,50.2
+Dynamics -Newton’s Laws of Motion,t+6,50.2
+Dynamics -Newton’s Laws of Motion,t+7,77.52
+Dynamics -Newton’s Laws of Motion,t+8,90.8736
+Dynamics -Newton’s Laws of Motion,t+9,98.1568
+Dynamics -Newton’s Laws of Motion,t+10,98.1568
+Dynamics -Newton’s Laws of Motion,t+11,100
+Dynamics -Newton’s Laws of Motion,t+12,100
+Dynamics-Conservation of energy,t,19
+Dynamics-Conservation of energy,t+1,35
+Dynamics-Conservation of energy,t+2,49.4
+Dynamics-Conservation of energy,t+3,49.4
+Dynamics-Conservation of energy,t+4,49.8
+Dynamics-Conservation of energy,t+5,49.8
+Dynamics-Conservation of energy,t+6,49.8
+Dynamics-Conservation of energy,t+7,77.12
+Dynamics-Conservation of energy,t+8,90.4736
+Dynamics-Conservation of energy,t+9,97.7568
+Dynamics-Conservation of energy,t+10,97.7568
+Dynamics-Conservation of energy,t+11,100
+Dynamics-Conservation of energy,t+12,100
+Dynamics-Power,t,19
+Dynamics-Power,t+1,35
+Dynamics-Power,t+2,49.4
+Dynamics-Power,t+3,49.4
+Dynamics-Power,t+4,50.2
+Dynamics-Power,t+5,50.2
+Dynamics-Power,t+6,50.2
+Dynamics-Power,t+7,77.52
+Dynamics-Power,t+8,90.8736
+Dynamics-Power,t+9,98.1568
+Dynamics-Power,t+10,98.1568
+Dynamics-Power,t+11,100
+Dynamics-Power,t+12,100
+Dynamics-Linear momentum,t,19
+Dynamics-Linear momentum,t+1,35
+Dynamics-Linear momentum,t+2,49.4
+Dynamics-Linear momentum,t+3,49.4
+Dynamics-Linear momentum,t+4,50.2
+Dynamics-Linear momentum,t+5,50.2
+Dynamics-Linear momentum,t+6,50.2
+Dynamics-Linear momentum,t+7,77.52
+Dynamics-Linear momentum,t+8,90.8736
+Dynamics-Linear momentum,t+9,98.1568
+Dynamics-Linear momentum,t+10,98.1568
+Dynamics-Linear momentum,t+11,100
+Dynamics-Linear momentum,t+12,100
+Dynamics-Conservation of linear momentum and impulse,t,19
+Dynamics-Conservation of linear momentum and impulse,t+1,27
+Dynamics-Conservation of linear momentum and impulse,t+2,34.2
+Dynamics-Conservation of linear momentum and impulse,t+3,34.2
+Dynamics-Conservation of linear momentum and impulse,t+4,35
+Dynamics-Conservation of linear momentum and impulse,t+5,35
+Dynamics-Conservation of linear momentum and impulse,t+6,35
+Dynamics-Conservation of linear momentum and impulse,t+7,48.66
+Dynamics-Conservation of linear momentum and impulse,t+8,55.3368
+Dynamics-Conservation of linear momentum and impulse,t+9,58.9784
+Dynamics-Conservation of linear momentum and impulse,t+10,58.9784
+Dynamics-Conservation of linear momentum and impulse,t+11,100
+Dynamics-Conservation of linear momentum and impulse,t+12,100
+Dynamics-Elastic collision,t,19
+Dynamics-Elastic collision,t+1,27
+Dynamics-Elastic collision,t+2,34.2
+Dynamics-Elastic collision,t+3,34.2
+Dynamics-Elastic collision,t+4,35
+Dynamics-Elastic collision,t+5,35
+Dynamics-Elastic collision,t+6,35
+Dynamics-Elastic collision,t+7,45.928
+Dynamics-Elastic collision,t+8,52.6048
+Dynamics-Elastic collision,t+9,55.51808
+Dynamics-Elastic collision,t+10,55.51808
+Dynamics-Elastic collision,t+11,100
+Dynamics-Elastic collision,t+12,100
+Dynamics-Inelastic collision,t,19
+Dynamics-Inelastic collision,t+1,35
+Dynamics-Inelastic collision,t+2,49.4
+Dynamics-Inelastic collision,t+3,49.4
+Dynamics-Inelastic collision,t+4,50.2
+Dynamics-Inelastic collision,t+5,50.2
+Dynamics-Inelastic collision,t+6,50.2
+Dynamics-Inelastic collision,t+7,77.52
+Dynamics-Inelastic collision,t+8,90.8736
+Dynamics-Inelastic collision,t+9,98.1568
+Dynamics-Inelastic collision,t+10,98.1568
+Dynamics-Inelastic collision,t+11,100
+Dynamics-Inelastic collision,t+12,100
+Dynamics-Collision in 2-dimension,t,19
+Dynamics-Collision in 2-dimension,t+1,35
+Dynamics-Collision in 2-dimension,t+2,49.4
+Dynamics-Collision in 2-dimension,t+3,49.4
+Dynamics-Collision in 2-dimension,t+4,50.2
+Dynamics-Collision in 2-dimension,t+5,50.2
+Dynamics-Collision in 2-dimension,t+6,50.2
+Dynamics-Collision in 2-dimension,t+7,77.52
+Dynamics-Collision in 2-dimension,t+8,90.8736
+Dynamics-Collision in 2-dimension,t+9,98.1568
+Dynamics-Collision in 2-dimension,t+10,98.1568
+Dynamics-Collision in 2-dimension,t+11,100
+Dynamics-Collision in 2-dimension,t+12,100
+Angular displacement,t,19
+Angular displacement,t+1,59
+Angular displacement,t+2,95
+Angular displacement,t+3,95
+Angular displacement,t+4,95.8
+Angular displacement,t+5,95.8
+Angular displacement,t+6,95.8
+Angular displacement,t+7,100
+Angular displacement,t+8,100
+Angular displacement,t+9,100
+Angular displacement,t+10,100
+Angular displacement,t+11,100
+Angular displacement,t+12,100
+Velocity and acceleration,t,19
+Velocity and acceleration,t+1,59
+Velocity and acceleration,t+2,95
+Velocity and acceleration,t+3,95
+Velocity and acceleration,t+4,95.8
+Velocity and acceleration,t+5,95.8
+Velocity and acceleration,t+6,95.8
+Velocity and acceleration,t+7,100
+Velocity and acceleration,t+8,100
+Velocity and acceleration,t+9,100
+Velocity and acceleration,t+10,100
+Velocity and acceleration,t+11,100
+Velocity and acceleration,t+12,100
+Relation between rotational motion and linear motion,t,19
+Relation between rotational motion and linear motion,t+1,59
+Relation between rotational motion and linear motion,t+2,95
+Relation between rotational motion and linear motion,t+3,95
+Relation between rotational motion and linear motion,t+4,95.8
+Relation between rotational motion and linear motion,t+5,95.8
+Relation between rotational motion and linear motion,t+6,95.8
+Relation between rotational motion and linear motion,t+7,100
+Relation between rotational motion and linear motion,t+8,100
+Relation between rotational motion and linear motion,t+9,100
+Relation between rotational motion and linear motion,t+10,100
+Relation between rotational motion and linear motion,t+11,100
+Relation between rotational motion and linear motion,t+12,100
+Conical pendulum,t,19
+Conical pendulum,t+1,59
+Conical pendulum,t+2,95
+Conical pendulum,t+3,95
+Conical pendulum,t+4,95.8
+Conical pendulum,t+5,95.8
+Conical pendulum,t+6,95.8
+Conical pendulum,t+7,100
+Conical pendulum,t+8,100
+Conical pendulum,t+9,100
+Conical pendulum,t+10,100
+Conical pendulum,t+11,100
+Conical pendulum,t+12,100
+Centre of mass and torque,t,19
+Centre of mass and torque,t+1,59
+Centre of mass and torque,t+2,95
+Centre of mass and torque,t+3,95
+Centre of mass and torque,t+4,95.8
+Centre of mass and torque,t+5,95.8
+Centre of mass and torque,t+6,95.8
+Centre of mass and torque,t+7,100
+Centre of mass and torque,t+8,100
+Centre of mass and torque,t+9,100
+Centre of mass and torque,t+10,100
+Centre of mass and torque,t+11,100
+Centre of mass and torque,t+12,100
+Moment of inertia and parallel axis theorem,t,19
+Moment of inertia and parallel axis theorem,t+1,59
+Moment of inertia and parallel axis theorem,t+2,95
+Moment of inertia and parallel axis theorem,t+3,95
+Moment of inertia and parallel axis theorem,t+4,95.8
+Moment of inertia and parallel axis theorem,t+5,95.8
+Moment of inertia and parallel axis theorem,t+6,95.8
+Moment of inertia and parallel axis theorem,t+7,100
+Moment of inertia and parallel axis theorem,t+8,100
+Moment of inertia and parallel axis theorem,t+9,100
+Moment of inertia and parallel axis theorem,t+10,100
+Moment of inertia and parallel axis theorem,t+11,100
+Moment of inertia and parallel axis theorem,t+12,100
+Rotational kinetic energy,t,19
+Rotational kinetic energy,t+1,59
+Rotational kinetic energy,t+2,95
+Rotational kinetic energy,t+3,95
+Rotational kinetic energy,t+4,95.8
+Rotational kinetic energy,t+5,95.8
+Rotational kinetic energy,t+6,95.8
+Rotational kinetic energy,t+7,100
+Rotational kinetic energy,t+8,100
+Rotational kinetic energy,t+9,100
+Rotational kinetic energy,t+10,100
+Rotational kinetic energy,t+11,100
+Rotational kinetic energy,t+12,100
+Conservation of angular momentum,t,19
+Conservation of angular momentum,t+1,59
+Conservation of angular momentum,t+2,95
+Conservation of angular momentum,t+3,95
+Conservation of angular momentum,t+4,95.8
+Conservation of angular momentum,t+5,95.8
+Conservation of angular momentum,t+6,95.8
+Conservation of angular momentum,t+7,100
+Conservation of angular momentum,t+8,100
+Conservation of angular momentum,t+9,100
+Conservation of angular momentum,t+10,100
+Conservation of angular momentum,t+11,100
+Conservation of angular momentum,t+12,100
 Newton’s law of gravitation,t,50
-Newton’s law of gravitation,t+2,50
-Newton’s law of gravitation,t+2,50
-Newton’s law of gravitation,t+3,66
-Newton’s law of gravitation,t+4,74
-Newton’s law of gravitation,t+6,80.6
-Newton’s law of gravitation,t+7,80.6
-Newton’s law of gravitation,t+8,80.6
-Newton’s law of gravitation,t+9,85.94
-Newton’s law of gravitation,t+10,85.94
-Gravitational potential,﻿,Gravitational potential
-Gravitational potential,t,50
-Gravitational potential,t+2,50
-Gravitational potential,t+2,50
-Gravitational potential,t+3,66
-Gravitational potential,t+4,74
-Gravitational potential,t+6,80.6
-Gravitational potential,t+7,80.6
-Gravitational potential,t+8,80.6
-Gravitational potential,t+9,85.94
-Gravitational potential,t+10,85.94
-The motion of satellite,﻿,The motion of satellite
-The motion of satellite,t,50
-The motion of satellite,t+2,50
-The motion of satellite,t+2,50
-The motion of satellite,t+3,66
-The motion of satellite,t+4,74
-The motion of satellite,t+6,80.6
-The motion of satellite,t+7,80.6
-The motion of satellite,t+8,80.6
-The motion of satellite,t+9,85.94
-The motion of satellite,t+10,85.94
-Force equilibrium and torque equlilbrium,﻿,Force equilibrium and torque equlilbrium
-Force equilibrium and torque equlilbrium,t,20
-Force equilibrium and torque equlilbrium,t+2,20
-Force equilibrium and torque equlilbrium,t+2,20
-Force equilibrium and torque equlilbrium,t+3,36
-Force equilibrium and torque equlilbrium,t+4,44
-Force equilibrium and torque equlilbrium,t+6,50.6
-Force equilibrium and torque equlilbrium,t+7,50.6
-Force equilibrium and torque equlilbrium,t+8,50.6
-Force equilibrium and torque equlilbrium,t+9,55.94
-Force equilibrium and torque equlilbrium,t+10,55.94
+Newton’s law of gravitation,t+1,66
+Newton’s law of gravitation,t+2,80.4
+Newton’s law of gravitation,t+3,80.4
+Newton’s law of gravitation,t+4,81.2
+Newton’s law of gravitation,t+5,81.2
+Newton’s law of gravitation,t+6,81.2
+Newton’s law of gravitation,t+7,92.128
+Newton’s law of gravitation,t+8,98.8048
+Newton’s law of gravitation,t+9,100
+Newton’s law of gravitation,t+10,100
+Newton’s law of gravitation,t+11,100
+Newton’s law of gravitation,t+12,100
+Gravitational potential,t,47.5
+Gravitational potential,t+1,63.5
+Gravitational potential,t+2,77.9
+Gravitational potential,t+3,77.9
+Gravitational potential,t+4,78.7
+Gravitational potential,t+5,78.7
+Gravitational potential,t+6,78.7
+Gravitational potential,t+7,89.628
+Gravitational potential,t+8,96.3048
+Gravitational potential,t+9,99.21808
+Gravitational potential,t+10,99.21808
+Gravitational potential,t+11,100
+Gravitational potential,t+12,100
+The motion of satellite,t,19
+The motion of satellite,t+1,35
+The motion of satellite,t+2,49.4
+The motion of satellite,t+3,49.4
+The motion of satellite,t+4,50.2
+The motion of satellite,t+5,50.2
+The motion of satellite,t+6,50.2
+The motion of satellite,t+7,61.128
+The motion of satellite,t+8,67.8048
+The motion of satellite,t+9,70.71808
+The motion of satellite,t+10,70.71808
+The motion of satellite,t+11,73.859288
+The motion of satellite,t+12,73.859288
+Center of gravity,t,19
+Center of gravity,t+1,35
+Center of gravity,t+2,49.4
+Center of gravity,t+3,49.4
+Center of gravity,t+4,50.2
+Center of gravity,t+5,50.2
+Center of gravity,t+6,50.2
+Center of gravity,t+7,61.128
+Center of gravity,t+8,67.8048
+Center of gravity,t+9,70.71808
+Center of gravity,t+10,70.71808
+Center of gravity,t+11,73.859288
+Center of gravity,t+12,73.859288
+Force equilibrium and torque equlilbrium,t,19
+Force equilibrium and torque equlilbrium,t+1,35
+Force equilibrium and torque equlilbrium,t+2,49.4
+Force equilibrium and torque equlilbrium,t+3,49.4
+Force equilibrium and torque equlilbrium,t+4,50.2
+Force equilibrium and torque equlilbrium,t+5,50.2
+Force equilibrium and torque equlilbrium,t+6,50.2
+Force equilibrium and torque equlilbrium,t+7,61.128
+Force equilibrium and torque equlilbrium,t+8,67.8048
+Force equilibrium and torque equlilbrium,t+9,70.71808
+Force equilibrium and torque equlilbrium,t+10,70.71808
+Force equilibrium and torque equlilbrium,t+11,73.859288
+Force equilibrium and torque equlilbrium,t+12,73.859288
