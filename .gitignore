@@ -9,3 +9,4 @@ tag.py
 .idea
 .vscode
 data/*
+venv

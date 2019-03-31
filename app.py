@@ -40,6 +40,7 @@ def get_students_data():
         data = list(csv.reader(csvfile, delimiter=','))
         return jsonify(data)
 
+
 @app.route('/experts-data', methods=['GET'])
 def get_experts_data():
     with open(experts_data, 'r') as csvfile:
@@ -97,7 +98,8 @@ def write_into_file(data):
         writer.writerow(["source", "target", "value"])
         for idx, column in enumerate(data):
             for x in range(len(column)):
-                if not (data[0][x] == "null" or data[idx][x] == "null" or column[0] == "null" or data[0][x] == "" or data[idx][x] == "" or column[0] == ""):
+                if not (data[0][x] == "null" or data[idx][x] == "null" or column[0] == "null" or data[0][x] == "" or
+                        data[idx][x] == "" or column[0] == ""):
                     row = [column[0], data[0][x], data[idx][x]]
                     writer = csv.writer(file)
                     writer.writerow(row)
@@ -114,7 +116,8 @@ def write_students_data_into_file(data):
         writer.writerow(["source", "target", "value"])
         for idx, column in enumerate(data):
             for x in range(len(column)):
-                if not (data[0][x] == "null" or data[idx][x] == "null" or column[0] == "null" or data[0][x] == "" or data[idx][x] == "" or column[0] == ""):
+                if not (data[0][x] == "null" or data[idx][x] == "null" or column[0] == "null" or data[0][x] == "" or
+                        data[idx][x] == "" or column[0] == ""):
                     row = [column[0], data[0][x], data[idx][x]]
                     writer = csv.writer(file)
                     writer.writerow(row)

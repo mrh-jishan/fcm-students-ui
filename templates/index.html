@@ -2,167 +2,199 @@
 
 {% block content %}
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="modalitemList">Select Item List - <span id="modal-title"></span></label>
-                    <select id="modalitemList" class="form-control">
-                        <option value="null">Select a option</option>
-                    </select>
-                </div>
+    {#<div id="myModal" class="modal">#}
+    {#    <div class="modal-content">#}
+    {#        <div class="modal-header">#}
+    {#            <div class="col-md-12">#}
+    {#                <div class="form-group">#}
+    {#                    <label for="modalitemList">Select Item List - <span id="modal-title"></span></label>#}
+    {#                    <select id="modalitemList" class="form-control">#}
+    {#                        <option value="null">Select a option</option>#}
+    {#                    </select>#}
+    {#                </div>#}
+    {##}
+    {#            </div>#}
+    {##}
+    {#            <button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close">#}
+    {#                <span aria-hidden="true">&times;</span>#}
+    {#            </button>#}
+    {#        </div>#}
+    {#        <div class="modal-body">#}
+    {##}
+    {#        </div>#}
+    {#        <div class="modal-footer">#}
+    {#            <button class="close-btn btn btn-danger">Close</button>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#</div>#}
 
-            </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="timestamp">Select time</label>
+                            <select id="timestamp" class="form-control">
+                                <option value="null">Select a time</option>
+                            </select>
+                        </div>
+                    </div>
 
-            <button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
+                    <div class="col-md-12 text-center">
+                        <h4 class="text-danger">::::::: OR :::::::</h4>
+                    </div>
 
-        </div>
-        <div class="modal-footer">
-            <button class="close-btn btn btn-danger">Close</button>
-        </div>
-    </div>
-</div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="subtopics">Select sub-topic</label>
+                            <select id="subtopics" class="form-control">
+                                <option value="null">Select a sub-topic</option>
+                            </select>
+                        </div>
+                    </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="row">
 
-                <div class="col-md-12 pt-4">
-                    <div class="form-group">
-                        <label for="itemList">Select Item List</label>
-                        <select id="itemList" class="form-control">
-                            <option value="null">Select a option</option>
-                        </select>
+                    <div class="col-md-12 pt-4">
+                        <form method="post" action="students" enctype="multipart/form-data" novalidate>
+                            <div class="form-group">
+                                <label for="fileupload">Upload students data</label>
+                                <input type="file" class="form-control" name="students_data_file"
+                                       id="students_data_file">
+                                <small>{{ data }}</small>
+                            </div>
+                            <div class="btn-group layout-gap">
+                                <button class="btn btn-info btn-sm">Upload File</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-12 pt-4">
+                        <form method="post" enctype="multipart/form-data" novalidate>
+                            <div class="form-group">
+                                <label for="fileupload">Upload experts data</label>
+                                <input type="file" class="form-control" name="data_file" id="data_file">
+                                <small>{{ data }}</small>
+                            </div>
+                            <div class="btn-group layout-gap">
+                                <button class="btn btn-info btn-sm">Upload File</button>
+                                <!-- <button class="btn btn-secondary btn-sm" id="view_experts">Viw Experts Data</button> -->
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-md-12 pt-4">
-                    <form method="post" action="students" enctype="multipart/form-data" novalidate>
-                        <div class="form-group">
-                            <label for="fileupload">Upload students data</label>
-                            <input type="file" class="form-control" name="students_data_file" id="students_data_file">
-                            <small>{{ data }}</small>
-                        </div>
-                        <div class="btn-group layout-gap">
-                            <button class="btn btn-info btn-sm">Upload File</button>
-                            <!-- <button class="btn btn-secondary btn-sm" id="view_experts">Viw Experts Data</button> -->
-                        </div>
-                    </form>
-                </div>
-
-
-                <div class="col-md-12 pt-4">
-                    <form method="post" enctype="multipart/form-data" novalidate>
-                        <div class="form-group">
-                            <label for="fileupload">Upload experts data</label>
-                            <input type="file" class="form-control" name="data_file" id="data_file">
-                            <small>{{ data }}</small>
-                        </div>
-                        <div class="btn-group layout-gap">
-                            <button class="btn btn-info btn-sm">Upload File</button>
-                            <!-- <button class="btn btn-secondary btn-sm" id="view_experts">Viw Experts Data</button> -->
-                        </div>
-                    </form>
+            </div>
+            <div class="col-md-8">
+                <div class="row" id="container">
                 </div>
             </div>
-        </div>
-        <div class="col-md-8">
-            <div class="row" id="container">
-            </div>
-        </div>
 
-        <div class="col-md-12 pt-3">
-            <table class="table table-bordered" id="selectedNode">
-                <thead>
+            <div class="col-md-12 pt-3">
+                <table class="table table-bordered" id="selectedNode">
+                    <thead>
                     <tr>
                         <th scope="col">From</th>
                         <th scope="col">To</th>
                         <th scope="col">Students</th>
                         <th scope="col">Experts</th>
                     </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
+
     </div>
 
-</div>
+    <script>
+        fetch('/students-data').then(function (res) {
+            res.json().then(function (data) {
 
-<script>
-    fetch('/students-data').then(function (res) {
-        res.json().then(function (data) {
-            items = [];
-            data.slice(1).forEach(function (res) {
-                items.push(res[0])
-                items.push(res[1])
+                var subtopics = [];
+                var timestamp = [];
+
+                data.slice(1).forEach(function (res) {
+                    subtopics.push(res[0])
+                    timestamp.push(res[1])
+                });
+
+                Array.from(new Set(subtopics)).forEach(function (d) {
+                    $('#itemList, #subtopics').append('<option value="' + d + '">' + d + '</option>');
+                });
+
+
+                Array.from(new Set(timestamp)).forEach(function (d) {
+                    $('#itemList, #timestamp').append('<option value="' + d + '">' + d + '</option>');
+                });
+
             })
-            uItem = Array.from(new Set(items));
-            // console.log(uItem);
-            uItem.forEach(function (item) {
-                $('#itemList, #modalitemList').append('<option value="' + item + '">' + item + '</option>');
-            })
-        })
-    })
-
-    $("#itemList").change(function () {
-        $("#itemList option:selected").each(function () {
-            if ($(this).text() != null) {
-                location.href = 'index?param=' + $(this).text()
-            }
-
         });
-    });
+
+        $("#subtopics").change(function () {
+            $("#subtopics option:selected").each(function () {
+                if ($(this).text() != null) {
+                    location.href = 'index?param=' + $(this).text()
+                }
+
+            });
+        });
 
 
-    $.urlParam = function (param) {
-        const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
-        if (results == null) {
-            return null;
-        } else {
-            return decodeURI(results[1] || 0);
+        $("#timestamp").change(function () {
+            $("#timestamp option:selected").each(function () {
+                if ($(this).text() != null) {
+                    location.href = 'index?param=' + $(this).text()
+                }
+
+            });
+        });
+
+
+        $.urlParam = function (param) {
+            const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+            if (results == null) {
+                return null;
+            } else {
+                return decodeURI(results[1] || 0);
+            }
+        };
+
+        if ($.urlParam('param')) {
+            view_students_data($.urlParam('param'));
         }
-    }
 
-    if ($.urlParam('param')) {
-        view_students_data($.urlParam('param'));
-    }
+        // When the user clicks the button, open the modal
+        $("#view_experts").click(function ($event) {
+            $event.preventDefault();
 
-    // When the user clicks the button, open the modal
-    $("#view_experts").click(function ($event) {
-        $event.preventDefault();
+            // const outputstudents = 'static/file/students.csv';
+            // $getJSON(outputstudents, output).then(res => {
+            //     res.outputstudents.forEach(function (d, index) {
+            //         $("#tBody").append(`<tr>
+            //                 <th scope = "row" >${index}</th>
+            //                 <td>${d.target}</td>
+            //                 <td>${res.outputstudents.find(x => x.target == d.target).value}</td>
+            //                 <td>${d.value}</td>
+            //             </tr >`)
+            //     })
+            // })
 
-        // const outputstudents = 'static/file/students.csv';
-        // $getJSON(outputstudents, output).then(res => {
-        //     res.outputstudents.forEach(function (d, index) {
-        //         $("#tBody").append(`<tr>
-        //                 <th scope = "row" >${index}</th>
-        //                 <td>${d.target}</td>
-        //                 <td>${res.outputstudents.find(x => x.target == d.target).value}</td>
-        //                 <td>${d.value}</td>
-        //             </tr >`)
-        //     })
-        // })
-        
-        $("#modal-title").text($.urlParam('param'));
-        $("#myModal").css({ "display": "block" });
-    });
+            $("#modal-title").text($.urlParam('param'));
+            $("#myModal").css({"display": "block"});
+        });
 
-    // When the user clicks on <span> (x), close the modal
-    $(".close-btn").click(function () {
-        $("#myModal").css({ "display": "none" });
-    });
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == document.getElementById('myModal')) {
-            $("#myModal").css({ "display": "none" });
+        // When the user clicks on <span> (x), close the modal
+        $(".close-btn").click(function () {
+            $("#myModal").css({"display": "none"});
+        });
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('myModal')) {
+                $("#myModal").css({"display": "none"});
+            }
         }
-    }
 
-</script>
+    </script>
 
 {% endblock %}
