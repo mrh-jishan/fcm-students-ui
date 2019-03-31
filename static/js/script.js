@@ -108,8 +108,9 @@ view_students_data = (filterText) => {
 
         // add the text 
         node.append("text")
-            .attr("x", 12)
+            .attr("x", 20)
             .attr("dy", ".35em")
+            .style("font-size", "12px")
             .text(function (d) {
                 return d.name;
             });
