@@ -170,12 +170,12 @@
                 });
 
                 Array.from(new Set(subtopics)).forEach(function (d) {
-                    $('#itemList, #subtopics').append('<option value="' + d + '">' + d + '</option>');
+                    $('#subtopics').append('<option value="' + d + '">' + d + '</option>');
                 });
 
 
                 Array.from(new Set(timestamp)).forEach(function (d) {
-                    $('#itemList, #timestamp').append('<option value="' + d + '">' + d + '</option>');
+                    $('#timestamp').append('<option value="' + d + '">' + d + '</option>');
                 });
 
             })
@@ -199,16 +199,6 @@
 
             });
         });
-
-
-        $.urlParam = function (param) {
-            const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
-            if (results == null) {
-                return null;
-            } else {
-                return decodeURI(results[1] || 0);
-            }
-        };
 
         if ($.urlParam('param')) {
             view_students_data($.urlParam('param'));

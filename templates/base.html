@@ -8,6 +8,17 @@
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/d3.js') }}"></script>
+
+    <script>
+        $.urlParam = function (param) {
+            const results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+            if (results == null) {
+                return null;
+            } else {
+                return decodeURI(results[1] || 0);
+            }
+        };
+    </script>
     {% block header %}
 
     {% endblock %}

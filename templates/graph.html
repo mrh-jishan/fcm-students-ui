@@ -129,27 +129,66 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="chart-wrapper" id="chart-line1"></div>
     </div>
 
+
+    <div class="form-group">
+        <label for="subtopics">Select sub-topic</label>
+        <select id="subtopics" class="form-control">
+            <option value="null">Select a time</option>
+        </select>
+    </div>
+
+
     <script type="application/javascript">
-        d3.csv('static/file/multiline_data.csv', function (error, data) {
-            data.forEach(function (d) {
-                d.t = +d.t;
-                d.student = +d.student;
-                d.expert = +100;
-            });
-            var chart = makeLineChart(data, 't', {
-                    'Students Value': {column: 'student'},
-                    'Experts Value': {column: 'expert'}
-                },
-                {xAxis: 'Score', yAxis: 'Time'});
+        fetch('/students-data').then(function (res) {
+            res.json().then(function (data) {
+                var subtopics = [];
+                data.slice(1).forEach(function (res) {
+                    subtopics.push(res[0])
+                });
 
-            chart.bind("#chart-line1");
-            chart.render();
-
+                Array.from(new Set(subtopics)).forEach(function (d) {
+                    $('#subtopics').append('<option value="' + d + '">' + d + '</option>');
+                });
+            })
         });
+
+
+        $("#subtopics").change(function () {
+            $("#subtopics option:selected").each(function () {
+                if ($(this).text() != null) {
+                    location.href = 'graph?param=' + $(this).text()
+                }
+
+            });
+        });
+
+        if ($.urlParam('param')) {
+
+            d3.csv('static/file/students.csv', function (error, data) {
+                const param = $.urlParam('param');
+                data = data.filter((res) => res.source === param || res.target === param)
+
+                data.forEach(function (d, index) {
+                    d.t = +index;
+                    d.student = +d.value;
+                    d.expert = +100;
+                });
+                var chart = makeLineChart(data, 't', {
+                        'Students Value': {column: 'student'},
+                        'Experts Value': {column: 'expert'}
+                    },
+                    {xAxis: 'Time', yAxis: 'Score'});
+
+                chart.bind("#chart-line1");
+                chart.render();
+
+            });
+        }
+
     </script>
 
 {% endblock %}
