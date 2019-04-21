@@ -34,6 +34,11 @@ def index():
     return render_template('index.html', data='')
 
 
+@app.route('/graph', methods=['GET'])
+def graph():
+    return render_template('graph.html', data='')
+
+
 @app.route('/students-data', methods=['GET'])
 def get_students_data():
     with open(students_data, 'r') as csvfile:

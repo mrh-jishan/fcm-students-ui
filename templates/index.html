@@ -1,5 +1,44 @@
 {% extends "base.html" %}
 
+{% block header %}
+    <style type="text/css">
+        path.link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 1.5px;
+        }
+
+        path.link.red-line {
+            stroke: #FF0000;
+        }
+
+        path.link.yellow-line {
+            stroke: #ffff00;
+        }
+
+        path.link.orange-line {
+            stroke: #ffa500;
+        }
+
+        path.link.green-line {
+            stroke: #008000;
+        }
+
+        circle {
+            fill: #ccc;
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            fill: #000;
+            font: 10px sans-serif;
+            pointer-events: none;
+        }
+    </style>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
 {% block content %}
 
     {#<div id="myModal" class="modal">#}
@@ -201,7 +240,7 @@
         });
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
-            if (event.target == document.getElementById('myModal')) {
+            if (event.target === document.getElementById('myModal')) {
                 $("#myModal").css({"display": "none"});
             }
         }

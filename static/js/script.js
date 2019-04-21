@@ -3,7 +3,7 @@ view_students_data = (filterText) => {
     d3.csv("static/file/students.csv", async (error, links) => {
         var nodes = {};
 
-        links = links.filter((res) => res.source == filterText || res.target == filterText)
+        links = links.filter((res) => res.source === filterText || res.target === filterText)
 
         experts_data = await $getData('static/file/experts.csv');
 
@@ -151,7 +151,7 @@ view_students_data = (filterText) => {
             $html = '';
 
             links.filter((e) => e.source.name === d.name || e.target.name === d.name).forEach((res, index) => {
-                $data = experts_data.find(d => d.source == res.source.name && d.target == res.target.name);
+                $data = experts_data.find(d => d.source === res.source.name && d.target === res.target.name);
                 // console.log($data);
                 $html += `<tr><td>${res.source.name}</td>
                     <td>${res.target.name}</td>
@@ -379,7 +379,7 @@ $getData = function (url) {
 $getOutputData = function (url, source) {
     return new Promise(resolve => {
         d3.csv(url, function (error, links) {
-            const data = links.filter(fd => fd.source == source || fd.target == source);
+            const data = links.filter(fd => fd.source === source || fd.target === source);
             resolve(data);
         });
     });
@@ -389,7 +389,7 @@ $getOutputData = function (url, source) {
 $getJSON = function (outputstudents, output) {
     return new Promise(resolve => {
         $getData(outputstudents).then(data => {
-            const unique_output = data.filter((e, i) => data.findIndex((x) => x.source == e.source && x.target == e.target) == i);
+            const unique_output = data.filter((e, i) => data.findIndex((x) => x.source === e.source && x.target === e.target) === i);
             $getOutputData(output, data[0].source).then(allData => {
                 resolve({outputstudents: unique_output, allOutputFile: allData});
             });
@@ -400,7 +400,7 @@ $getJSON = function (outputstudents, output) {
 
 checking_with_experts_data = async (data) => {
     return $getData('static/file/experts.csv').then(res => {
-        var result = res.some(d => d.source == data.source.name && d.target == data.target.name && data.value == d.value)
+        var result = res.some(d => d.source === data.source.name && d.target === data.target.name && data.value === d.value)
         return result;
     })
 };
